@@ -1,0 +1,98 @@
+﻿<div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.jpg);">
+    <div class="container position-relative">
+        <h1>Membership Plans</h1>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<section id="pricing" class="pricing section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <span>Top Plans</span>
+        <h2>Top Plans</h2>
+        <h1>Holiday Membership Plans</h1>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                
+                    <h3>Classic Membership</h3>     
+                    <div class="card">
+                    <img src="~/assets/img/card.png" class="card-img-top" alt="...">
+                        <div class="card-body" style="display: none;">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                   
+                </div>
+            </div><!-- End Pricing Item -->
+
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+             
+                    <h3>Signature Membership</h3>
+                    <div class="card">
+                        <img src="~/assets/img/card.png" class="card-img-top" alt="...">
+                        <div class="card-body" style="display: none;">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                
+            </div><!-- End Pricing Item -->
+
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                
+                    <h3>Platinum Membership</h3>
+                <div class="card" >
+                    <img src="~/assets/img/card.png" class="card-img-top" alt="...">
+                        <div class="card-body" style="display: none;">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+               
+            </div><!-- End Pricing Item -->
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<script>
+       // Select all cards
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        const cardBody = card.querySelector('.card-body'); // Select the card body within the current card
+
+        card.addEventListener('mouseover', function() {
+            cardBody.style.display = 'block'; // Show the card body on hover
+        });
+
+        card.addEventListener('mouseout', function() {
+            cardBody.style.display = 'none'; // Hide the card body when not hovering
+        });
+    });
+</script>
