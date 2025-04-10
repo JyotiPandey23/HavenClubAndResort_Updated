@@ -1,0 +1,98 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<div class="page-title dark-background" data-aos="fade" style="background-image: url(/assets/img/bg-hero.jpg);">
+    <div class="container position-relative">
+        <h1>Contact Us</h1>
+        <p>Your thoughts matter to us! Please fill out the form below, and we'll get back to you as soon as possible.</p>
+      @*   <nav class="breadcrumbs">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li class="current">Contact</li>
+            </ol>
+        </nav> *@
+    </div>
+</div>
+<section id="contact" class="contact section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+            @* <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/dir//Sun+West+Bank+Ashram+Road,+B+1322,+Ashram+Road,+P.o,+Sadar+Bazar,+Ahmedabad,+Gujarat+380009/@23.0718007,72.5209105,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x395e85d50caa8775:0xab0f158add34e856!2m2!1d72.6033121!2d23.0718221?entry=ttu&g_ep=EgoyMDI1MDQwNy4wIKXMDSoASAFQAw%3D%3D"></iframe> *@
+
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8027051400154!2d72.5683907747705!3d23.031015216014087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e850953360193%3A0xd427426d1e877832!2sWestbank!5e0!3m2!1sen!2sin!4v1742637883277!5m2!1sen!2sin"
+                    style="border:0; width: 100%; height: 270px;">
+            </iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+            <div class="col-lg-4">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Sun West Bank Ashram Road, B 1322, Ashram Road, P.o, Sadar Bazar, Ahmedabad, Gujarat 380009</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>096871 99136</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>info@example.com</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+            </div>
+
+            <div class="col-lg-8">
+                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                    <div class="row gy-4">
+
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                        </div>
+
+                        <div class="col-md-12">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                            <button type="submit">Send Message</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div><!-- End Contact Form -->
+
+        </div>
+
+    </div>
+
+</section>

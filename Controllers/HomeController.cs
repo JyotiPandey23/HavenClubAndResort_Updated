@@ -23,11 +23,15 @@ namespace HavenClubAndResort.Controllers
         {
             return View();
         }
+       
         public IActionResult Membership()
         {
             return View();
         }
-
+        public IActionResult ContatUs()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

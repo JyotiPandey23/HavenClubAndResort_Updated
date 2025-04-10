@@ -1,4 +1,4 @@
-/**
+﻿/**
 * Template Name: Logis
 * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
 * Updated: Aug 07 2024 with Bootstrap v5.3.3
@@ -1354,6 +1354,88 @@ section,
   }
 }
 
+
+
+
+
+
+.pricing-card {
+    perspective: 1000px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+    .pricing-card:hover {
+        transform: rotateY(10deg) scale(1.05);
+    }
+.card-green .card-body {
+    background: linear-gradient(135deg, #4cd137, #6efb8d); /* Green gradient */
+}
+
+.card-blue .card-body {
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Blue gradient */
+}
+
+.card-orange .card-body {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Orange gradient */
+}
+.card-body {
+  /*  background: linear-gradient(135deg, #6e8efb, #a777e3);*/
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .feature-list li {
+        margin-bottom: 10px;
+        color: #f0f0f0;
+    }
+
+        .feature-list li::before {
+            content: "✓";
+            margin-right: 10px;
+            color: #000000;
+            font-weight: bold;
+        }
+
+.btn-custom {
+    background-color: #ffffff;
+    color: #6e8efb;
+    border: none;
+   /* transition: all 0.3s ease;*/
+}
+
+    .btn-custom:hover {
+        background-color: #4cd137;
+        color: #ffffff;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(76, 209, 55, 0.4);
+    }
+
+.popular-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #4cd137;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(76, 209, 55, 0.3);
+}
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
