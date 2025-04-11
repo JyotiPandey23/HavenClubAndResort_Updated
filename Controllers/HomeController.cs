@@ -28,6 +28,10 @@ namespace HavenClubAndResort.Controllers
         {
             return View();
         }
+        public IActionResult Memberships()
+        {
+            return View();
+        }
         public IActionResult ContatUs()
         {
             return View();
