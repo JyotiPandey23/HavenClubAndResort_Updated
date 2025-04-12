@@ -2604,8 +2604,8 @@
 
 /*======= historical places section=====*/
 .historical-places {
-    padding-top: 130px;
-    padding-bottom: 140px;
+   
+   /* padding-bottom: 140px;*/
     background: #f7fafd;
 }
 
