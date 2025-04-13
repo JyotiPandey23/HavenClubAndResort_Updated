@@ -32,6 +32,10 @@ namespace HavenClubAndResort.Controllers
         {
             return View();
         }
+        public IActionResult TravelBlog()
+        {
+            return View();
+        }
         public IActionResult ContatUs()
         {
             return View();
