@@ -32,6 +32,10 @@ namespace HavenClubAndResort.Controllers
         {
             return View();
         }
+        public IActionResult TravelBlog()
+        {
+            return View();
+        }
         public IActionResult ContatUs()
         {
             return View();
@@ -52,6 +56,10 @@ namespace HavenClubAndResort.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        public IActionResult MemberLogin()
+        {
+            return View();
         }
     }
 }

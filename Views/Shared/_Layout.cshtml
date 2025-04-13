@@ -23,6 +23,7 @@
     <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Site CSS -->
     <link rel="stylesheet" href="~/assets/css/style.css">
+    <link href="~/css/site.css" rel="stylesheet" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="~/assets/css/responsive.css">
     <!-- Custom CSS -->
@@ -32,21 +33,87 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
 
+        .dark-background {
+            --background-color: #0e1d34;
+            --default-color: #ffffff;
+            --heading-color: #ffffff;
+            --surface-color: #19335c;
+            --contrast-color: #ffffff;
+        }
+
+       .call-to-action {
+  padding: 80px 0;
+  position: relative;
+  clip-path: inset(0);
+}
+
+.call-to-action img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.call-to-action:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.call-to-action .container {
+  position: relative;
+  z-index: 3;
+}
+
+.call-to-action h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--default-color);
+}
+
+.call-to-action p {
+  color: var(--default-color);
+}
+
+.call-to-action .cta-btn {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid var(--contrast-color);
+  color: var(--contrast-color);
+}
+
+.call-to-action .cta-btn:hover {
+  background: blue;
+  border: 2px solid var(--accent-color);
+}
+    </style>
 </head>
 
 <body>
+    @Html.Partial("_BodyModalPartialView")
+
     <!-- Start Main Top -->
     <div class="main-top">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="custom-select-box">
-                        @* <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-                            <option>¥ JPY</option>
-                            <option>$ USD</option>
-                            <option>€ EUR</option>
-                        </select> *@
+                       
                     </div>
                     <div class="right-phone-box">
                         <p>Call US :- <a href="#">18002122750</a></p>
@@ -114,12 +181,14 @@
                 <!-- End Header Navigation -->
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav ms-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">Destination</a></li>
                         <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Memberships">Membership Plan</a></li>
                         <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="ContatUs">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="MemberLogin">Member Login</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="TravelBlog">Travel Blog</a></li>
                         @* <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Memberships">Member Login</a></li> *@
                      @*    <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
@@ -196,97 +265,36 @@
     </div>
     <!-- End Top Search -->
     <!-- Start Slider -->
-   
+
     <!-- End Slider -->
     <!-- Start Categories  -->
-   @RenderBody();
+   @RenderBody()
+
     <!-- End Instagram Feed  -->
     <!-- Start Footer  -->
     <!-- Start Instagram Feed  -->
-    <div class="instagram-box">
-        <div class="main-instagram owl-carousel owl-theme">
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-01.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+
+
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+    @*     <img src="assets/img/cta-bg.jpg" alt=""> *@
+        <img src="~/assets/images/back.jpg"  alt="">
+
+        <div class="container"> 
+            <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">    
+                <div class="col-xl-10">
+                    <div class="text-center">
+                        <h3>Give Us a Ring: We're Ready to Help!</h3>
+                        <p>The world is a book, and those who do not travel read only one page.</p>
+                        <a class="cta-btn" href="tel:18002677022"> <i class="fas fa-phone fa-rotate-90"></i> 18002122750</a>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-02.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-03.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-04.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-06.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-07.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-08.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-09.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
+            </div>  
         </div>
-    </div>
+
+    </section>
+   
     <footer>
         <div class="footer-main">
             <div class="container">
@@ -386,8 +394,9 @@
     <!-- ALL JS FILES -->
     <script src="~/assets/js/jquery-3.2.1.min.js"></script>
     <script src="~/assets/js/popper.min.js"></script>
-    <script src="~/assets/js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+@*     <script src="~/assets/js/bootstrap.min.js"></script>
+ *@    <!-- ALL PLUGINS -->
     <script src="~/assets/js/jquery.superslides.min.js"></script>
     <script src="~/assets/js/bootstrap-select.js"></script>
     <script src="~/assets/js/inewsticker.js"></script>
@@ -404,3 +413,11 @@
 </body>
 
 </html>
+<script>
+    $(document).ready(function () {
+        if (!sessionStorage.getItem("modalShown")) {
+            $('#inquiryModal').modal('show');
+            sessionStorage.setItem("modalShown", "true"); 
+        }
+    });
+</script>
