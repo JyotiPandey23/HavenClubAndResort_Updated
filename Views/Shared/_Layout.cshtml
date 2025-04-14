@@ -28,11 +28,12 @@
     <link rel="stylesheet" href="~/assets/css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="~/assets/css/custom.css">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
     <style>
 
         .dark-background {
@@ -168,19 +169,16 @@
     <!-- Start Main Top -->
     <header class="main-header">
         <!-- Start Navigation -->
+        <!-- Navigation bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
             <div class="container">
-                <!-- Start Header Navigation -->
+                <!-- Header -->
                 <div class="navbar-header">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button">
                         <i class="fa fa-bars"></i>
                     </button>
-
-                   @*  <a class="navbar-brand" href="index.html"><img src="~/assets/images/logo.png" class="logo" alt="" height="150"></a>
-                </div> *@
                 </div>
-                <!-- End Header Navigation -->
-                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item active"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
@@ -188,71 +186,13 @@
                         <li class="nav-item"><a class="nav-link" href="about.html">Destination</a></li>
                         <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Memberships">Membership Plan</a></li>
                         <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="ContatUs">Contact Us</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="TravelBlog">Travel Blog</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="TravelBlog">Travel Blog</a></li>
                         <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="MemberLogin">Member Login</a></li>
-                        @* <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Memberships">Member Login</a></li> *@
-                     @*    <li class="dropdown">
-                            <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="shop.html">Sidebar Shop</a></li>
-                                <li><a href="shop-detail.html">Shop Detail</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="my-account.html">My Account</a></li>
-                                <li><a href="wishlist.html">Wishlist</a></li>
-                            </ul>
-                        </li> *@
-                       
-                       
                     </ul>
                 </div>
-                <!-- /.navbar-collapse -->
-                <!-- Start Atribute Navigation -->
-              @*   <div class="attr-nav">
-                    <ul>
-                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu">
-                            <a href="#">
-                                <i class="fa fa-shopping-bag"></i>
-                                <span class="badge">3</span>
-                                <p>My Cart</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div *@
-                <!-- End Atribute Navigation -->
             </div>
-            <!-- Start Side Menu -->
-            <div class="side">
-                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-                <li class="cart-box">
-                    <ul class="cart-list">
-                        <li>
-                            <a href="#" class="photo"><img src="images/img-pro-01.jpg" class="cart-thumb" alt="" /></a>
-                            <h6><a href="#">Delica omtantur </a></h6>
-                            <p>1x - <span class="price">$80.00</span></p>
-                        </li>
-                        <li>
-                            <a href="#" class="photo"><img src="images/img-pro-02.jpg" class="cart-thumb" alt="" /></a>
-                            <h6><a href="#">Omnes ocurreret</a></h6>
-                            <p>1x - <span class="price">$60.00</span></p>
-                        </li>
-                        <li>
-                            <a href="#" class="photo"><img src="images/img-pro-03.jpg" class="cart-thumb" alt="" /></a>
-                            <h6><a href="#">Agam facilisis</a></h6>
-                            <p>1x - <span class="price">$40.00</span></p>
-                        </li>
-                        <li class="total">
-                            <a href="#" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
-                            <span class="float-right"><strong>Total</strong>: $180.00</span>
-                        </li>
-                    </ul>
-                </li>
-            </div>
-            <!-- End Side Menu -->
         </nav>
+
         <!-- End Navigation -->
     </header>
     <!-- End Main Top -->
@@ -398,21 +338,25 @@
     <script src="~/assets/js/jquery-3.2.1.min.js"></script>
     <script src="~/assets/js/popper.min.js"></script>
     <script src="~/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 @*     <script src="~/assets/js/bootstrap.min.js"></script>
  *@    <!-- ALL PLUGINS -->
+
     <script src="~/assets/js/jquery.superslides.min.js"></script>
     <script src="~/assets/js/bootstrap-select.js"></script>
     <script src="~/assets/js/inewsticker.js"></script>
-    <script src="~/assets/js/bootsnav.js."></script>
     <script src="~/assets/js/images-loded.min.js"></script>
     <script src="~/assets/js/isotope.min.js"></script>
     <script src="~/assets/js/owl.carousel.min.js"></script>
     <script src="~/assets/js/baguetteBox.min.js"></script>
     <script src="~/assets/js/form-validator.min.js"></script>
     <script src="~/assets/js/contact-form-script.js"></script>
+    @* <script src="~/assets/js/bootsnav.js."></script> *@
     <script src="~/assets/js/custom.js"></script>
     <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
@@ -426,7 +370,8 @@
         }
     });
 
-
-
+    $('.navbar-toggler').click(function () {
+        $('#navbar-menu').stop(true, true).slideToggle(300);
+    });
 
 </script>
