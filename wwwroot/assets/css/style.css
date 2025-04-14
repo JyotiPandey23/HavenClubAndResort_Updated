@@ -2607,6 +2607,7 @@
 
 
 
+
 /*======= historical places section=====*/
 .historical-places {
    
@@ -2731,6 +2732,21 @@
 
 
 
+/* @media (max-width: 768px) {
+      .travel-card {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .travel-card img,
+      .travel-content {
+        width: 100%;
+      }
+
+      .travel-card img {
+        height: 200px;
+      }
+    } */
 
 
 

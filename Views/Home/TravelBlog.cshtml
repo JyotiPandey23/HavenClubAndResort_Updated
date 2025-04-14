@@ -1,174 +1,129 @@
-﻿<style>
-    .thumb {
-        position: relative;
-        overflow: hidden;
-    }
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Switch Template</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
+    <link rel="stylesheet" href="~/switch/dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img class="header-logo-image asset-light" src="~/switch/dist/images/logo-light.svg" alt="Logo">
+                                <img class="header-logo-image asset-dark" src="~/switch/dist/images/logo-dark.svg" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
 
-        .thumb img {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-            transition: transform 0.5s ease, opacity 0.5s ease;
-        }
-
-        .thumb:hover img {
-            transform: scale(1.05) translateY(-10px);
-            opacity: 0.9;
-        }
-
-    .overlay-text {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 20px;
-        background: rgba(0, 0, 0, 0.6);
-        color: white;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
-
-        .overlay-text h3, .overlay-text h4 {
-            color: white;
-        }
-
-
-</style>
-<div class="all-title-box">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>Travel Blog</h2>
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active"> Travel Blog </li>
-                </ul>
             </div>
-        </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">Discover. Explore. Travel.</h1>
+                            <p class="hero-paragraph">Join us to unlock unforgettable travel experiences. From exotic getaways to cultural immersions — your adventure begins here</p>
+                            
+                        </div>
+                        <div class="hero-media">
+                            <div class="header-illustration">
+                                <img class="header-illustration-image asset-light" src="~/switch/dist/images/header-illustration-light.svg" alt="Header illustration">
+                                <img class="header-illustration-image asset-dark" src="~/switch/dist/images/header-illustration-dark.svg" alt="Header illustration">
+                            </div>
+                            <div class="hero-media-illustration">
+                                <img class="hero-media-illustration-image asset-light" src="~/switch/dist/images/hero-media-illustration-light.svg" alt="Hero media illustration">
+                                <img class="hero-media-illustration-image asset-dark" src="~/switch/dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
+                            </div>
+                            <div class="hero-media-container">
+                                <img class="hero-media-image asset-light" src="~/assets/images/image_travel1.jpg" alt="Hero media">
+                                <img class="hero-media-image asset-dark" src="~/assets/images/image_travel1.jpg" alt="Hero media">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           
+        </main>
+        <!-- Add below inside <main> tag after the hero section -->
+        <section class="cards-section">
+            <div class="container">
+                <h2 class="text-center">Top Travel Blogs</h2>
+                <div class="cards-wrapper" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                    <div class="card" style="width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                        <img src="~/assets/images/image_travel2.jpg" alt="Manali" style="width: 100%; height: auto;">
+                        <div style="padding: 15px;">
+                            <h3>Manali</h3>
+                            <p>Nestled in the mountains of Himachal Pradesh, Manali is a paradise for nature lovers and adventure seekers. 
+                        </div>
+                    </div>
+                    <div class="card" style="width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                        <img src="~/assets/images/image_travel2.jpg" alt="Kashmir" style="width: 100%; height: auto;">
+                        <div style="padding: 15px;">
+                            <h3>Kashmir</h3>
+                            <p>Often called "Paradise on Earth", Kashmir mesmerizes with its breathtaking valleys, serene lakes, and vibrant gardens.
+                        </div>
+                    </div>
+                    <div class="card" style="width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                        <img src="~/assets/images/image_travel2.jpg" alt="Chennai" style="width: 100%; height: auto;">
+                        <div style="padding: 15px;">
+                            <h3>Chennai</h3>
+                            <p>Chennai, the cultural capital of South India,
+                                is a vibrant metropolis that beautifully blends tradition with modernity. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Left - Content Right -->
+        <section class="image-text-section" style="padding: 60px 0;">
+            <div class="container" style="display: flex; align-items: center; gap: 30px;">
+                <div class="image" style="flex: 1;">
+                    <img src="~/assets/images/image_travel2.jpg" alt="Asia Travel" style="width: 100%; border-radius: 10px;">
+                </div>
+                <div class="content" style="flex: 1;">
+                    <h2>Asia's Best Travel Destinations</h2>
+                    <p>Asia is a continent of contrasts, offering everything from bustling megacities to tranquil villages.
+                        Whether you dream of exploring the ancient temples of Angkor Wat in Cambodia,
+                        wandering the neon-lit streets of Tokyo, or relaxing on the pristine beaches of the Maldives, Asia has it all. 
+                        In Thailand, enjoy vibrant street life and ornate palaces; in Vietnam, cruise through the limestone karsts of Ha Long Bay.
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Right - Content Left -->
+        <section class="image-text-section" style="padding: 60px 0; background-color: #f9f9f9;">
+            <div class="container" style="display: flex; align-items: center; gap: 30px; flex-direction: row-reverse;">
+                <div class="image" style="flex: 1;">
+                    <img src="~/assets/images/image_travel2.jpg" alt="Europe Travel" style="width: 100%; border-radius: 10px;">
+                </div>
+                <div class="content" style="flex: 1;">
+                    <h2>Europe's Must-Visit Spots</h2>
+                    <p>Europe is a treasure trove of historical landmarks, 
+                        artistic masterpieces, and breathtaking natural landscapes. 
+                        Imagine strolling through the romantic streets of Paris,
+                        exploring ancient ruins in Rome, or enjoying the northern lights in Norway.
+                        Each country offers a unique flavor — the tulip fields of the Netherlands,
+                        the fjords of Iceland, and the castles of Germany are just a few highlights.
+                </div>
+            </div>
+        </section>
+
+
     </div>
-</div>
 
-<div style="background-color:black; color:white;">
-    <div class="container-fluid py-5">
-
-        <div class="container ">
-            <div class="text-center mb-3 pb-3">
-                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;"><strong>Haven Club & Resort Blog</strong></h5>
-                <p>Welcome to the official blog of Haven Club & Resort — your perfect escape into comfort, adventure, and unforgettable experiences.</p>
-                <p>We believe that travel isn’t just about the destination — it’s about the memories you create along the way. Whether you're planning a quick weekend getaway or a peaceful staycation, we’re here to inspire your journey with ideas, tips, and hidden gems.</p>
-                <p>Nestled in the heart of Gujarat, Haven Club & Resort opens doors to vibrant local culture, stunning landscapes, and soul-soothing serenity. From historical landmarks to natural wonders — explore places that are just a short drive away and feel a world apart.</p>
-                <p><strong>Ready to rediscover Gujarat? Here are 7 must-visit destinations that promise a full experience in just 24 hours — perfect for your next weekend escape!</strong></p>
-            </div>
-
-            <div class="historical-places">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 bg-black">
-                        <div class="single-dest position-relative">
-                            <div class="thumb">
-                                <img src="~/assets/images/forest.jpg" class="img-fluid" alt="">
-                                <div class="overlay-text">
-                                    <h3>Royal Resort</h3>
-                                    <h4>Planning some holiday retreats or wish to enjoy the post-wedding holidays? 
-                                        Discover some amazing travel experiences and land up in the best spot with expert guidance. 
-                                        Seeking some romantic and peaceful destinations to enjoy the romantic vibes and create some memories? The best cure at such moments 
-                                        is to just pack the bags and travel to some beautiful destinations.
-                                        This Royal Resort Kheda will blow your mind with Spacious Rooms and Beauty Midst Nature.</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 bg-black">
-                        <div class="single-dest position-relative">
-                            <div class="thumb">
-                                <img src="~/assets/images/history.jpg" class="img-fluid" alt="">
-                                <div class="overlay-text">
-                                    <h3>Cidade De Daman Beach Resort – Daman</h3>
-                                    <h4>There are Many luxury resorts in Daman which are just perfect for newlyweds, 
-                                        Nature lovers, weekenders and summer vacationers. Given its natural green 
-                                        surroundings, Mussoorie is visited by a number of 
-                                        people every year and hence is equipped with classy and upscale resorts that are
-                                        simply splendid. This Resort will give you Memories to Save it for your lifetime!></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 bg-black">
-                        <div class="single-dest position-relative">
-                            <div class="thumb">
-                                <img src="~/assets/images/forest.jpg" class="img-fluid" alt="">
-                                <div class="overlay-text">
-                                    <h3>Royal Resort</h3>
-                                    <h4>
-                                        Planning some holiday retreats or wish to enjoy the post-wedding holidays?
-                                        Discover some amazing travel experiences and land up in the best spot with expert guidance.
-                                        Seeking some romantic and peaceful destinations to enjoy the romantic vibes and create some memories? The best cure at such moments
-                                        is to just pack the bags and travel to some beautiful destinations.
-                                        This Royal Resort Kheda will blow your mind with Spacious Rooms and Beauty Midst Nature.
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 bg-black">
-                        <div class="single-dest position-relative">
-                            <div class="thumb">
-                                <img src="~/assets/images/history.jpg" class="img-fluid" alt="">
-                                <div class="overlay-text">
-                                    <h3>Cidade De Daman Beach Resort – Daman</h3>
-                                    <h4>
-                                        There are Many luxury resorts in Daman which are just perfect for newlyweds,
-                                        Nature lovers, weekenders and summer vacationers. Given its natural green
-                                        surroundings, Mussoorie is visited by a number of
-                                        people every year and hence is equipped with classy and upscale resorts that are
-                                        simply splendid. This Resort will give you Memories to Save it for your lifetime!>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 bg-black">
-                        <div class="single-dest position-relative">
-                            <div class="thumb">
-                                <img src="~/assets/images/forest.jpg" class="img-fluid" alt="">
-                                <div class="overlay-text">
-                                    <h3>Royal Resort</h3>
-                                    <h4>
-                                        Planning some holiday retreats or wish to enjoy the post-wedding holidays?
-                                        Discover some amazing travel experiences and land up in the best spot with expert guidance.
-                                        Seeking some romantic and peaceful destinations to enjoy the romantic vibes and create some memories? The best cure at such moments
-                                        is to just pack the bags and travel to some beautiful destinations.
-                                        This Royal Resort Kheda will blow your mind with Spacious Rooms and Beauty Midst Nature.
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 bg-black">
-                        <div class="single-dest position-relative">
-                            <div class="thumb">
-                                <img src="~/assets/images/history.jpg" class="img-fluid" alt="">
-                                <div class="overlay-text">
-                                    <h3>Cidade De Daman Beach Resort – Daman</h3>
-                                    <h4>
-                                        There are Many luxury resorts in Daman which are just perfect for newlyweds,
-                                        Nature lovers, weekenders and summer vacationers. Given its natural green
-                                        surroundings, Mussoorie is visited by a number of
-                                        people every year and hence is equipped with classy and upscale resorts that are
-                                        simply splendid. This Resort will give you Memories to Save it for your lifetime!>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <script src="~/switch/dist/js/main.min.js"></script>
+</body>
+</html>
