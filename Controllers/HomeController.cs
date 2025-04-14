@@ -44,6 +44,10 @@ namespace HavenClubAndResort.Controllers
         {
             return View();
         }
+        public IActionResult North()
+        {
+            return View();
+        }
         public IActionResult termsCondition()
         {
             return View();

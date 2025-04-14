@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="~/assets/css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="~/assets/css/custom.css">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -101,8 +101,8 @@
   background: blue;
   border: 2px solid var(--accent-color);
 }
-    </style>
-</head>
+        </style>
+</head> 
 
 <body>
     @Html.Partial("_BodyModalPartialView")
@@ -112,9 +112,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="custom-select-box">
+                    <di v class="custom-select-box">
                        
-                    </div>
+                    </di>
                     <div class="right-phone-box">
                         <p>Call US :- <a href="#">18002122750</a></p>
                     </div>
@@ -410,14 +410,20 @@
     <script src="~/assets/js/custom.js"></script>
     <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
 <script>
+      AOS.init();   
     $(document).ready(function () {
         if (!sessionStorage.getItem("modalShown")) {
             $('#inquiryModal').modal('show');
             sessionStorage.setItem("modalShown", "true"); 
         }
     });
+
+
+
+
 </script>
