@@ -1,129 +1,599 @@
-﻿<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Switch Template</title>
-    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
-    <link rel="stylesheet" href="~/switch/dist/css/style.css">
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-</head>
-<body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
-        <header class="site-header">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-                            <a href="#">
-                                <img class="header-logo-image asset-light" src="~/switch/dist/images/logo-light.svg" alt="Logo">
-                                <img class="header-logo-image asset-dark" src="~/switch/dist/images/logo-dark.svg" alt="Logo">
-                            </a>
-                        </h1>
-                    </div>
-                </div>
+﻿
+<link href="https://fonts.googleapis.com/css?family=Heebo:400,700|IBM+Plex+Sans:600" rel="stylesheet">
+<link rel="stylesheet" href="~/switch/dist/css/style.css">
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<style>
+    p{
+        font-size:15px;
+    }
+    .strap-bar {
+        
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
+    .strap-button {
+        padding: 12px 24px;
+        font-size: 16px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        background-color: white;
+        color: #007bff;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+        .strap-button:hover {
+            background-color: #007bff;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+    .row-region {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .region-card {
+        position: relative;
+        flex: 1 1 50%;
+        height: 400px;
+        overflow: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+        .region-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .region-card .overlay-text {
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+            z-index: 2;
+        }
+
+        .region-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .region-card:hover {
+            transform: translateY(-10px);
+            opacity: 0.95;
+        }
+
+            .region-card:hover::before {
+                opacity: 1;
+            }
+
+    .card-label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+        font-size: 18px;
+        transition: transform 0.3s ease;
+    }
+
+    .explore-card:hover .card-label {
+        transform: translateY(-10px);
+    }
+
+</style>
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Travel Blogs</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Travel Blog </li>
+                </ul>
             </div>
-        </header>
-
-        <main>
-            <section class="hero">
-                <div class="container">
-                    <div class="hero-inner">
-                        <div class="hero-copy">
-                            <h1 class="hero-title mt-0">Discover. Explore. Travel.</h1>
-                            <p class="hero-paragraph">Join us to unlock unforgettable travel experiences. From exotic getaways to cultural immersions — your adventure begins here</p>
-                            
-                        </div>
-                        <div class="hero-media">
-                            <div class="header-illustration">
-                                <img class="header-illustration-image asset-light" src="~/switch/dist/images/header-illustration-light.svg" alt="Header illustration">
-                                <img class="header-illustration-image asset-dark" src="~/switch/dist/images/header-illustration-dark.svg" alt="Header illustration">
-                            </div>
-                            <div class="hero-media-illustration">
-                                <img class="hero-media-illustration-image asset-light" src="~/switch/dist/images/hero-media-illustration-light.svg" alt="Hero media illustration">
-                                <img class="hero-media-illustration-image asset-dark" src="~/switch/dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
-                            </div>
-                            <div class="hero-media-container">
-                                <img class="hero-media-image asset-light" src="~/assets/images/image_travel1.jpg" alt="Hero media">
-                                <img class="hero-media-image asset-dark" src="~/assets/images/image_travel1.jpg" alt="Hero media">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-           
-        </main>
-        <!-- Add below inside <main> tag after the hero section -->
-        <section class="cards-section">
-            <div class="container">
-                <h2 class="text-center">Top Travel Blogs</h2>
-                <div class="cards-wrapper" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-                    <div class="card" style="width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
-                        <img src="~/assets/images/image_travel2.jpg" alt="Manali" style="width: 100%; height: auto;">
-                        <div style="padding: 15px;">
-                            <h3>Manali</h3>
-                            <p>Nestled in the mountains of Himachal Pradesh, Manali is a paradise for nature lovers and adventure seekers. 
-                        </div>
-                    </div>
-                    <div class="card" style="width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
-                        <img src="~/assets/images/image_travel2.jpg" alt="Kashmir" style="width: 100%; height: auto;">
-                        <div style="padding: 15px;">
-                            <h3>Kashmir</h3>
-                            <p>Often called "Paradise on Earth", Kashmir mesmerizes with its breathtaking valleys, serene lakes, and vibrant gardens.
-                        </div>
-                    </div>
-                    <div class="card" style="width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
-                        <img src="~/assets/images/image_travel2.jpg" alt="Chennai" style="width: 100%; height: auto;">
-                        <div style="padding: 15px;">
-                            <h3>Chennai</h3>
-                            <p>Chennai, the cultural capital of South India,
-                                is a vibrant metropolis that beautifully blends tradition with modernity. 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Image Left - Content Right -->
-        <section class="image-text-section" style="padding: 60px 0;">
-            <div class="container" style="display: flex; align-items: center; gap: 30px;">
-                <div class="image" style="flex: 1;">
-                    <img src="~/assets/images/image_travel2.jpg" alt="Asia Travel" style="width: 100%; border-radius: 10px;">
-                </div>
-                <div class="content" style="flex: 1;">
-                    <h2>Asia's Best Travel Destinations</h2>
-                    <p>Asia is a continent of contrasts, offering everything from bustling megacities to tranquil villages.
-                        Whether you dream of exploring the ancient temples of Angkor Wat in Cambodia,
-                        wandering the neon-lit streets of Tokyo, or relaxing on the pristine beaches of the Maldives, Asia has it all. 
-                        In Thailand, enjoy vibrant street life and ornate palaces; in Vietnam, cruise through the limestone karsts of Ha Long Bay.
-                </div>
-            </div>
-        </section>
-
-        <!-- Image Right - Content Left -->
-        <section class="image-text-section" style="padding: 60px 0; background-color: #f9f9f9;">
-            <div class="container" style="display: flex; align-items: center; gap: 30px; flex-direction: row-reverse;">
-                <div class="image" style="flex: 1;">
-                    <img src="~/assets/images/image_travel2.jpg" alt="Europe Travel" style="width: 100%; border-radius: 10px;">
-                </div>
-                <div class="content" style="flex: 1;">
-                    <h2>Europe's Must-Visit Spots</h2>
-                    <p>Europe is a treasure trove of historical landmarks, 
-                        artistic masterpieces, and breathtaking natural landscapes. 
-                        Imagine strolling through the romantic streets of Paris,
-                        exploring ancient ruins in Rome, or enjoying the northern lights in Norway.
-                        Each country offers a unique flavor — the tulip fields of the Netherlands,
-                        the fjords of Iceland, and the castles of Germany are just a few highlights.
-                </div>
-            </div>
-        </section>
-
-
+        </div>
+    </div>
+</div>
+<section>
+    <!-- Add Category section -->
+    <div class="strap-bar">
+        <button class="strap-button" onclick="scrollToSection('top-blogs')">Top Travel Blogs</button>
+        <button class="strap-button" onclick="scrollToSection('trending-destinations')">Trending Destinations</button>
+        <button class="strap-button" onclick="scrollToSection('explore-region')">Explore by Region</button>
+        <button class="strap-button" onclick="scrollToSection('beach-vibes')">Beach Vibes</button>
+        <button class="strap-button" onclick="scrollToSection('budget-tips')">Budget Travel Tips</button>
     </div>
 
-    <script src="~/switch/dist/js/main.min.js"></script>
-</body>
-</html>
+</section>
+<div class="body-wrap boxed-container">
+   
+    <section class="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <h1 class="hero-title mt-0">Discover. Explore. Travel.</h1>
+                    <p class="hero-paragraph">Join us to unlock unforgettable travel experiences. From exotic getaways to cultural immersions — your adventure begins here</p>
+                    <a asp-action="ContatUs" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="transition: all 0.3s ease;">
+                        Get in touch
+                    </a>
+                </div>
+                <div class="hero-media">
+                    <div class="header-illustration">
+                        <img class="header-illustration-image asset-light" src="~/switch/dist/images/header-illustration-light.svg" alt="Header illustration">
+                        <img class="header-illustration-image asset-dark" src="~/switch/dist/images/header-illustration-dark.svg" alt="Header illustration">
+                    </div>
+                    <div class="hero-media-illustration">
+                        <img class="hero-media-illustration-image asset-light" src="~/switch/dist/images/hero-media-illustration-light.svg" alt="Hero media illustration">
+                        <img class="hero-media-illustration-image asset-dark" src="~/switch/dist/images/hero-media-illustration-dark.svg" alt="Hero media illustration">
+                    </div>
+                    <div class="hero-media-container">
+                        <img class="hero-media-image asset-light" src="~/assets/images/travel_blog2.jpg" alt="Hero media">
+                        <img class="hero-media-image asset-dark" src="~/assets/images/travel_blog2.jpg" alt="Hero media">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards-section" id="top-blogs">
+        <div class="container">
+            <h2 class="text-center">Top Travel Blogs</h2>
+            <div class="cards-wrapper" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+                <!-- Bali -->
+                <div class="card" data-destination="manali" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/bali.jpg" alt="Manali" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Bali is a tropical paradise known for its serene beaches, lush rice terraces, vibrant culture, and affordable luxury. Bali offers it all in one beautiful package.</p>
+                        <a onclick="showDetails('Bali')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Kashmir -->
+                <div class="card" data-destination="kashmir" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/kashmir.jpg" alt="Kashmir" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>Kashmir, India</h3>
+                        <p>Referred to as the "Paradise on Earth", Kashmir is blooming this season with scenic valleys. It's perfect for both relaxation and adventure.</p>
+                        <a onclick="showDetails('Kashmir')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Jaipur -->
+                <div class="card" data-destination="chennai" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/jaipur.jpg" alt="Jaipur" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>Jaipur, India</h3>
+                        <p>The Pink City of Jaipur offers a royal glimpse into India’s majestic past. With palaces, it’s a treat for history lovers and photographers alike.</p>
+                        <a onclick="showDetails('Jaipur')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Collage Right - Content Left -->
+    <section class="image-text-section" style="padding: 60px 0;">
+        <div class="container" style="display: flex; align-items: center; gap: 30px; flex-direction: row-reverse; flex-wrap: wrap;">
+            <!-- Right Side: Collage of 4 Images -->
+            <div class="image-collage" style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 3px;">
+                <img src="~/assets/travel_blog_image/river.jpg" alt="India Place 1" style="width: 100%; height: auto; border-radius: 6px;">
+                <img src="~/assets/travel_blog_image/travel_inidagate.jpg" alt="India Place 2" style="width: 100%; height: auto; border-radius: 6px;">
+                <img src="~/assets/travel_blog_image/elephants.jpg" alt="India Place 3" style="width: 100%; height: auto; border-radius: 6px;">
+                <img src="~/assets/travel_blog_image/river.jpg" alt="India Place 4" style="width: 100%; height: auto; border-radius: 6px;">
+            </div>
+            <!-- Left Side: Text Content -->
+            <div class="content" style="flex: 1;">
+                <h2>India’s Must-Visit Places</h2>
+                <p>
+                    India is a land of vibrant diversity, offering an unforgettable blend of culture, heritage, and natural beauty.
+                    Wander through the majestic forts of Rajasthan, experience the serene backwaters of Kerala, or enjoy the spiritual calm of Varanasi.
+                    Witness the snowy peaks of Himachal, the golden deserts of Jaisalmer, and the lush tea gardens of Assam.
+                    From the iconic Taj Mahal to the lively beaches of Goa, every corner of India tells a story.
+                    Whether you're an adventure seeker, a spiritual traveler, or a history lover, India has something magical for you.
+                </p>
+            </div>
+        </div>
+    </section>
+   
+    
+    <!-- Trending Destinations Section -->
+    <section class="cards-section" id="trending-destinations">
+        <div class="container">
+            <h2 class="text-center">Trending Destinations</h2>
+            <div class="cards-wrapper" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+                <!-- Bali -->
+                <div class="card" data-destination="bali" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/bali_temple.jpg" alt="Bali" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Bali blends spiritual calm with natural beauty. From forest temples and waterfalls to beach parties and yoga retreats, it has something for everyone.</p>
+                        <a onclick="showDetails('bali')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Cappadocia -->
+                <div class="card" data-destination="cappadocia" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/cappadocia.jpg" alt="Cappadocia" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>Cappadocia, Turkey</h3>
+                        <p>Famous for its fairy chimneys and hot air balloon rides, Cappadocia offers a magical landscape, underground cities, and rich history for travelers.</p>
+                        <a onclick="showDetails('cappadocia')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Kyoto -->
+                <div class="card" data-destination="kyoto" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/tokyo.jpg" alt="Kyoto" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>Kyoto, Japan</h3>
+                        <p>Known for cherry blossoms, ancient temples, and traditional tea ceremonies, Kyoto is Japan’s cultural heart that remains timeless and enchanting.</p>
+                        <a onclick="showDetails('kyoto')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Image Collage Left - Content Right -->
+    <section class="image-text-section" style="padding: 60px 0;">
+        <div class="container" style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+
+            <!-- Left Side: Collage of 4 Images -->
+            <div class="image-collage" style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 3px;">
+                <img src="~/assets/travel_blog_image/eiffel-tower.jpg" alt="Tokyo" style="width: 100%; height: auto; border-radius: 6px;">
+                <img src="~/assets/travel_blog_image/japan.jpg" alt="Maldives" style="width: 100%; height: auto; border-radius: 6px;">
+                <img src="~/assets/travel_blog_image/maldives.jpg" alt="Paris" style="width: 100%; height: auto; border-radius: 6px;">
+                <img src="~/assets/travel_blog_image/rome.jpg" alt="Rome" style="width: 100%; height: auto; border-radius: 6px;">
+            </div>
+            <!-- Right Side: Content -->
+            <div class="content" style="flex: 1;">
+                <h2>Asia & Europe’s Best Travel Destinations</h2>
+                <p>
+                    Asia and Europe offer some of the world’s most iconic travel experiences.
+                    In Asia, immerse yourself in the vibrant energy of Tokyo’s futuristic skyline,
+                    relax on the sun-kissed beaches of the Maldives, or explore the ancient spirituality of Angkor Wat in Cambodia.
+                    Europe charms with its rich history, romantic cities, and artistic treasures—stroll through Parisian boulevards,
+                    marvel at the Colosseum in Rome, or cruise along the canals of Amsterdam.
+                    Whether you're craving culture, adventure, or relaxation, these continents have unforgettable memories waiting for you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="explore-region" class="cards-section">
+        <div class="container">
+            <h2 class="text-center">explore by region</h2>
+            <div class="cards-wrapper" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+
+                <!-- domestic card -->
+                <div class="card region-card" onclick="showSubRegion('domestic')" style="cursor: pointer; ">
+                    <img src="~/assets/travel_blog_image/srinagar.jpg" alt="domestic travel">
+                    <div class="overlay-text">domestic</div>
+                </div>
+
+                <!-- international card -->
+                <div class="card region-card" onclick="showSubRegion('international')" style="cursor: pointer; ">
+                    <img src="~/assets/travel_blog_image/prague.jpg" alt="international travel">
+                    <div class="overlay-text">international</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    @* <section id="explore-region" class="cards-section">
+        <div class="container">
+            <!-- Sub Region Cards -->
+            <div id="sub-domestic" class="cards-wrapper" style="display: none; margin-top: 30px; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <div class="card" style="width: 300px;">
+                    <img src="~/assets/images/image_travel2.jpg" alt="North Zone" style="width: 100%; object-fit: cover;">
+                    <div class="card-label">North Zone</div>
+                </div>
+                <div class="card" style="width: 300px;">
+                    <img src="~/assets/images/image_travel2.jpg" alt="South Zone" style="width: 100%; object-fit: cover;">
+                    <div class="card-label">South Zone</div>
+                </div>
+            </div>
+
+            <div id="sub-international" class="cards-wrapper" style="display: none; margin-top: 30px; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <div class="card" style="width: 300px;">
+                    <img src="~/assets/images/image_travel2.jpg" alt="Asia" style="width: 100%; object-fit: cover;">
+                    <div class="card-label">Asia</div>
+                </div>
+                <div class="card" style="width: 300px;">
+                    <img src="~/assets/images/image_travel2.jpg" alt="Europe" style="width: 100%; object-fit: cover;">
+                    <div class="card-label">Europe</div>
+                </div>
+            </div>
+        </div>
+    </section> *@
+
+
+
+    <!-- Beach Vibes Section -->
+    <section class="cards-section" id="beach-vibes">
+        <div class="container">
+            <h2 class="text-center">Beach Vibes</h2>
+            <div class="cards-wrapper" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+                <!-- Goa -->
+                <div class="card" data-destination="goa" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/beach.jpg" alt="Goa" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>Goa</h3>
+                        <p>Goa’s golden sands and shimmering waters invite you to relax, party, and explore vibrant beach life. From historic forts to vibrant shacks and water sports, Goa has something for everyone.</p>
+                        <a onclick="showDetails('goa')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Andaman -->
+                <div class="card" data-destination="andaman" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/lake.jpg" alt="Andaman" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>Andaman Islands</h3>
+                        <p>Andaman’s turquoise waters, white-sand beaches, and exotic marine life create the perfect escape. Whether it's snorkeling at Havelock or relaxing under the sun, Andaman is pure paradise.</p>
+                        <a onclick="showDetails('andaman')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Varkala -->
+                <div class="card" data-destination="varkala" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/sea.jpg" alt="Varkala" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>Varkala</h3>
+                        <p>Perched on a dramatic cliff, Varkala Beach in Kerala offers stunning views, serene waves, and a laid-back vibe. It's the perfect destination for yoga lovers, surfers, and peace seekers.</p>
+                        <a onclick="showDetails('varkala')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Right - Content Left -->
+    <section class="image-text-section" style="padding: 60px 0;">
+        <div class="container" style="display: flex; align-items: center; gap: 30px; flex-direction: row-reverse;">
+            <div class="image" style="flex: 1;">
+                <img src="~/assets/images/image_travel2.jpg" alt="Europe Travel" style="width: 100%; border-radius: 10px;">
+            </div>
+            <div class="content" style="flex: 1;">
+                <h2>Europe's Must-Visit Spots</h2>
+                <p>
+                    Europe is a treasure trove of historical landmarks,
+                    artistic masterpieces, and breathtaking natural landscapes.
+                    Imagine strolling through the romantic streets of Paris,
+                    exploring ancient ruins in Rome, or enjoying the northern lights in Norway.
+                    Each country offers a unique flavor — the tulip fields of the Netherlands,
+                    the fjords of Iceland, and the castles of Germany are just a few highlights.
+            </div>
+        </div>
+    </section>
+    <section class="cards-section" id="budget-tips">
+        <div class="container">
+            <h2 class="text-center">Budget Travel Tips</h2>
+            <div class="cards-wrapper" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+                <!-- Rishikesh -->
+                <div class="card" data-destination="rishikesh" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/rapids.jpg" alt="Rishikesh" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>Rishikesh</h3>
+                        <p>Perfect for budget travelers, Rishikesh offers yoga retreats, river rafting, and serene views along the Ganges — all without breaking the bank. Stay in hostels or ashrams for a peaceful, affordable experience.</p>
+                        <a onclick="showDetails('rishikesh')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- McLeod Ganj -->
+                <div class="card" data-destination="mcleodganj" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/drepung.jpg" alt="McLeod Ganj" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>McLeod Ganj</h3>
+                        <p>Home to the Dalai Lama, this spiritual town offers scenic treks, Tibetan food, and budget guesthouses. It’s the ideal escape for solo travelers looking to unwind affordably in the Himalayas.</p>
+                        <a onclick="showDetails('mcleodganj')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+                <!-- Pondicherry -->
+                <div class="card" data-destination="pondicherry" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <img src="~/assets/travel_blog_image/girls.jpg" alt="Pondicherry" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                        <h3>Pondicherry</h3>
+                        <p>With its French charm, clean beaches, and affordable cafés, Pondicherry is great for low-cost yet scenic holidays. Rent a bike and explore the serene streets and seaside promenades on a budget.</p>
+                        <a onclick="showDetails('pondicherry')" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="align-self: flex-start;">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Image Right - Content Left -->
+    <section class="image-text-section" style="padding: 60px 0;">
+        <div class="container" style="display: flex; align-items: center; gap: 30px; flex-direction: row-reverse;">
+            <div class="image" style="flex: 1;">
+                <img src="~/assets/images/image_travel2.jpg" alt="Europe Travel" style="width: 100%; border-radius: 10px;">
+            </div>
+            <div class="content" style="flex: 1;">
+                <h2>Europe's Must-Visit Spots</h2>
+                <p>
+                    Europe is a treasure trove of historical landmarks,
+                    artistic masterpieces, and breathtaking natural landscapes.
+                    Imagine strolling through the romantic streets of Paris,
+                    exploring ancient ruins in Rome, or enjoying the northern lights in Norway.
+                    Each country offers a unique flavor — the tulip fields of the Netherlands,
+                    the fjords of Iceland, and the castles of Germany are just a few highlights.
+            </div>
+        </div>
+    </section>
+</div>
+<section id="detail-section" class="image-text-section" style="padding: 60px 0; display: none; position: relative;">
+    <!-- ❌ Close Button -->
+    <button onclick="closeDetails()" style="
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    ">
+        ×
+    </button>
+
+    <div class="container" style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+        <div class="image" style="flex: 1; min-width: 300px;">
+            <img id="detail-image" src="" alt="Destination" style="width: 100%; border-radius: 10px;">
+        </div>
+        <div class="content" style="flex: 1; min-width: 300px;">
+            <h2 id="detail-title"></h2>
+            <p id="detail-description"></p>
+        </div>
+    </div>
+</section>
+<script src="~/switch/dist/js/main.min.js"></script>
+
+<script>
+    const destinations = {
+        manali: {
+            title: "Bali",
+            description: `Bali, Indonesia’s most loved island, is a stunning destination that blends natural beauty with spiritual tranquility. Surrounded by turquoise waters and soft sandy beaches, Bali is perfect for relaxation and rejuvenation. Its lush rice terraces, volcanic mountains, and waterfalls offer unmatched scenic beauty. Beyond nature, Bali's cultural heart beats in its temples, traditional dances, and local craftsmanship. Visitors can explore vibrant beach towns like Seminyak and Ubud, surf in Kuta, or enjoy peaceful retreats in the mountains. With a thriving café culture, wellness resorts, and affordable luxury, Bali has become a favorite among solo travelers, honeymooners, and digital nomads. It’s not just a destination—it’s an experience.`,
+            image: "/assets/travel_blog_image/bali.jpg"
+        },
+        kashmir: {
+            title: "Kashmir",
+            description: `Kashmir, often described as “Heaven on Earth,” is a destination of awe-inspiring beauty and deep serenity. Cradled by the Himalayas, it boasts lush valleys, snow-covered mountains, crystal-clear lakes, and blooming gardens. The iconic Dal Lake with its houseboats and shikaras offers a peaceful escape, while the Mughal gardens, especially in spring, are a visual delight. In winter, Kashmir transforms into a snowy wonderland perfect for skiing and snowboarding in Gulmarg. Rich in culture and hospitality, it offers delicious cuisine, warm Kashmiri kahwa, and handcrafted pashmina shawls. Whether you're seeking adventure or tranquility, Kashmir has something magical for every traveler.`,
+            image: "/assets/travel_blog_image/kashmir.jpg"
+        } ,
+        chennai: {
+            title: "Jaipur",
+            description: `Jaipur, the majestic Pink City of India, is a vibrant blend of history, culture, and royal elegance. As the capital of Rajasthan, it’s home to opulent palaces, imposing forts, and bustling bazaars. Explore the iconic Amber Fort, City Palace, and Hawa Mahal, each narrating tales of Rajput valor and artistry. The city is adorned with traditional Rajasthani architecture, colorful textiles, handcrafted jewelry, and spicy street food. Every corner is a photographer’s delight. Jaipur also embraces modernity with luxury hotels and rooftop cafés, offering a perfect blend of old and new. A visit here promises royal charm and unforgettable experiences.`,
+            image: "/assets/travel_blog_image/jaipur.jpg"
+        },
+        rishikesh: {
+            title: "Rishikesh",
+            description: `Rishikesh, known as the Yoga Capital of the World, is a spiritual haven nestled along the banks of the Ganges River. Surrounded by the Himalayan foothills, it offers the perfect escape for those seeking peace and introspection. Budget travelers can enjoy affordable ashram stays, yoga and meditation classes, and thrilling adventures like white-water rafting and bungee jumping. Visit the iconic Laxman Jhula, attend the soulful Ganga Aarti, and savor local vegetarian cuisine. Rishikesh is an ideal mix of spirituality and adventure, all without straining your wallet.`,
+            image: "/assets/travel_blog_image/rapids.jpg"
+        },
+
+        mcleodganj: {
+            title: "McLeod Ganj",
+            description: `McLeod Ganj, a quaint town in Himachal Pradesh, is the spiritual seat of the Tibetan government-in-exile and home to the Dalai Lama. With scenic treks like Triund, peaceful monasteries, and charming cafés offering Tibetan momos and thukpa, it’s a perfect retreat for solo and budget travelers. The local markets brim with handmade goods, while the cool mountain air and tranquil ambiance make it a favorite among backpackers. Affordable hostels and homestays further enhance its appeal for those exploring India on a budget.`,
+            image: "/assets/travel_blog_image/drepung.jpg"
+        },
+
+        pondicherry: {
+            title: "Pondicherry",
+            description: `Pondicherry, with its French colonial charm, colorful bougainvillea-lined streets, and serene beaches, offers a relaxing coastal escape. Travelers on a budget can enjoy French and South Indian fusion cuisine, peaceful walks along the promenade, and budget-friendly guesthouses. Visit the Aurobindo Ashram, explore the artistic White Town, or cycle your way to Auroville. Its laid-back atmosphere and affordable lifestyle make Pondicherry a hidden gem for beach lovers and culture enthusiasts alike.`,
+            image: "/assets/travel_blog_image/girls.jpg"
+        },
+        bali: {
+            title: "Bali, Indonesia",
+            description: `Bali, Indonesia, is an island paradise that beautifully blends spiritual serenity with tropical adventure. From the iconic rice terraces of Ubud to the vibrant beaches of Seminyak and Kuta, Bali offers something for every traveler. Visit ancient temples like Tanah Lot and Uluwatu, indulge in traditional Balinese spa treatments, or catch the sunset while enjoying fresh seafood by the shore. Whether you’re seeking surf, yoga, culture, or nightlife, Bali delivers a magical and unforgettable experience.`,
+            image: "/assets/travel_blog_image/bali_temple.jpg"
+        },
+
+        cappadocia: {
+            title: "Cappadocia, Turkey",
+            description: `Cappadocia is a land straight out of a fairy tale, famed for its surreal landscapes of rock formations and magical hot air balloon rides at sunrise. Explore the ancient underground cities, hike through the valleys with unique chimney-like spires, and stay in cozy cave hotels carved into the soft volcanic rock. Rich in history and natural wonders, Cappadocia offers a once-in-a-lifetime experience filled with awe and wonder.`,
+            image: "/assets/travel_blog_image/cappadocia.jpg"
+        },
+
+        kyoto: {
+            title: "Kyoto, Japan",
+            description: `Kyoto is Japan's timeless cultural heart, offering an enchanting mix of tradition, nature, and architecture. Discover centuries-old temples like Kinkaku-ji (Golden Pavilion) and Fushimi Inari Shrine with its famous red torii gates. Walk beneath cherry blossoms in spring or enjoy vibrant maple leaves in the fall. Kyoto’s serene gardens, tea ceremonies, and Geisha district of Gion offer a truly immersive glimpse into Japan's elegant past. It’s a destination that captivates the soul and senses alike.`,
+            image: "/assets/travel_blog_image/tokyo.jpg"
+        },
+        goa: {
+            title: "Goa",
+            description: `Goa is India's ultimate beach destination, famous for its golden sandy shores, vibrant nightlife, and Portuguese heritage. Whether you’re looking to party in Baga, relax at Palolem, or explore historic forts and churches in Old Goa, there’s something for every traveler. Water sports, seafood shacks, flea markets, and sunset views make Goa a favorite among budget and luxury travelers alike.`,
+            image: "/assets/travel_blog_image/beach.jpg"
+        },
+
+        andaman: {
+            title: "Andaman Islands",
+            description: `The Andaman Islands are a tropical paradise tucked away in the Bay of Bengal. With crystal-clear waters, coral reefs, and powdery white beaches, these islands offer snorkeling, scuba diving, and breathtaking sunsets. Popular spots like Havelock and Neil Island provide serenity and adventure in equal measure. Ideal for honeymooners and solo travelers alike, Andaman delivers peace, beauty, and unforgettable experiences.`,
+            image: "/assets/travel_blog_image/lake.jpg"
+        },
+
+        varkala: {
+            title: "Varkala",
+            description: `Varkala, a coastal gem in Kerala, is known for its dramatic red cliffs, palm-fringed beaches, and spiritual charm. The beach is lined with yoga retreats, cliffside cafes, and Ayurvedic healing centers. It's a quiet alternative to busier beach towns, offering surfers, spiritual seekers, and nature lovers a tranquil escape. Don’t miss the cliff walks at sunset or a visit to the 2,000-year-old Janardhana Swamy Temple.`,
+            image: "/assets/travel_blog_image/sea.jpg"
+        }
+
+
+    };
+
+    function showDetails(cardElement) {
+        const destinationKey = cardElement.getAttribute("data-destination");
+        const data = destinations[destinationKey];
+
+        if (data) {
+            document.getElementById("detail-title").textContent = data.title;
+            document.getElementById("detail-description").textContent = data.description;
+            document.getElementById("detail-image").src = data.image;
+            document.getElementById("detail-section").style.display = "block";
+
+            // Scroll to the section
+            document.getElementById("detail-section").scrollIntoView({ behavior: "smooth" });
+        }
+    }
+    function closeDetails() {
+        document.getElementById("detail-section").style.display = "none";
+    }
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    // function showSubRegion(type) {
+    //     document.getElementById('sub-domestic').style.display = 'none';
+    //     document.getElementById('sub-international').style.display = 'none';
+
+    //     if (type === 'domestic') {
+    //         document.getElementById('sub-domestic').style.display = 'flex';
+    //     } else if (type === 'international') {
+    //         document.getElementById('sub-international').style.display = 'flex';
+    //     }
+    // }
+</script>
