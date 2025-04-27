@@ -2806,3 +2806,47 @@
         margin-bottom: 20px;
     }
 }
+
+
+
+/*======= end historical places section=====*/
+/* Mobile Spacing Fix */
+@media (max-width: 767px) {
+    .video-section {
+        margin-bottom: 10px;
+    }
+
+    .fullwidth-callback {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .popular-destinations {
+        padding-top: 50px;
+    }
+}
+
+/*Top desitnation*/
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .activity-item {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .activity-item {
+        width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .activity-item {
+        width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+}
+
