@@ -2749,12 +2749,60 @@
     } */
 
 
+/* Style for logo slider */
+.logo-slider {
+    overflow: hidden; /* Hide overflowed content */
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    animation: scrollRightToLeft 20s linear infinite;
+}
+
+    .logo-track img {
+        margin-right: 30px; /* Space between logos */
+        height: 50px; /* Adjust logo size */
+    }
+
+/* Define the right to left scrolling animation */
+@keyframes scrollRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .callback-counter-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 
 
 
 
 
+/*======= end historical places section=====*/
 
 
 
-
+@media (max-width: 768px) {
+    .destination-card {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .destination-card {
+        margin-bottom: 20px;
+    }
+}
