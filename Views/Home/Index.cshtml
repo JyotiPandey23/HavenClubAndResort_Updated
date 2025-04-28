@@ -1,408 +1,431 @@
 ﻿
 <style>
-    /* General About Us Section */
-    .about-us h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
+   /* General About Us Section */
+.about-us h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
-    .about-us p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 20px;
-    }
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
 
-    .about-us .offerings,
-    .about-us .destinations {
-        margin-bottom: 20px;
-    }
+.about-us .offerings,
+.about-us .destinations {
+    margin-bottom: 20px;
+}
 
-    .about-us .btn {
-        font-size: 1.1rem;
-        padding: 10px 20px;
-        background-color: #007bff;
-        border-color: #007bff;
-        color: white;
-    }
+.about-us .btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
 
-        .about-us .btn:hover {
-            background-color: #0056b3;
-            border-color: #004085;
-        }
+.about-us .btn:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
 
-    /* Fullwidth Callback Section */
-    .fullwidth-callback {
-        background: url('/assets/travel_blog_image/sea.jpg') center/cover no-repeat;
-        padding: 100px 0;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        min-height: 400px;
-        margin: 40px 0; /* Space before and after */
-    }
+/* Fullwidth Callback Section */
+.fullwidth-callback {
+    background: url('/assets/travel_blog_image/sea.jpg') center/cover no-repeat;
+    padding: 100px 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+    margin: 40px 0; /* Space before and after */
+}
 
-    .section-heading-white h2 {
-        color: black;
-        font-size: 2.5rem;
-        font-weight: bold;
-    }
+.section-heading-white h2 {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
 
-    /* Callback Counter */
-    .callback-counter-wrap {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 20px;
-    }
+/* Callback Counter */
+.callback-counter-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
 
-    .counter-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* margin: 10px; */
-    }
+.counter-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 10px; */
+}
 
-    .counter-icon img {
-        width: 55px;
-        height: 55px;
-    }
+.counter-icon img {
+    width: 55px;
+    height: 55px;
+}
 
-    .counter-content {
-        text-align: center;
-    }
+.counter-content {
+    text-align: center;
+}
 
-    .counter-no {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
+.counter-no {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
-    .counter-text {
-        font-size: 1rem;
-        margin-top: 5px;
-    }
+.counter-text {
+    font-size: 1rem;
+    margin-top: 5px;
+}
 
-    /* Popular Destinations Section */
-    .popular-destinations {
-        background-color: #f9f9f9;
-        padding: 60px 0;
-        /* margin: 40px 0; /* Space around section */ */
-    }
+/* Popular Destinations Section */
+.popular-destinations {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    /* margin: 40px 0; /* Space around section */ */
+}
 
-    .section-heading h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        /* margin-bottom: 40px; */
-    }
+.section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* margin-bottom: 40px; */
+}
 
-    .cards-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
-    .card {
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        overflow: hidden;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-    }
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
 
-        .card:hover {
-            transform: scale(1.05);
-        }
+.card:hover {
+    transform: scale(1.05);
+}
 
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
 
-    .card-content {
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-grow: 1;
-    }
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
 
-    /* Video Section */
-    .video-section {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+/* Video Section */
+/* .video-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-    .video-wrapper iframe {
-        width: 100%;
-        height: 100vh;
-        border: none;
-    }
-/*top category*/
-    /* General Styles */
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
+.video-wrapper iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+} */
 
-  /*   .section-heading {
-        margin-bottom: 50px;
-    } */
+/* Top Category */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
 
-    .section-heading h5.dash-style {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #3498db;
-        text-transform: uppercase;
-    }
+/* .section-heading {
+    margin-bottom: 50px;
+} */
 
-    .section-heading h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 10px;
-    }
+.section-heading h5.dash-style {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3498db;
+    text-transform: uppercase;
+}
 
-    .activity-inner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+.section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
 
-    .activity-item {
-        background-color: #003c70;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 20px 0;
-        padding: 15px;
-        text-align: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        cursor: pointer;
-        width: 100%;
-        
-       
-    }
+.activity-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-    .activity-item:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    }
+.activity-item {
+    background-color: #003c70;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+}
 
-    .activity-icon img {
-        width: 72px;
-        height: 72px;
-        object-fit: contain;
-    }
+.activity-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
 
-    .activity-content h4 {
-        font-size: 1.1rem;
-        margin-top: 15px;
-        font-weight: 600;
-        color: white;
-    }
+.activity-icon img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
 
-    .activity-content a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-    }
+.activity-content h4 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    font-weight: 600;
+    color: white;
+}
 
-    .activity-content a:hover {
-        color: white;
-    }
-/* 
-    .text-center {
-        margin-top: 40px;
-    } */
+.activity-content a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
 
-    .button-primary {
-        background-color: #3498db;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 1.1rem;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-    }
+.activity-content a:hover {
+    color: white;
+}
 
-    .button-primary:hover {
-        background-color: #2980b9;
-    }
+/* Button Primary */
+.button-primary {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
 
-    .callback-img {
-        background: url('/assets/travel_blog_image/sea.jpg') center/cover no-repeat;
-        height: 100%;
-        min-height: 400px; /* Set a minimum height so it looks good */
-    }
+.button-primary:hover {
+    background-color: #2980b9;
+}
 
+.callback-img {
+    background: url('/assets/travel_blog_image/sea.jpg') center/cover no-repeat;
+    height: 100%;
+    min-height: 400px; /* Set a minimum height so it looks good */
+}
 
-    /*Register agency */
-   .features-section {
-  padding: 60px 0;
-  background: #003c70;
+/* Register Agency */
+.features-section {
+    padding: 60px 0;
+    background: #003c70;
 }
 
 .feature-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 10px;
-  color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    color: #fff;
 }
 
 .feature-item .icon {
-  font-size: 2rem;
-  color: #ffffff;
-  margin-right: 15px;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-right: 15px;
 }
 
 .feature-item .separator {
-  font-size: 1.5rem;
-  margin-right: 15px;
+    font-size: 1.5rem;
+    margin-right: 15px;
 }
 
 .feature-item .content h4 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffffff;
-  margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
 }
 
-/*Go travel*/
+/* Go Travel */
+.travel-feature-item:hover {
+    background: linear-gradient(rgba(0, 123, 255, 0.4), rgba(0, 123, 255, 0.3));
+    border: 1px solid rgba(0, 123, 255, 0.6);
+  }
+  .travel-feature-item:hover h4, .travel-feature-item:hover small {
+    color: #fff;
+  }
 .travel-features-section .travel-feature-item {
     padding: 20px;
     background: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
+
 .travel-features-section .travel-icon {
     color: #28a745;
 }
+
 .travel-features-section .travel-separator {
     font-size: 24px;
     color: #dee2e6;
 }
+
 .travel-features-section h4 {
     font-weight: 600;
     margin-bottom: 5px;
 }
+
 .travel-features-section small {
     font-size: 14px;
-    color:black;
+    color: black;
 }
 
+.about-section {
+    background: #f9f9f9;
+}
 
-    .about-section {
-        background: #f9f9f9;
-    }
+.info-card {    
+    border: 5px solid #fff;
+    border-radius: 8px;
+}
 
-    .info-card {    
-        border: 5px solid #fff;
-        border-radius: 8px;
-    }
+.btn-success {
+    background-color: #009961;
+    border: none;
+    font-weight: bold;
+}
 
-    .btn-success {
-        background-color: #009961;
-        border: none;
-        font-weight: bold;
-    }
+.btn-success:hover {
+    background-color: #007a4d;
+}
 
-        .btn-success:hover {
-            background-color: #007a4d;
-        }
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .icon-box {
-        width: 60px;
-        height: 60px;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
 </style>
 
 
 <!-- Video Section -->
-<section class="video-section">
-    <div class="container">
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/SIR1Gul1DD4?list=PLOhV0FrFphUcZnVciz7KtPaaXGAa5wTyP"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>
-        </div>
+<section class="relative w-full h-screen overflow-hidden">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <iframe class="w-full h-full" src="https://www.youtube.com/embed/SIR1Gul1DD4?list=PLOhV0FrFphUcZnVciz7KtPaaXGAa5wTyP"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="absolute inset-0 flex items-center justify-center ">
+        <h2 class="text-4xl font-bold">Discover Your Next Adventure</h2>
     </div>
 </section>
 
-<section class="about-section py-5">
-    <div class="container">
-        <div class="row align-items-center">
+<!-- About Us Section -->
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
 
             <!-- Left Side Images -->
-            <div class="col-lg-6 position-relative">
-
-                <!-- Big Image -->
-                <div class="position-relative mb-4">
-                    <img src="~/assets/images/travel_img1.jpg" alt="Main Travel" class="img-fluid rounded w-100">
+            <div class="relative w-full lg:w-1/2">
+                <!-- Big Image with Info Card -->
+                <div class="relative mb-8 group">
+                    <div class="relative overflow-hidden rounded-xl shadow-2xl group-hover:scale-105 group-hover:z-10 transition-all duration-500">
+                        <img src="/assets/images/travel_img1.jpg" alt="Main Travel" class="w-full h-96 object-cover transition-transform duration-500 transform group-hover:scale-110 group-hover:translate-x-4 group-hover:translate-y-4">
+                    </div>
 
                     <!-- Overlapping Card -->
-                    <div class="info-card bg-primary text-white p-4 shadow position-absolute top-0 start-0 w-100">
-                        <h5 class="mb-3">Something you want <br> to know <br> about us !!</h5>
-                        <a href="#" class="btn btn-success">LEARN MORE</a>
+                    <div class="absolute top-0 left-0 w-11/12 bg-white bg-opacity-80 text-gray-900 p-8 rounded-xl shadow-2xl transform translate-x-6 translate-y-6 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500">
+                        <h5 class="text-3xl font-extrabold text-blue-900 mb-6 leading-tight group-hover:text-green-600 transition duration-300">
+                            Discover the World <br> with Haven Club & Resorts!
+                        </h5>
+                        <a href="#" class="inline-block bg-green-600 hover:bg-green-700  font-semibold py-3 px-6 rounded-lg transition duration-300 hover:scale-105">
+                            LEARN MORE
+                        </a>
                     </div>
                 </div>
 
                 <!-- Two Small Images -->
-                <div class="row g-3">
-                    <div class="col-6">
-                        <img src="~/assets/images/travel_img2.jpg" alt="Travel 2" class="img-fluid rounded w-100">
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="relative group">
+                        <img src="/assets/images/travel_img2.jpg" alt="Travel 2" class="w-full h-48 rounded-lg shadow-md object-cover transition-transform duration-500 transform group-hover:scale-110 group-hover:translate-x-2 group-hover:translate-y-2">
                     </div>
-                    <div class="col-6">
-                        <img src="~/assets/images/travel_img3.jpg" alt="Travel 3" class="img-fluid rounded w-100">
+                    <div class="relative group">
+                        <img src="/assets/images/travel_img3.jpg" alt="Travel 3" class="w-full h-48 rounded-lg shadow-md object-cover transition-transform duration-500 transform group-hover:scale-110 group-hover:translate-x-2 group-hover:translate-y-2">
                     </div>
                 </div>
-
             </div>
 
             <!-- Right Side Content -->
-            <div class="col-lg-6">
-                <h6 class="text-success fw-bold mb-2">INTRODUCTION ABOUT US</h6>
-                <h2 class="fw-bold mb-4">WELCOME TO <br> RAO HOLIDAYS</h2>
-                <p class="mb-4">Rao Holidays is the Brand of Company Harsha Holidays & Resorts Private Limited (HHRPL), into Leisure & Hospitality across INDIA & ASIA, offers budget friendly quality family holidays primarily through vacation ownership memberships & brings to the industry values such as reliability, trust & customer satisfaction.</p>
+            <div class="w-full lg:w-1/2">
+                <h6 class=" font-bold uppercase mb-4 tracking-widest text-lg">About Us</h6>
+                <h2 class="text-5xl font-extrabold  mb-8 leading-tight">
+                    Welcome to <br> Haven Club & Resorts
+                </h2>
+                <p class=" mb-8 text-lg">
+                    Welcome to Haven Club & Resorts, your premier destination for exceptional travel experiences. Established in 2022, we take pride in offering top-notch tours and travel services. We're excited to introduce our latest offerings: membership plans and packages, now available exclusively online through our website.
+                </p>
+                <p class=" mb-8 text-lg">
+                    At Haven Club & Resorts, we are committed to crafting unforgettable journeys for our members. Whether you're dreaming of a tropical escape, a cultural adventure, or a relaxing retreat, our curated packages cater to every traveler’s desires.
+                </p>
+                <p class=" mb-8 text-lg">
+                    Join our club today and unlock a world of possibilities. Explore our website to find the perfect getaway that suits your preferences and budget. Your next extraordinary journey awaits with Haven Club & Resorts.
+                </p>
 
                 <!-- Service 1 -->
-                <div class="d-flex align-items-start mb-4">
-                    <div class="icon-box bg-primary text-white me-3">
-                        <i class="bi bi-hand-thumbs-up" style="font-size: 24px;"></i>
+                <div class="flex items-start gap-6 mb-10">
+                    <div class="bg-green-600  p-6 rounded-full flex items-center justify-center shadow-xl transition-transform duration-500 hover:scale-110">
+                        <!-- Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 9l3 6h-7l-3-6h7z" />
+                        </svg>
                     </div>
                     <div>
-                        <h5 class="fw-bold">BEST PRICE GUARANTEED</h5>
-                        <p class="mb-0">Offering its members an extensive selection of Hotels, Resorts, adventures & travel services to meet every budget and activities of every kind at competitive rates.</p>
+                        <h5 class="text-2xl font-extrabold  mb-3">Best Price Guaranteed</h5>
+                        <p class=" text-base">Offering its members an extensive selection of Hotels, Resorts, adventures & travel services to meet every budget and activities of every kind at competitive rates.</p>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="d-flex align-items-start">
-                    <div class="icon-box bg-primary text-white me-3">
-                        <i class="bi bi-geo-alt" style="font-size: 24px;"></i>
+                <div class="flex items-start gap-6">
+                    <div class="bg-green-600  p-6 rounded-full flex items-center justify-center shadow-xl transition-transform duration-500 hover:scale-110">
+                        <!-- Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 12.414M13.414 12.414L9.172 8.172m4.242 4.242l4.243 4.243M12 3v9m0 0v9" />
+                        </svg>
                     </div>
                     <div>
-                        <h5 class="fw-bold">AMAZING DESTINATION</h5>
-                        <p class="mb-0">We offer amazing destinations to visit and create unforgettable memories.</p>
+                        <h5 class="text-2xl font-extrabold  mb-3">Amazing Destinations</h5>
+                        <p class=" text-base">We offer amazing destinations to visit and create unforgettable memories.</p>
                     </div>
                 </div>
-
             </div>
 
         </div>
@@ -410,55 +433,54 @@
 </section>
 
 <!-- Fullwidth Callback Section -->
-<section class="travel-features-section" style="background: #003c70;"> 
-  <div class="container">
+<section class="travel-features-section" style="background: url('/assets/images/travel_img3.jpg') no-repeat center center/cover; position: relative;"> 
+  <div class="container py-5">
     <div class="section-heading text-center mb-5">
-      <h2 class="fw-bold" style="color:white">GO TRAVEL. DISCOVER.</h2>
-      <h2 class="fw-bold" style="color:white">REMEMBER US!!</h2>
+      <h2 class="fw-bold text-white">GO TRAVEL. DISCOVER.</h2>
+      <h2 class="fw-bold text-white">REMEMBER US!!</h2>
     </div>
 
     <div class="row">
-
       <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item d-flex align-items-center justify-content-center">
-          <i class="bi bi-clock travel-icon" style="font-size:30px;"></i>
-          <span class="travel-separator mx-3">|</span>
-          <div class="travel-content text-start">
-            <h4 class="mb-0">6+</h4>
-            <small>Years Of Experience</small>
+        <div class="travel-feature-item flex items-center justify-center p-5 rounded-xl shadow-md" style="background: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); transition: all 0.3s ease;">
+          <i class="bi bi-clock text-green-500" style="font-size:30px;"></i>
+          <span class="travel-separator mx-3 text-gray-200">|</span>
+          <div class="travel-content text-left">
+            <h4 class="mb-0 text-white" style="font-size: 1.6rem;">6+</h4>
+            <small class="text-white" style="font-size: 1.2rem;">Years Of Experience</small>
           </div>
         </div>
       </div>
 
       <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item d-flex align-items-center justify-content-center">
-          <i class="bi bi-star travel-icon" style="font-size:30px;"></i>
-          <span class="travel-separator mx-3">|</span>
-          <div class="travel-content text-start">
-            <h4 class="mb-0">100%</h4>
-            <small>Satisfied Clients</small>
+        <div class="travel-feature-item flex items-center justify-center p-5 rounded-xl shadow-md" style="background: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); transition: all 0.3s ease;">
+          <i class="bi bi-star text-green-500" style="font-size:30px;"></i>
+          <span class="travel-separator mx-3 text-gray-200">|</span>
+          <div class="travel-content text-left">
+            <h4 class="mb-0 text-white" style="font-size: 1.6rem;">100%</h4>
+            <small class="text-white" style="font-size: 1.2rem;">Satisfied Clients</small>
           </div>
         </div>
       </div>
 
       <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item d-flex align-items-center justify-content-center">
-          <i class="bi bi-people travel-icon" style="font-size:30px;"></i>
-          <span class="travel-separator mx-3">|</span>
-          <div class="travel-content text-start">
-            <h4 class="mb-0">8600+</h4>
-            <small>Members</small>
+        <div class="travel-feature-item flex items-center justify-center p-5 rounded-xl shadow-md" style="background:linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); transition: all 0.3s ease;">
+          <i class="bi bi-people text-green-500" style="font-size:30px;"></i>
+          <span class="travel-separator mx-3 text-gray-200">|</span>
+          <div class="travel-content text-left">
+            <h4 class="mb-0 text-white" style="font-size: 1.6rem;">8600+</h4>
+            <small class="text-white" style="font-size: 1.2rem;">Members</small>
           </div>
         </div>
       </div>
 
       <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item d-flex align-items-center justify-content-center">
-          <i class="bi bi-building travel-icon" style="font-size:30px;"></i>
-          <span class="travel-separator mx-3">|</span>
-          <div class="travel-content text-start">
-            <h4 class="mb-0">200+</h4>
-            <small>Resorts</small>
+        <div class="travel-feature-item flex items-center justify-center p-5 rounded-xl shadow-md" style="background: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); transition: all 0.3s ease;">
+          <i class="bi bi-building text-green-500" style="font-size:30px;"></i>
+          <span class="travel-separator mx-3 text-gray-200">|</span>
+          <div class="travel-content text-left">
+            <h4 class="mb-0 text-white" style="font-size: 1.6rem;">200+</h4>
+            <small class="text-white" style="font-size: 1.2rem;">Resorts</small>
           </div>
         </div>
       </div>
