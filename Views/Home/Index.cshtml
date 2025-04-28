@@ -63,7 +63,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10px;
+        /* margin: 10px; */
     }
 
     .counter-icon img {
@@ -89,13 +89,13 @@
     .popular-destinations {
         background-color: #f9f9f9;
         padding: 60px 0;
-        margin: 40px 0; /* Space around section */
+        /* margin: 40px 0; /* Space around section */ */
     }
 
     .section-heading h2 {
         font-size: 2.5rem;
         font-weight: bold;
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
     }
 
     .cards-wrapper {
@@ -153,9 +153,9 @@
         margin: 0 auto;
     }
 
-    .section-heading {
+  /*   .section-heading {
         margin-bottom: 50px;
-    }
+    } */
 
     .section-heading h5.dash-style {
         font-size: 1.2rem;
@@ -178,7 +178,7 @@
     }
 
     .activity-item {
-        background-color: #fff;
+        background-color: #003c70;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin: 20px 0;
@@ -187,6 +187,7 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         cursor: pointer;
         width: 100%;
+        
        
     }
 
@@ -205,23 +206,23 @@
         font-size: 1.1rem;
         margin-top: 15px;
         font-weight: 600;
-        color: #333;
+        color: white;
     }
 
     .activity-content a {
-        color: #3498db;
+        color: white;
         text-decoration: none;
         font-weight: bold;
         transition: color 0.3s ease;
     }
 
     .activity-content a:hover {
-        color: #2c3e50;
+        color: white;
     }
-
+/* 
     .text-center {
         margin-top: 40px;
-    }
+    } */
 
     .button-primary {
         background-color: #3498db;
@@ -238,6 +239,67 @@
         background-color: #2980b9;
     }
 
+    .callback-img {
+        background: url('/assets/travel_blog_image/sea.jpg') center/cover no-repeat;
+        height: 100%;
+        min-height: 400px; /* Set a minimum height so it looks good */
+    }
+
+
+    /*Register agency */
+   .features-section {
+  padding: 60px 0;
+  background: #003c70;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  color: #fff;
+}
+
+.feature-item .icon {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+.feature-item .separator {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.feature-item .content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+/*Go travel*/
+.travel-features-section .travel-feature-item {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.travel-features-section .travel-icon {
+    color: #28a745;
+}
+.travel-features-section .travel-separator {
+    font-size: 24px;
+    color: #dee2e6;
+}
+.travel-features-section h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.travel-features-section small {
+    font-size: 14px;
+    color:black;
+}
 
 </style>
 
@@ -256,72 +318,69 @@
 </section>
 
 <!-- Fullwidth Callback Section -->
-<section class="fullwidth-callback">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">GO TRAVEL. DISCOVER.</h2>
-            <h2 class="fw-bold">REMEMBER US!!</h2>
-        </div>
-
-        <div class="row justify-content-center">
-            <!-- Counter Items -->
-            <div class="col-12 col-sm-6 col-md-3 mb-4">
-                <div class="d-flex align-items-center bg-dark bg-opacity-50 p-3 rounded-3 h-100" style="background: linear-gradient(135deg, #28a745, #218838);">
-                    <div class="icon-box d-flex align-items-center justify-content-center me-3" style="width:60px; height:60px; background:white; border-radius:8px;">
-                        <i class="bi bi-clock text-dark" style="font-size:30px;"></i>
-                    </div>
-                    <div class="vr mx-2 bg-white" style="height:50px;"></div>
-                    <div>
-                        <h4 class="mb-0">6+</h4>
-                        <small>Years Of Experience</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3 mb-4">
-                <div class="d-flex align-items-center bg-dark bg-opacity-50 p-3 rounded-3 h-100" style="background: linear-gradient(135deg, #28a745, #218838);">
-                    <div class="icon-box d-flex align-items-center justify-content-center me-3" style="width:60px; height:60px; background:white; border-radius:8px;">
-                        <i class="bi bi-star text-dark" style="font-size:30px;"></i>
-                    </div>
-                    <div class="vr mx-2 bg-white" style="height:50px;"></div>
-                    <div>
-                        <h4 class="mb-0">100%</h4>
-                        <small>Satisfied Clients</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3 mb-4">
-                <div class="d-flex align-items-center bg-dark bg-opacity-50 p-3 rounded-3 h-100" style="background: linear-gradient(135deg, #28a745, #218838);">
-                    <div class="icon-box d-flex align-items-center justify-content-center me-3" style="width:60px; height:60px; background:white; border-radius:8px;">
-                        <i class="bi bi-people text-dark" style="font-size:30px;"></i>
-                    </div>
-                    <div class="vr mx-2 bg-white" style="height:50px;"></div>
-                    <div>
-                        <h4 class="mb-0">8600+</h4>
-                        <small>Members</small>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-3 mb-4">
-                <div class="d-flex align-items-center bg-dark bg-opacity-50 p-3 rounded-3 h-100"  style="background: linear-gradient(135deg, #28a745, #218838);">
-                    <div class="icon-box d-flex align-items-center justify-content-center me-3" style="width:60px; height:60px; background:white; border-radius:8px;">
-                        <i class="bi bi-building text-dark" style="font-size:30px;"></i>
-                    </div>
-                    <div class="vr mx-2 bg-white" style="height:50px;"></div>
-                    <div>
-                        <h4 class="mb-0">200+</h4>
-                        <small>Resorts</small>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="travel-features-section" style="background: #003c70;"> 
+  <div class="container">
+    <div class="section-heading text-center mb-5">
+      <h2 class="fw-bold" style="color:white">GO TRAVEL. DISCOVER.</h2>
+      <h2 class="fw-bold" style="color:white">REMEMBER US!!</h2>
     </div>
+
+    <div class="row">
+
+      <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="travel-feature-item d-flex align-items-center justify-content-center">
+          <i class="bi bi-clock travel-icon" style="font-size:30px;"></i>
+          <span class="travel-separator mx-3">|</span>
+          <div class="travel-content text-start">
+            <h4 class="mb-0">6+</h4>
+            <small>Years Of Experience</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="travel-feature-item d-flex align-items-center justify-content-center">
+          <i class="bi bi-star travel-icon" style="font-size:30px;"></i>
+          <span class="travel-separator mx-3">|</span>
+          <div class="travel-content text-start">
+            <h4 class="mb-0">100%</h4>
+            <small>Satisfied Clients</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="travel-feature-item d-flex align-items-center justify-content-center">
+          <i class="bi bi-people travel-icon" style="font-size:30px;"></i>
+          <span class="travel-separator mx-3">|</span>
+          <div class="travel-content text-start">
+            <h4 class="mb-0">8600+</h4>
+            <small>Members</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="travel-feature-item d-flex align-items-center justify-content-center">
+          <i class="bi bi-building travel-icon" style="font-size:30px;"></i>
+          <span class="travel-separator mx-3">|</span>
+          <div class="travel-content text-start">
+            <h4 class="mb-0">200+</h4>
+            <small>Resorts</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
+
+
+
 <!---top destination----->
 <!-- Travel by Activity Section -->
-<div class="container">
+<section>
+    <div class="container" >
     <div class="section-heading text-center">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
@@ -433,6 +492,7 @@
         <a href="destinations" class=" btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg">View All Destinations</a>
     </div>
 </div>
+</section>
 <!-- Trending Destinations Section -->
 <section class="popular-destinations" id="trending-destinations">
     <div class="container">
@@ -481,6 +541,127 @@
 </section>
 
 
+<section class="callback-section">
+    <div class="container">
+        <div class="row align-items-center no-gutters">
+
+            <!-- Image Section -->
+            <div class="col-lg-5">
+                <div class="callback-img">
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="col-lg-7">
+                <div class="callback-inner">
+
+                    <!-- Heading -->
+                    <div class="section-heading section-heading-white">
+                        <h5 class="dash-style">GO TRAVEL. DISCOVER. REMEMBER US!!</h5>
+                        <h2>Why Choose Rao Holidays?</h2>
+                    </div>
+
+                    <!-- About Services -->
+                    <div class="about-service-container">
+
+                        <div class="about-service">
+                            <div class="about-service-icon">
+                                <i class="bi bi-cash-coin" style="font-size: 2rem; color: #007bff;"></i>
+                            </div>
+                            <div class="about-service-content">
+                                <h4>BEST PRICE GUARANTEED</h4>
+                                <p>Offerings its members an extensive selection of Hotels, Resorts, adventures & travel services to meet every budget and activities of every kind at competitive rates.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-service">
+                            <div class="about-service-icon">
+                                <i class="bi bi-geo-alt-fill" style="font-size: 2rem; color: #007bff;"></i>
+                            </div>
+                            <div class="about-service-content">
+                                <h4>AMAZING DESTINATION</h4>
+                                <p>Enjoy premium resorts across India & overseas. Experience the best customer support.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-service">
+                            <div class="about-service-icon">
+                                <i class="bi bi-person-lines-fill" style="font-size: 2rem; color: #007bff;"></i>
+                            </div>
+                            <div class="about-service-content">
+                                <h4>PERSONAL SERVICES</h4>
+                                <p>Assured and best holiday booking & We commit to quality.</p>
+                            </div>
+                        </div>
+
+                        <!-- Support Area -->
+                        <div class="support-area">
+                            <div class="support-icon">
+                                <i class="bi bi-telephone-inbound-fill" style="font-size: 2rem; color: #007bff;"></i>
+                            </div>
+                            <div class="support-content">
+                                <h4>Our 24/7 Emergency Phone Services</h4>
+                                <h3><a href="tel:18002677022">Call: 18002677022</a></h3>
+                            </div>
+                        </div>
+
+
+                    </div
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="features-section">
+  <div class="container">
+    <div class="row">
+
+      <div class="feature-block col-lg-3 col-md-6 col-sm-12">
+        <div class="feature-item d-flex align-items-center">
+          <i class="bi bi-hand-thumbs-up-fill icon"></i>
+          <span class="separator">|</span>
+          <div class="content">
+            <h4>Registered Agency</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-block col-lg-3 col-md-6 col-sm-12">
+        <div class="feature-item d-flex align-items-center">
+          <i class="bi bi-currency-rupee icon"></i>
+          <span class="separator">|</span>
+          <div class="content">
+            <h4>Interesting Packages</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-block col-lg-3 col-md-6 col-sm-12">
+        <div class="feature-item d-flex align-items-center">
+          <i class="bi bi-chat-dots-fill icon"></i>
+          <span class="separator">|</span>
+          <div class="content">
+            <h4>Best Support</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-block col-lg-3 col-md-6 col-sm-12">
+        <div class="feature-item d-flex align-items-center">
+          <i class="bi bi-person-badge-fill icon"></i>
+          <span class="separator">|</span>
+          <div class="content">
+            <h4>Experienced Tour Leader</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- Trusted Partners Section -->
 <section id="brands" style="background: #f9f9f9; padding: 40px 0;">
