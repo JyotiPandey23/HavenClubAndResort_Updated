@@ -273,9 +273,11 @@
 }
 
 /* Go Travel */
-.travel-feature-item:hover {
-    background: linear-gradient(rgba(0, 123, 255, 0.4), rgba(0, 123, 255, 0.3));
-    border: 1px solid rgba(0, 123, 255, 0.6);
+.travel_feature-item {
+    background: rgba(0%, 0%, 100%, 0.75);
+  }
+  .travel_feature-item:hover{
+      background: rgba(0, 200, 83, 0.25)
   }
   .travel-feature-item:hover h4, .travel-feature-item:hover small {
     color: #fff;
@@ -446,7 +448,7 @@
 
     <div class="row">
       <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item flex items-center justify-center p-5 rounded-xl shadow-md" style="background: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); transition: all 0.3s ease;">
+        <div class="travel_feature-item flex items-center justify-center p-5 rounded-xl shadow-md">
           <i class="bi bi-clock text-green-500" style="font-size:30px;"></i>
           <span class="travel-separator mx-3 text-gray-200">|</span>
           <div class="travel-content text-left">
@@ -457,7 +459,7 @@
       </div>
 
       <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item flex items-center justify-center p-5 rounded-xl shadow-md" style="background: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); transition: all 0.3s ease;">
+        <div class="travel_feature-item flex items-center justify-center p-5 rounded-xl shadow-md">
           <i class="bi bi-star text-green-500" style="font-size:30px;"></i>
           <span class="travel-separator mx-3 text-gray-200">|</span>
           <div class="travel-content text-left">
@@ -468,7 +470,7 @@
       </div>
 
       <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item flex items-center justify-center p-5 rounded-xl shadow-md" style="background:linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); transition: all 0.3s ease;">
+        <div class="travel_feature-item flex items-center justify-center p-5 rounded-xl shadow-md">
           <i class="bi bi-people text-green-500" style="font-size:30px;"></i>
           <span class="travel-separator mx-3 text-gray-200">|</span>
           <div class="travel-content text-left">
@@ -479,7 +481,7 @@
       </div>
 
       <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item flex items-center justify-center p-5 rounded-xl shadow-md" style="background: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); transition: all 0.3s ease;">
+        <div class="travel_feature-item flex items-center justify-center p-5 rounded-xl shadow-md">
           <i class="bi bi-building text-green-500" style="font-size:30px;"></i>
           <span class="travel-separator mx-3 text-gray-200">|</span>
           <div class="travel-content text-left">
@@ -611,9 +613,6 @@
     </div>
 </div>
 </section>
-
-
-
 
 
 <section class="services-section-two" style="padding: 50px 0;">
@@ -911,6 +910,56 @@
   </div>
 </section>
 
+
+<section class="article-section py-12 bg-gray-100">
+  <div class="section-heading text-center mb-10 relative">
+    <div class="col-lg-12 relative">
+      <h5 class="text-[#009563] text-[15px] font-bold uppercase mb-6 inline-block relative pl-20">
+        OUR BLOGS
+        <span class="absolute left-0 top-1/2 w-[60px] h-[2px] bg-[#009563] -translate-y-1/2"></span>
+      </h5>
+      <h2 class="text-5xl font-extrabold uppercase m-0">OUR RECENT POSTS</h2>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap -mx-4">
+      
+      <!-- Card 1 -->
+      <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+        <div class="bg-blue-700 shadow-lg overflow-hidden h-full flex flex-col">
+          <img src="~/assets/images/travel_img3.jpg" alt="Blog Image" class="w-full h-80 object-cover">
+          <div class="flex-1 p-6 flex flex-col justify-center items-center text-center">
+            <h1 class="text-2xl font-bold text-white uppercase">Memories Last Forever</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+        <div class="bg-blue-700 shadow-lg overflow-hidden h-full flex flex-col">
+          <img src="~/assets/images/travel_img3.jpg" alt="Blog Image" class="w-full h-80 object-cover">
+          <div class="flex-1 p-6 flex flex-col justify-center items-center text-center">
+            <h1 class="text-2xl font-bold text-white uppercase">Embrace Adventure</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+        <div class="bg-blue-700 shadow-lg overflow-hidden h-full flex flex-col">
+          <img src="~/assets/images/travel_img3.jpg" alt="Blog Image" class="w-full h-100 object-cover">
+          <div class="flex-1 p-6 flex flex-col justify-center items-center text-center">
+            <h1 class="text-2xl font-bold text-white uppercase">Explore The World</h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <!-- Trusted Partners Section -->
 <section id="brands" style="background: #f9f9f9; padding: 40px 0;">
     <div class="text-center" data-aos="fade-up">
@@ -936,4 +985,7 @@
         </div>
     </div>
 </section>
+
+
+
 
