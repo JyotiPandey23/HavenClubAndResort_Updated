@@ -178,7 +178,7 @@
 }
 
 .activity-item {
-    background-color: #003c70;
+    background: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
@@ -333,6 +333,10 @@
     align-items: center;
     justify-content: center;
 }
+
+ .unique-service-block:hover .lower-box {
+    background: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%) !important;
+  }
 
 
 </style>
@@ -508,9 +512,9 @@
         <!-- Beach Category -->
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
-                <div class="activity-icon">
+                <div class="activity-icon" style="text-align: -webkit-center;">
                     <a href="beach">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/005-sunbed.webp" alt="Beach" loading="lazy">
+                        <img src="~/assets/index_image/beach_vetcor.png" style="border-radius:40px;" alt="Beach" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -524,9 +528,9 @@
         <!-- Heritage Category -->
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
-                <div class="activity-icon">
+                <div class="activity-icon"  style="text-align: -webkit-center;">
                     <a href="heritage">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/004-camping-tent.webp" alt="Heritage" loading="lazy">
+                       <img src="~/assets/index_image/Heritage.png" style="border-radius:40px;"  alt="Heritage" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -540,9 +544,9 @@
         <!-- Religious Places Category -->
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
-                <div class="activity-icon">
+                <div class="activity-icon"  style="text-align: -webkit-center;">
                     <a href="#">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/icon2.webp" alt="Religious Places" loading="lazy">
+                        <img src="~/assets/index_image/religiousplace.png" style="border-radius:40px;"  alt="Religious Places" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -556,9 +560,9 @@
         <!-- Forest Category -->
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
-                <div class="activity-icon">
+                <div class="activity-icon"  style="text-align: -webkit-center;">
                     <a href="forest">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/icon9.webp" alt="Forest" loading="lazy">
+                        <img src="~/assets/index_image/Forest.png" style="border-radius:40px;"  alt="Forest" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -573,8 +577,8 @@
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
                 <div class="activity-icon">
-                    <a href="snow-peaks">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/002-safari.webp" alt="Snow Peaks" loading="lazy">
+                    <a href="snow-peaks"  style="text-align: -webkit-center;">
+                         <img src="~/assets/index_image/snow peaks.png" style="border-radius:40px;" alt="Snow Peaks" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -589,8 +593,8 @@
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
                 <div class="activity-icon">
-                    <a href="mountain-destination">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/008-cycling.webp" alt="Mountain" loading="lazy">
+                    <a href="mountain-destination"  style="text-align: -webkit-center;">
+                        <img src="~/assets/index_image/mountain.png" style="border-radius:40px;" alt="Mountain" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -607,6 +611,136 @@
     </div>
 </div>
 </section>
+
+
+
+
+
+<section class="services-section-two" style="padding: 50px 0;">
+  <div class="section-heading text-center" style="margin-bottom: 40px; position: relative;">
+  <div class="col-lg-12" style="position: relative;">
+    <h5 
+      style="
+        padding-left: 80px; 
+        position: relative; 
+        color: #009563; 
+        font-size: 15px; 
+        font-weight: 700; 
+        line-height: 1.2; 
+        margin-bottom: 22px; 
+        text-transform: uppercase; 
+        display: inline-block;
+      ">
+      HAVEN CLUB AND RESORT HOLIDAYS PLANNER
+      <span style="
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        background-color: #009563;
+        transform: translateY(-50%);
+      "></span>
+    </h5>
+
+    <h2 
+      style="
+        font-size: 48px; 
+        font-weight: 900; 
+        line-height: 1.1; 
+        text-transform: uppercase;
+        margin: 0;
+      ">
+      THE HAVEN CLUB
+    </h2>
+  </div>
+</div>
+
+
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    <div class="row" style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+      <!-- Service Block 1 -->
+      <div class="service-block-two unique-service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" 
+           style="flex: 1 1 calc(25% - 20px); box-sizing: border-box;" 
+           data-wow-delay="0ms" data-wow-duration="1500ms">
+        <div class="inner-box" style="border: 1px solid #ccc; overflow: hidden; border-radius: 8px;">
+          <div class="image" style="text-align: center; background: #f9f9f9;">
+            <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/featured-image-34.webp" alt="Domestic Tour" width="263" height="185" loading="lazy" style="max-width: 100%; height: auto;">
+          </div>
+          <div class="lower-box" style="background: #003c70; padding: 30px 20px; transition: background 0.3s;">
+            <div class="title-box" style="text-align: center;">
+              <div class="subtitle" style="color: #fff; font-size: 13px; text-transform: uppercase; margin-bottom: 15px;">Haven Club and Resort</div>
+              <hr style="border: 0; height: 1px; background: #fff; width: 50%; margin: 0 auto 15px auto;">
+              <h4 style="margin: 0;"><a href="your-domestic-tour-link" style="color: #fff; font-size: 20px; text-decoration: none;">Domestic Tour</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Block 2 -->
+      <div class="service-block-two unique-service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" 
+           style="flex: 1 1 calc(25% - 20px); box-sizing: border-box;" 
+           data-wow-delay="300ms" data-wow-duration="1500ms">
+        <div class="inner-box" style="border: 1px solid #ccc; overflow: hidden; border-radius: 8px;">
+          <div class="image" style="text-align: center; background: #f9f9f9;">
+            <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/featured-image-34.webp" alt="International Tour" width="263" height="185" loading="lazy" style="max-width: 100%; height: auto;">
+          </div>
+          <div class="lower-box" style="background: #003c70; padding: 30px 20px; transition: background 0.3s;">
+            <div class="title-box" style="text-align: center;">
+              <div class="subtitle" style="color: #fff; font-size: 13px; text-transform: uppercase; margin-bottom: 15px;">Haven Club and Resort</div>
+              <hr style="border: 0; height: 1px; background: #fff; width: 50%; margin: 0 auto 15px auto;">
+              <h4 style="margin: 0;"><a href="your-international-tour-link" style="color: #fff; font-size: 20px; text-decoration: none;">International Tour</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Block 3 -->
+      <div class="service-block-two unique-service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" 
+           style="flex: 1 1 calc(25% - 20px); box-sizing: border-box;" 
+           data-wow-delay="600ms" data-wow-duration="1500ms">
+        <div class="inner-box" style="border: 1px solid #ccc; overflow: hidden; border-radius: 8px;">
+          <div class="image" style="text-align: center; background: #f9f9f9;">
+            <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/featured-image-34.webp" alt="Hotel Booking" width="263" height="185" loading="lazy" style="max-width: 100%; height: auto;">
+          </div>
+          <div class="lower-box" style="background: #003c70; padding: 30px 20px; transition: background 0.3s;">
+            <div class="title-box" style="text-align: center;">
+              <div class="subtitle" style="color: #fff; font-size: 13px; text-transform: uppercase; margin-bottom: 15px;">Haven Club and Resort</div>
+              <hr style="border: 0; height: 1px; background: #fff; width: 50%; margin: 0 auto 15px auto;">
+              <h4 style="margin: 0;"><a href="your-hotel-booking-link" style="color: #fff; font-size: 20px; text-decoration: none;">Hotel Booking</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Block 4 -->
+      <div class="service-block-two unique-service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" 
+           style="flex: 1 1 calc(25% - 20px); box-sizing: border-box;" 
+           data-wow-delay="900ms" data-wow-duration="1500ms">
+        <div class="inner-box" style="border: 1px solid #ccc; overflow: hidden; border-radius: 8px;">
+          <div class="image" style="text-align: center; background: #f9f9f9;">
+            <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/featured-image-34.webp" alt="Ticketing" width="263" height="185" loading="lazy" style="max-width: 100%; height: auto;">
+          </div>
+          <div class="lower-box" style="background: #003c70; padding: 30px 20px; transition: background 0.3s;">
+            <div class="title-box" style="text-align: center;">
+              <div class="subtitle" style="color: #fff; font-size: 13px; text-transform: uppercase; margin-bottom: 15px;">Haven Club and Resort</div>
+              <hr style="border: 0; height: 1px; background: #fff; width: 50%; margin: 0 auto 15px auto;">
+              <h4 style="margin: 0;"><a href="your-ticketing-link" style="color: #fff; font-size: 20px; text-decoration: none;">Ticketing</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- End row -->
+  </div> <!-- End container -->
+</section>
+
+
+
+
+
+
 <!-- Trending Destinations Section -->
 <section class="popular-destinations" id="trending-destinations">
     <div class="container">
