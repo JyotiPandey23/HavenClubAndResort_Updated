@@ -341,6 +341,144 @@
   }
 
 
+
+
+  /* New unique class to target only image gallery */
+.image-gallery ul {
+  display: contents;
+  width: calc(80% - 2rem);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.image-gallery li {
+  padding: 0;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+/* Hover effects applied only to .image-gallery */
+.image-gallery ul:is(:hover, :focus-within) img {
+  opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+  filter: grayscale(calc(1 - var(--active-lerp, 0)));
+}
+
+/* Lerp values */
+:root {
+  --lerp-0: 1;
+  --lerp-1: 0.5787037;
+  --lerp-2: 0.2962963;
+  --lerp-3: 0.125;
+  --lerp-4: 0.037037;
+  --lerp-5: 0.0046296;
+  --lerp-6: 0;
+}
+
+.image-gallery a {
+  outline-offset: 4px;
+}
+
+/* Flex and transition for .image-gallery li */
+.image-gallery li {
+  flex: calc(0.1 + (var(--active-lerp, 0) * 1));
+  transition: flex 0.2s ease;
+}
+
+.image-gallery li:is(:hover, :focus-within) {
+  --active-lerp: var(--lerp-0);
+  z-index: 7;
+}
+
+.image-gallery li:has( + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li {
+  --active-lerp: var(--lerp-1);
+  z-index: 6;
+}
+
+.image-gallery li:has( + li + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li + li {
+  --active-lerp: var(--lerp-2);
+  z-index: 5;
+}
+
+.image-gallery li:has( + li + li + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li + li + li {
+  --active-lerp: var(--lerp-3);
+  z-index: 4;
+}
+
+.image-gallery li:has( + li + li + li + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li + li + li + li {
+  --active-lerp: var(--lerp-4);
+  z-index: 3;
+}
+
+.image-gallery li:has( + li + li + li + li + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li + li + li + li + li {
+  --active-lerp: var(--lerp-5);
+  z-index: 2;
+}
+
+.image-gallery li:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li + li + li + li + li + li {
+  --active-lerp: var(--lerp-6);
+  z-index: 1;
+}
+
+.image-gallery .row {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically if needed */
+  gap: 0px;               /* space between cards */
+  flex-wrap: wrap;         /* allow wrapping if needed */
+  padding: 40px 0;         /* some vertical spacing */
+}
+
+/* New styles for title and card details */
+.image-gallery .image-wrapper {
+  position: relative;
+}
+
+.image-gallery .title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  transition: opacity 0.3s ease;
+}
+
+.image-gallery .details {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Show details on hover */
+.image-gallery .result:hover .title {
+  opacity: 0;
+}
+
+.image-gallery .result:hover .details {
+  opacity: 1;
+}
+
 </style>
 
 
@@ -353,6 +491,68 @@
         <h2 class="text-4xl font-bold">Discover Your Next Adventure</h2>
     </div>
 </section>
+<section class="image-gallery">
+  <div class="row">
+    <ul class="results">
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 1">
+            <div class="title">Card 1</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1551978429-3dbfed5cacc9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 2">
+            <div class="title">Card 2</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 3">
+            <div class="title">Card 3</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1523437237164-d442d57cc3c9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 4">
+            <div class="title">Card 4</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1494625927555-6ec4433b1571?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 5">
+            <div class="title">Card 5</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 6">
+            <div class="title">Card 6</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
 
 <!-- About Us Section -->
 <section class="py-20">
