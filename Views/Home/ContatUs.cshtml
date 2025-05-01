@@ -1,432 +1,278 @@
-﻿
+﻿<style>
+
+  
 
 
 
-
-
-<style>
-   
-
-
-
-
-    .card {
-        transition: transform 0.3s, box-shadow 0.3s;
-        border: none;
-        border-radius: 15px;
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
     }
 
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-        }
-
-    .card-icon {
-        font-size: 50px; /* Adjust icon size */
-        color: #1325e8; /* Icon color */
-        margin-bottom: 15px; /* Space between icon and title */
-    }
-
-    .card-title {
-        font-weight: bold;
-        font-size: 1.5rem; /* Larger title */
-        margin-bottom: 5px; /* Reduced space below title */
-    }
-
-    .card-text {
-        font-size: 1rem; /* Standard text size */
-        color: #555; /* Darker text color */
-        margin-bottom: 10px; /* Space below text */
-    }
-
-    .btn-custom {
-        background-color: #1325e8; /* Custom button color */
-        color: #fff; /* Button text color */
-        border-radius: 25px; /* Rounded button */
-        transition: background-color 0.3s;
-    }
-
-        .btn-custom:hover {
-            background-color: #0f1f9e; /* Darker shade on hover */
-        }
-
-    .responsive-map {
-        overflow: hidden;
-        padding-bottom: 56.25%;
-        position: relative;
-        height: 0;
-    }
-
-        .responsive-map iframe {
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-        }
-
-
-
-
-    .contact .info-item + .info-item {
-        margin-top: 40px;
-    }
-
-    .contact .info-item i {
-        color: var(--contrast-color);
-        background: var(--accent-color);
-        font-size: 20px;
-        width: 44px;
-        height: 44px;
+    .wrapper {
+        min-height: 100vh;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 4px;
-        transition: all 0.3s ease-in-out;
-        margin-right: 15px;
+        background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-size: cover;
+        background-position: center;
+        position: relative;
     }
 
-    .contact .info-item h3 {
-        font-size: 20px;
-        padding: 0;
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 5px;
-    }
-
-    .contact .info-item p {
-        padding: 0;
-        margin-bottom: 0;
-        font-size: 14px;
-    }
-
-    .contact .php-email-form {
-        height: 100%;
-    }
-
-        .contact .php-email-form input[type=text],
-        .contact .php-email-form input[type=email],
-        .contact .php-email-form textarea {
-            font-size: 14px;
-            padding: 10px 15px;
-            box-shadow: none;
-            border-radius: 0;
-            color: var(--default-color);
-            background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-            border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-        }
-
-            .contact .php-email-form input[type=text]:focus,
-            .contact .php-email-form input[type=email]:focus,
-            .contact .php-email-form textarea:focus {
-                border-color: var(--accent-color);
-            }
-
-            .contact .php-email-form input[type=text]::placeholder,
-            .contact .php-email-form input[type=email]::placeholder,
-            .contact .php-email-form textarea::placeholder {
-                color: color-mix(in srgb, var(--default-color), transparent 70%);
-            }
-
-        .contact .php-email-form button[type=submit] {
-            color: var(--contrast-color);
-            background: var(--accent-color);
-            border: 0;
-            padding: 10px 30px;
-            transition: 0.4s;
-            border-radius: 4px;
-        }
-
-            .contact .php-email-form button[type=submit]:hover {
-                background: color-mix(in srgb, var(--accent-color), transparent 20%);
-            }
-
-    .contact-title {
-        font-size: 58px; /* Adjust size as needed */
-        font-weight: 700; /* Bold */
-        text-align: center; /* Center the title */
-        margin-bottom: 30px; /* Space below the title */
-        color: #009563; /* Text color */
-    }
-
-
-
-
-
-
-
-
-
-
-
-    .card {
-        background-color: #215070; /* $secondary */
-        display: table;
-        width: 100%;
-        height: 150px;
-        color: #3498db; /* $primary */
-        overflow: hidden;
-        margin-bottom: 30px;
-        border-radius: 3px;
-    }
-
-        .card .icon {
-            width: 48px;
+        .wrapper::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
             height: 100%;
-            display: table-cell;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+    .content {
+        position: relative;
+        z-index: 3;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .container {
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+        .header h2 {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            color: #FFF;
+        }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact-info {
+        width: 50%;
+    }
+
+    .contact-info-item {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .contact-info-icon {
+        height: 70px;
+        width: 70px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+        .contact-info-icon i {
+            font-size: 30px;
+            line-height: 70px;
+        }
+
+    .contact-info-content {
+        margin-left: 20px;
+    }
+
+        .contact-info-content h4 {
+            color: #1da9c0;
+            font-size: 1.4em;
+            margin-bottom: 5px;
+        }
+
+        .contact-info-content p {
+            color: #FFF;
+            font-size: 1em;
+        }
+
+    .contact-form {
+        background-color: #fff;
+        padding: 40px;
+        width: 45%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+        .contact-form h2 {
+            font-weight: bold;
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .contact-form .input-box {
             position: relative;
-            background-color: currentColor; /* This will inherit the color from .card */
+            width: 100%;
+            margin-top: 10px;
         }
 
-            .card .icon:after {
-                content: '';
-                height: 100%;
-                width: 0;
-                position: absolute;
-                right: -90px;
-                top: 0;
-                border-right: 90px solid transparent;
-                border-left: 0px;
-                border-bottom: 272px solid currentColor; /* This will inherit the color from .card */
-            }
-
-            .card .icon i {
-                position: absolute;
-                bottom: 25px;
-                left: 25px;
-                color: #fff; /* $icon-color */
-                font-size: 28px;
-                z-index: 1;
-            }
-
-        .card .content-wrap {
-            padding: 10px;
-            padding-left: 62px;
-            display: table-cell;
-            vertical-align: middle;
-        }
-
-            .card .content-wrap .item-title {
-                display: inline-block;
+            .contact-form .input-box input,
+            .contact-form .input-box textarea {
+                width: 100%;
+                padding: 5px 0;
                 font-size: 16px;
-                color: #a3baca; /* $title-color */
-                margin-bottom: 3px;
+                margin: 10px 0;
+                border: none;
+                border-bottom: 2px solid #333;
+                outline: none;
+                resize: none;
             }
 
-            .card .content-wrap .text {
-                color: #fff; /* $text-color */
-                font-size: 15px;
+            .contact-form .input-box span {
+                position: absolute;
+                left: 0;
+                padding: 5px 0;
+                font-size: 16px;
+                margin: 10px 0;
+                pointer-events: none;
+                transition: 0.5s;
+                color: #666;
             }
+
+            .contact-form .input-box input:focus ~ span,
+            .contact-form .input-box textarea:focus ~ span {
+                color: #e91e63;
+                font-size: 12px;
+                transform: translateY(-20px);
+            }
+
+            .contact-form .input-box input[type="submit"] {
+                width: 100%;
+                background: #00bcd4;
+                color: #FFF;
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+                font-size: 18px;
+                border: 1px solid #00bcd4;
+                transition: 0.5s;
+            }
+
+                .contact-form .input-box input[type="submit"]:hover {
+                    background: #FFF;
+                    color: #00bcd4;
+                }
+
+
 </style>
-    <div class="all-title-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Contact Us</h2>
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active"> Contact Us </li>
-                    </ul>
-                </div>
+
+
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Contact Us</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active"> Contact Us </li>
+                </ul>
             </div>
         </div>
     </div>
-
-<div class="contact-cards container mt-5">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <span class="icon">
-                    <i class="fas fa-phone-volume card-icon " style="color: #FFD43B;"></i>
-                </span>
-                <div class="content-wrap">
-                    <span class="item-title">
-                        <strong>
-                        Call us anytime
-                        </strong>
-                    </span>
-                    <p class="text">
-                        +(91) 9687199136
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <span class="icon">
-                    <i class="fas fa-envelope card-icon" style="color: #FFD43B;"></i>
-                </span>
-                <div class="content-wrap">
-                    <span class="item-title">
-                        <strong>
-                        Our Email</strong>
-                    </span>
-                    <p class="text">
-                       xyz@gmail.com
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <span class="icon">
-                    <i class="fas fa-address-book card-icon " style="color: #FFD43B;"></i>
-                </span>
-                <div class="content-wrap">
-                    <span class="item-title">
-                      <strong>Address</strong>
-                    </span>
-                    <p class="text">
-                        Sun West Bank Ashram Road, B 1322, Ashram Road, P.o, Sadar Bazar, Ahmedabad, Gujarat 38000
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-       
-</div>
-
 </div>
 
 
+<div class="wrapper ">
 
+    <div class="content">
 
+        <div class="header">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Haven Club and Resorts Private Limited is a premier destination for relaxation and rejuvenation, offering an unparalleled experience in luxury and comfort. With its stunning landscapes and world-class amenities, Haven Club and Resorts Private Limited has become the go-to choice for travelers seeking an escape from the ordinary</p>
+            </div>
+        </div>
 
+        <div class="container">
+            <div class="row">
 
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
 
+                        <div class="contact-info-content">
+                            <h4>Address</h4>
+                            <p>Sun West Bank Ashram Road,<br /> B 1322, Ashram Road <br />Sadar Bazar, Ahmedabad<br> Gujarat 380009</p>
+                        </div>
+                    </div>
 
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
 
+                        <div class="contact-info-content">
+                            <h4>Phone</h4>
+                            <p>+9196871 99136</p>
+                        </div>
+                    </div>
 
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
 
+                        <div class="contact-info-content">
+                            <h4>Email</h4>
+                            <p>xyz@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="contact-form">
+                    <form action="" id="contact-form">
+                        <h2>Send Message</h2>
+                        <div class="input-box">
+                            <input type="text" required="true" name="">
+                            <span>Full Name</span>
+                        </div>
 
+                        <div class="input-box">
+                            <input type="email" required="true" name="">
+                            <span>Email</span>
+                        </div>
 
+                        <div class="input-box">
+                            <textarea required="true" name=""></textarea>
+                            <span>Type your Message...</span>
+                        </div>
 
-
-
-
-
-
-
-
-
-<div class="contact-box-main">
-    <h1 class="contact-title">Get in Touch</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-sm-12">
-                <div class="contact-form-right">
-                    
-                    @* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio justo, ultrices ac nisl sed, lobortis porta elit. Fusce in metus ac ex venenatis ultricies at cursus mauris.</p> *@
-                    <form id="contactForm">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" name="name" placeholder="Subject" required data-error="Please enter your Subject">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <div class="submit-button text-center">
-                                    <button class="btn hvr-hover" id="submit" type="submit">Send Message</button>
-                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
+                        <div class="input-box">
+                            <input type="submit" value="Send" name="">
                         </div>
                     </form>
                 </div>
-            </div>
-          @*   <div class="col-lg-4 col-sm-12">
-                <div class="contact-info-left">
-                    <h2>CONTACT INFO</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
-                    <ul>
-                        <li>
-                            <p><i class="fas fa-map-marker-alt"></i>Address:Sun West Bank Ashram Road <br>B 1322, Ashram Road,,<br>P.o, Sadar Bazar, Ahmedabad<br> Gujarat 380009 </p>
-                        </li>
-                        <li>
-                            <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+91-96871 99136">+9196871 99136</a></p>
-                        </li>
-                        <li>
-                            <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">xyz@gmail.com</a></p>
-                        </li>
-                    </ul>
-                </div>
-            </div> *@
-            <div class="col-lg-6 col-sm-12">
-                <div id="carousel-example-1" class="single-product-slider carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active"> <img class="d-block w-100" src="~/assets/images/kolkata.jpg" alt="First slide"> </div>
-                        <div class="carousel-item"> <img class="d-block w-100" src="~/assets/images/paris.jpg" alt="Second slide"> </div>
-                        <div class="carousel-item"> <img class="d-block w-100" src="~/assets/images/rome.jpg" alt="Third slide"> </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel-example-1" role="button" data-slide="prev">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-example-1" role="button" data-slide="next">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-1" data-slide-to="0" class="active">
-                            <img class="d-block w-100 img-fluid" src="~/assets/images/kolkata.jpg" alt="" />
-                        </li>
-                        <li data-target="#carousel-example-1" data-slide-to="1">
-                            <img class="d-block w-100 img-fluid" src="~/assets/images/paris.jpg" alt="" />
-                        </li>
-                        <li data-target="#carousel-example-1" data-slide-to="2">
-                            <img class="d-block w-100 img-fluid" src="~/assets/images/rome.jpg" alt="" />
-                        </li>
-                    </ol>
-                </div>
+
             </div>
         </div>
     </div>
+   
 </div>
-@* 
-<div class="responsive-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8027051400154!2d72.5683907747705!3d23.031015216014087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e850953360193%3A0xd427426d1e877832!2sWestbank!5e0!3m2!1sen!2sin!4v1742637883277!5m2!1sen!2sin"
-                    width="100%"
-                    height="400"
-                    style="border:0;"
-                    allowfullscreen
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-</div> *@
-
-<!-- Google Map Section -->
-@* <div class="container mt-5">
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8027051400154!2d72.5683907747705!3d23.031015216014087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e850953360193%3A0xd427426d1e877832!2sWestbank!5e0!3m2!1sen!2sin!4v1742637883277!5m2!1sen!2sin"
-                width="100%"
-                height="400"
-                style="border:0;"
-                allowfullscreen
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" >
-        </iframe>
-    </div>
-</div> *@
 <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
     <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
-
