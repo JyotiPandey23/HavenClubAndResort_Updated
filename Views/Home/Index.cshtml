@@ -1,483 +1,805 @@
 ﻿
 <style>
-    /* General About Us Section */
-    .about-us h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
+   /* General About Us Section */
+.about-us h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
-    .about-us p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 20px;
-    }
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
 
-    .about-us .offerings,
-    .about-us .destinations {
-        margin-bottom: 20px;
-    }
+.about-us .offerings,
+.about-us .destinations {
+    margin-bottom: 20px;
+}
 
-    .about-us .btn {
-        font-size: 1.1rem;
-        padding: 10px 20px;
-        background-color: #007bff;
-        border-color: #007bff;
-        color: white;
-    }
+.about-us .btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
 
-        .about-us .btn:hover {
-            background-color: #0056b3;
-            border-color: #004085;
-        }
+.about-us .btn:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
 
-    /* Fullwidth Callback Section */
-    .fullwidth-callback {
-        background: url('/assets/travel_blog_image/sea.jpg') center/cover no-repeat;
-        padding: 100px 0;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        min-height: 400px;
-        margin: 40px 0; /* Space before and after */
-    }
+/* Fullwidth Callback Section */
+.fullwidth-callback {
+    background: url('/assets/travel_blog_image/sea.jpg') center/cover no-repeat;
+    padding: 100px 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+    margin: 40px 0; /* Space before and after */
+}
 
-    .section-heading-white h2 {
-        color: black;
-        font-size: 2.5rem;
-        font-weight: bold;
-    }
+.section-heading-white h2 {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
 
-    /* Callback Counter */
-    .callback-counter-wrap {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 20px;
-    }
+/* Callback Counter */
+.callback-counter-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
 
-    .counter-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* margin: 10px; */
-    }
+.counter-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 10px; */
+}
 
-    .counter-icon img {
-        width: 55px;
-        height: 55px;
-    }
+.counter-icon img {
+    width: 55px;
+    height: 55px;
+}
 
-    .counter-content {
-        text-align: center;
-    }
+.counter-content {
+    text-align: center;
+}
 
-    .counter-no {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
+.counter-no {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
-    .counter-text {
-        font-size: 1rem;
-        margin-top: 5px;
-    }
+.counter-text {
+    font-size: 1rem;
+    margin-top: 5px;
+}
 
-    /* Popular Destinations Section */
-    .popular-destinations {
-        background-color: #f9f9f9;
-        padding: 60px 0;
-        /* margin: 40px 0; /* Space around section */ */
-    }
+/* Popular Destinations Section */
+.popular-destinations {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    /* margin: 40px 0; /* Space around section */ */
+}
 
-    .section-heading h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        /* margin-bottom: 40px; */
-    }
+.section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* margin-bottom: 40px; */
+}
 
-    .cards-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
-    .card {
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        overflow: hidden;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-    }
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
 
-        .card:hover {
-            transform: scale(1.05);
-        }
+.card:hover {
+    transform: scale(1.05);
+}
 
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
 
-    .card-content {
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-grow: 1;
-    }
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
 
-    /* Video Section */
-    .video-section {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
+/* Video Section */
+/* .video-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-    .video-wrapper iframe {
-        width: 100%;
-        height: 100vh;
-        border: none;
-    }
-/*top category*/
-    /* General Styles */
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
+.video-wrapper iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+} */
 
-  /*   .section-heading {
-        margin-bottom: 50px;
-    } */
+/* Top Category */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
 
-    .section-heading h5.dash-style {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #3498db;
-        text-transform: uppercase;
-    }
+/* .section-heading {
+    margin-bottom: 50px;
+} */
 
-    .section-heading h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 10px;
-    }
+.section-heading h5.dash-style {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3498db;
+    text-transform: uppercase;
+}
 
-    .activity-inner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+.section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
 
-    .activity-item {
-        background-color: #003c70;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 20px 0;
-        padding: 15px;
-        text-align: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        cursor: pointer;
-        width: 100%;
-        
-       
-    }
+.activity-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-    .activity-item:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    }
+.activity-item {
+    background: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+}
 
-    .activity-icon img {
-        width: 72px;
-        height: 72px;
-        object-fit: contain;
-    }
+.activity-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
 
-    .activity-content h4 {
-        font-size: 1.1rem;
-        margin-top: 15px;
-        font-weight: 600;
-        color: white;
-    }
+.activity-icon img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
 
-    .activity-content a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-    }
+.activity-content h4 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    font-weight: 600;
+    color: white;
+}
 
-    .activity-content a:hover {
-        color: white;
-    }
-/* 
-    .text-center {
-        margin-top: 40px;
-    } */
+.activity-content a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
 
-    .button-primary {
-        background-color: #3498db;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 1.1rem;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-    }
+.activity-content a:hover {
+    color: white;
+}
 
-    .button-primary:hover {
-        background-color: #2980b9;
-    }
+/* Button Primary */
+.button-primary {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
 
-    .callback-img {
-        background: url('/assets/travel_blog_image/sea.jpg') center/cover no-repeat;
-        height: 100%;
-        min-height: 400px; /* Set a minimum height so it looks good */
-    }
+.button-primary:hover {
+    background-color: #2980b9;
+}
 
+.callback-img {
+    background: url('/assets/travel_blog_image/sea.jpg') center/cover no-repeat;
+    height: 100%;
+    min-height: 300px; /* Set a minimum height so it looks good */
+}
 
-    /*Register agency */
-   .features-section {
-  padding: 60px 0;
-  background: #003c70;
+/* Register Agency */
+.features-section {
+    padding: 60px 0;
+    background: #003c70;
 }
 
 .feature-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 10px;
-  color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    color: #fff;
 }
 
 .feature-item .icon {
-  font-size: 2rem;
-  color: #ffffff;
-  margin-right: 15px;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-right: 15px;
 }
 
 .feature-item .separator {
-  font-size: 1.5rem;
-  margin-right: 15px;
+    font-size: 1.5rem;
+    margin-right: 15px;
 }
 
 .feature-item .content h4 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffffff;
-  margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
 }
 
-/*Go travel*/
+/* Go Travel */
+.travel_feature-item {
+        background: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+  }
+  .travel_feature-item:hover{
+      background: rgba(0, 200, 83, 0.25)
+  }
+  .travel-feature-item:hover h4, .travel-feature-item:hover small {
+    color: #fff;
+  }
 .travel-features-section .travel-feature-item {
     padding: 20px;
     background: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
+
 .travel-features-section .travel-icon {
     color: #28a745;
 }
+
 .travel-features-section .travel-separator {
     font-size: 24px;
     color: #dee2e6;
 }
+
 .travel-features-section h4 {
     font-weight: 600;
     margin-bottom: 5px;
 }
+
 .travel-features-section small {
     font-size: 14px;
-    color:black;
+    color: black;
+}
+
+.about-section {
+    background: #f9f9f9;
+}
+
+.info-card {    
+    border: 5px solid #fff;
+    border-radius: 8px;
+}
+
+.btn-success {
+    background-color: #009961;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #007a4d;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .unique-service-block:hover .lower-box {
+    background: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%) !important;
+  }
+
+
+
+
+  /* New unique class to target only image gallery */
+.image-gallery ul {
+  display: contents;
+  width: calc(80% - 2rem);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.image-gallery li {
+  padding: 0;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+/* Hover effects applied only to .image-gallery */
+.image-gallery ul:is(:hover, :focus-within) img {
+  opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+  filter: grayscale(calc(1 - var(--active-lerp, 0)));
+}
+
+/* Lerp values */
+:root {
+  --lerp-0: 1;
+  --lerp-1: 0.5787037;
+  --lerp-2: 0.2962963;
+  --lerp-3: 0.125;
+  --lerp-4: 0.037037;
+  --lerp-5: 0.0046296;
+  --lerp-6: 0;
+}
+
+.image-gallery a {
+  outline-offset: 4px;
+}
+
+/* Flex and transition for .image-gallery li */
+.image-gallery li {
+  flex: calc(0.1 + (var(--active-lerp, 0) * 1));
+  transition: flex 0.2s ease;
+}
+
+.image-gallery li:is(:hover, :focus-within) {
+  --active-lerp: var(--lerp-0);
+  z-index: 7;
+}
+
+.image-gallery li:has( + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li {
+  --active-lerp: var(--lerp-1);
+  z-index: 6;
+}
+
+.image-gallery li:has( + li + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li + li {
+  --active-lerp: var(--lerp-2);
+  z-index: 5;
+}
+
+.image-gallery li:has( + li + li + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li + li + li {
+  --active-lerp: var(--lerp-3);
+  z-index: 4;
+}
+
+.image-gallery li:has( + li + li + li + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li + li + li + li {
+  --active-lerp: var(--lerp-4);
+  z-index: 3;
+}
+
+.image-gallery li:has( + li + li + li + li + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li + li + li + li + li {
+  --active-lerp: var(--lerp-5);
+  z-index: 2;
+}
+
+.image-gallery li:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
+.image-gallery li:is(:hover, :focus-within) + li + li + li + li + li + li {
+  --active-lerp: var(--lerp-6);
+  z-index: 1;
+}
+
+.image-gallery .row {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically if needed */
+  gap: 0px;               /* space between cards */
+  flex-wrap: wrap;         /* allow wrapping if needed */
+  padding: 40px 0;         /* some vertical spacing */
+}
+
+/* New styles for title and card details */
+.image-gallery .image-wrapper {
+  position: relative;
+}
+
+.image-gallery .title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  transition: opacity 0.3s ease;
+}
+
+.image-gallery .details {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Show details on hover */
+.image-gallery .result:hover .title {
+  opacity: 0;
+}
+
+.image-gallery .result:hover .details {
+  opacity: 1;
 }
 
 
-    .about-section {
-        background: #f9f9f9;
-    }
-
-    .info-card {    
-        border: 5px solid #fff;
-        border-radius: 8px;
-    }
-
-    .btn-success {
-        background-color: #009961;
-        border: none;
-        font-weight: bold;
-    }
-
-        .btn-success:hover {
-            background-color: #007a4d;
-        }
-
-    .icon-box {
-        width: 60px;
-        height: 60px;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
+section{
+margin-top:40px;
+}
 </style>
 
 
 <!-- Video Section -->
-<section class="video-section">
-    <div class="container">
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/SIR1Gul1DD4?list=PLOhV0FrFphUcZnVciz7KtPaaXGAa5wTyP"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>
-        </div>
+<section class="relative w-full h-screen overflow-hidden mt-0">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <iframe class="w-full h-full" src="https://www.youtube.com/embed/SIR1Gul1DD4?list=PLOhV0FrFphUcZnVciz7KtPaaXGAa5wTyP"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="absolute inset-0 flex items-center justify-center ">
+        <h2 class="text-4xl font-bold">Discover Your Next Adventure</h2>
     </div>
 </section>
-
-<section class="about-section py-5">
-    <div class="container">
-        <div class="row align-items-center">
+<!-- About Us Section -->
+<section class="py-20 mt-0">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
 
             <!-- Left Side Images -->
-            <div class="col-lg-6 position-relative">
-
-                <!-- Big Image -->
-                <div class="position-relative mb-4">
-                    <img src="~/assets/images/travel_img1.jpg" alt="Main Travel" class="img-fluid rounded w-100">
+            <div class="relative w-full lg:w-1/2">
+                <!-- Big Image with Info Card -->
+                <div class="relative mb-8 group">
+                    <div class="relative overflow-hidden rounded-xl shadow-2xl group-hover:scale-105 group-hover:z-10 transition-all duration-500">
+                        <img src="/assets/images/travel_img1.jpg" alt="Main Travel" class="w-full h-96 object-cover transition-transform duration-500 transform group-hover:scale-110 group-hover:translate-x-4 group-hover:translate-y-4">
+                    </div>
 
                     <!-- Overlapping Card -->
-                    <div class="info-card bg-primary text-white p-4 shadow position-absolute top-0 start-0 w-100">
-                        <h5 class="mb-3">Something you want <br> to know <br> about us !!</h5>
-                        <a href="#" class="btn btn-success">LEARN MORE</a>
+                    <div class="absolute top-0 left-0 w-11/12 bg-white bg-opacity-80 text-gray-900 p-8 rounded-xl shadow-2xl transform translate-x-6 translate-y-6 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500">
+                        <h5 class="text-3xl font-extrabold text-blue-900 mb-6 leading-tight group-hover:text-green-600 transition duration-300">
+                            Discover the World <br> with Haven Club & Resorts!
+                        </h5>
+                        <a href="#" class="inline-block bg-green-600 hover:bg-green-700  font-semibold py-3 px-6 rounded-lg transition duration-300 hover:scale-105">
+                            LEARN MORE
+                        </a>
                     </div>
                 </div>
 
                 <!-- Two Small Images -->
-                <div class="row g-3">
-                    <div class="col-6">
-                        <img src="~/assets/images/travel_img2.jpg" alt="Travel 2" class="img-fluid rounded w-100">
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="relative group">
+                        <img src="/assets/images/travel_img2.jpg" alt="Travel 2" class="w-full h-48 rounded-lg shadow-md object-cover transition-transform duration-500 transform group-hover:scale-110 group-hover:translate-x-2 group-hover:translate-y-2">
                     </div>
-                    <div class="col-6">
-                        <img src="~/assets/images/travel_img3.jpg" alt="Travel 3" class="img-fluid rounded w-100">
+                    <div class="relative group">
+                        <img src="/assets/images/travel_img3.jpg" alt="Travel 3" class="w-full h-48 rounded-lg shadow-md object-cover transition-transform duration-500 transform group-hover:scale-110 group-hover:translate-x-2 group-hover:translate-y-2">
                     </div>
                 </div>
-
             </div>
 
             <!-- Right Side Content -->
-            <div class="col-lg-6">
-                <h6 class="text-success fw-bold mb-2">INTRODUCTION ABOUT US</h6>
-                <h2 class="fw-bold mb-4">WELCOME TO <br> RAO HOLIDAYS</h2>
-                <p class="mb-4">Rao Holidays is the Brand of Company Harsha Holidays & Resorts Private Limited (HHRPL), into Leisure & Hospitality across INDIA & ASIA, offers budget friendly quality family holidays primarily through vacation ownership memberships & brings to the industry values such as reliability, trust & customer satisfaction.</p>
+            <div class="w-full lg:w-1/2">
+                <h6 style="
+        padding-left: 80px;
+        position: relative;
+        color: #009563;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        display: inline-block;
+      ">
+                    About Us
+                    <span style="
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        background-color: #009563;
+        transform: translateY(-50%);
+      "></span>
+                <h2 class="text-5xl font-extrabold  mb-8 leading-tight">
+                    Welcome to <br> Haven Club & Resorts
+                </h2>
+                <p class=" mb-8 text-lg">
+                    Welcome to Haven Club & Resorts, your premier destination for exceptional travel experiences. Established in 2022, we take pride in offering top-notch tours and travel services. We're excited to introduce our latest offerings: membership plans and packages, now available exclusively online through our website.
+                </p>
+                <p class=" mb-8 text-lg">
+                    At Haven Club & Resorts, we are committed to crafting unforgettable journeys for our members. Whether you're dreaming of a tropical escape, a cultural adventure, or a relaxing retreat, our curated packages cater to every traveler’s desires.
+                </p>
+                <p class=" mb-8 text-lg">
+                    Join our club today and unlock a world of possibilities. Explore our website to find the perfect getaway that suits your preferences and budget. Your next extraordinary journey awaits with Haven Club & Resorts.
+                </p>
 
                 <!-- Service 1 -->
-                <div class="d-flex align-items-start mb-4">
-                    <div class="icon-box bg-primary text-white me-3">
-                        <i class="bi bi-hand-thumbs-up" style="font-size: 24px;"></i>
+                <div class="flex items-start gap-6 mb-10">
+                    <div class="bg-green-600  p-6 rounded-full flex items-center justify-center shadow-xl transition-transform duration-500 hover:scale-110">
+                        <!-- Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 9l3 6h-7l-3-6h7z" />
+                        </svg>
                     </div>
                     <div>
-                        <h5 class="fw-bold">BEST PRICE GUARANTEED</h5>
-                        <p class="mb-0">Offering its members an extensive selection of Hotels, Resorts, adventures & travel services to meet every budget and activities of every kind at competitive rates.</p>
+                        <h5 class="text-2xl font-extrabold  mb-3">Best Price Guaranteed</h5>
+                        <p class=" text-base">Offering its members an extensive selection of Hotels, Resorts, adventures & travel services to meet every budget and activities of every kind at competitive rates.</p>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="d-flex align-items-start">
-                    <div class="icon-box bg-primary text-white me-3">
-                        <i class="bi bi-geo-alt" style="font-size: 24px;"></i>
+                <div class="flex items-start gap-6">
+                    <div class="bg-green-600  p-6 rounded-full flex items-center justify-center shadow-xl transition-transform duration-500 hover:scale-110">
+                        <!-- Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 12.414M13.414 12.414L9.172 8.172m4.242 4.242l4.243 4.243M12 3v9m0 0v9" />
+                        </svg>
                     </div>
                     <div>
-                        <h5 class="fw-bold">AMAZING DESTINATION</h5>
-                        <p class="mb-0">We offer amazing destinations to visit and create unforgettable memories.</p>
+                        <h5 class="text-2xl font-extrabold  mb-3">Amazing Destinations</h5>
+                        <p class=" text-base">We offer amazing destinations to visit and create unforgettable memories.</p>
                     </div>
                 </div>
-
             </div>
 
         </div>
     </div>
 </section>
 
-<!-- Fullwidth Callback Section -->
-<section class="travel-features-section" style="background: #003c70;"> 
-  <div class="container">
-    <div class="section-heading text-center mb-5">
-      <h2 class="fw-bold" style="color:white">GO TRAVEL. DISCOVER.</h2>
-      <h2 class="fw-bold" style="color:white">REMEMBER US!!</h2>
+
+<!-- REMEMBER US Section -->
+<section class="travel-features-section" style="background: url('/assets/images/travel_img3.jpg') no-repeat center center/cover; position: relative;">
+    <div class="container py-5">
+        <div class="section-heading text-center mb-5">
+            <h2 class="fw-bold text-white">GO TRAVEL. DISCOVER.</h2>
+            <h2 class="fw-bold text-white">REMEMBER US!!</h2>
+        </div>
+
+        <div class="row">
+            <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="travel_feature-item flex items-center justify-center p-5 rounded-xl shadow-md">
+                    <i class="bi bi-clock text-green-500" style="font-size:30px;"></i>
+                    <span class="travel-separator mx-3 text-gray-200">|</span>
+                    <div class="travel-content text-left">
+                        <h4 class="mb-0 text-white" style="font-size: 1.6rem;">6+</h4>
+                        <small class="text-white" style="font-size: 1rem;">Years Of Experience</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="travel_feature-item flex items-center justify-center p-5 rounded-xl shadow-md">
+                    <i class="bi bi-star text-green-500" style="font-size:30px;"></i>
+                    <span class="travel-separator mx-3 text-gray-200">|</span>
+                    <div class="travel-content text-left">
+                        <h4 class="mb-0 text-white" style="font-size: 1.6rem;">100%</h4>
+                        <small class="text-white" style="font-size: 1.2rem;">Satisfied Clients</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="travel_feature-item flex items-center justify-center p-5 rounded-xl shadow-md">
+                    <i class="bi bi-people text-green-500" style="font-size:30px;"></i>
+                    <span class="travel-separator mx-3 text-gray-200">|</span>
+                    <div class="travel-content text-left">
+                        <h4 class="mb-0 text-white" style="font-size: 1.6rem;">8600+</h4>
+                        <small class="text-white" style="font-size: 1.2rem;">Members</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="travel_feature-item flex items-center justify-center p-5 rounded-xl shadow-md">
+                    <i class="bi bi-building text-green-500" style="font-size:30px;"></i>
+                    <span class="travel-separator mx-3 text-gray-200">|</span>
+                    <div class="travel-content text-left">
+                        <h4 class="mb-0 text-white" style="font-size: 1.6rem;">200+</h4>
+                        <small class="text-white" style="font-size: 1.2rem;">Resorts</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+</section>
+<!--image-gallery-->
+<section class="image-gallery">
+    <div class="section-heading text-center">
+        <div class="row">
+            <div class="col-lg-8 ">
 
-    <div class="row">
+                <h5 style="
+        padding-left: 80px;
+        position: relative;
+        color: #009563;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        display: inline-block;
+      ">
+                    Where do you want to unlock yourself?
+                    <span style="
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        background-color: #009563;
+        transform: translateY(-50%);
+      "></span>
+                </h5>
 
-      <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item d-flex align-items-center justify-content-center">
-          <i class="bi bi-clock travel-icon" style="font-size:30px;"></i>
-          <span class="travel-separator mx-3">|</span>
-          <div class="travel-content text-start">
-            <h4 class="mb-0">6+</h4>
-            <small>Years Of Experience</small>
-          </div>
+                <h4 style="
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin: 0;
+      ">
+                    Popular Destinations
+                </h4>
+            </div>
         </div>
-      </div>
-
-      <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item d-flex align-items-center justify-content-center">
-          <i class="bi bi-star travel-icon" style="font-size:30px;"></i>
-          <span class="travel-separator mx-3">|</span>
-          <div class="travel-content text-start">
-            <h4 class="mb-0">100%</h4>
-            <small>Satisfied Clients</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item d-flex align-items-center justify-content-center">
-          <i class="bi bi-people travel-icon" style="font-size:30px;"></i>
-          <span class="travel-separator mx-3">|</span>
-          <div class="travel-content text-start">
-            <h4 class="mb-0">8600+</h4>
-            <small>Members</small>
-          </div>
-        </div>
-      </div>
-
-      <div class="travel-feature-block col-lg-3 col-md-6 col-sm-12 mb-4">
-        <div class="travel-feature-item d-flex align-items-center justify-content-center">
-          <i class="bi bi-building travel-icon" style="font-size:30px;"></i>
-          <span class="travel-separator mx-3">|</span>
-          <div class="travel-content text-start">
-            <h4 class="mb-0">200+</h4>
-            <small>Resorts</small>
-          </div>
-        </div>
-      </div>
-
     </div>
+  <div class="row">
+    <ul class="results">
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 1">
+            <div class="title">Card 1</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1551978429-3dbfed5cacc9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 2">
+            <div class="title">Card 2</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 3">
+            <div class="title">Card 3</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1523437237164-d442d57cc3c9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 4">
+            <div class="title">Card 4</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1494625927555-6ec4433b1571?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 5">
+            <div class="title">Card 5</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+      <li class="result">
+        <a href="#">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;w=500" alt="Image 6">
+            <div class="title">Card 6</div>
+            <div class="details">Card details</div>
+          </div>
+        </a>
+      </li>
+    </ul>
   </div>
+    <div class="text-center">
+        <a href="destinations" class=" btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg">View More</a>
+    </div>
 </section>
 
 
 
 <!---top destination----->
-<!-- Travel by Activity Section -->
 <section>
     <div class="container" >
     <div class="section-heading text-center">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
-                <h5 class="dash-style">TRAVEL BY ACTIVITY</h5>
-                <h2>Top Categories</h2>
+                
+                    <h5 style="
+        padding-left: 80px;
+        position: relative;
+        color: #009563;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        display: inline-block;
+      ">
+                        TRAVEL BY ACTIVITY
+                        <span style="
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        background-color: #009563;
+        transform: translateY(-50%);
+      "></span>
+                    </h5>
+
+                    <h4 style="
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin: 0;
+      ">
+                        Top Categories
+                    </h4>
             </div>
         </div>
     </div>
@@ -486,9 +808,9 @@
         <!-- Beach Category -->
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
-                <div class="activity-icon">
+                <div class="activity-icon" style="text-align: -webkit-center;">
                     <a href="beach">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/005-sunbed.webp" alt="Beach" loading="lazy">
+                        <img src="~/assets/index_image/beach_vetcor.png" style="border-radius:40px;" alt="Beach" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -502,9 +824,9 @@
         <!-- Heritage Category -->
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
-                <div class="activity-icon">
+                <div class="activity-icon"  style="text-align: -webkit-center;">
                     <a href="heritage">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/004-camping-tent.webp" alt="Heritage" loading="lazy">
+                       <img src="~/assets/index_image/Heritage.png" style="border-radius:40px;"  alt="Heritage" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -518,9 +840,9 @@
         <!-- Religious Places Category -->
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
-                <div class="activity-icon">
+                <div class="activity-icon"  style="text-align: -webkit-center;">
                     <a href="#">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/icon2.webp" alt="Religious Places" loading="lazy">
+                        <img src="~/assets/index_image/religiousplace.png" style="border-radius:40px;"  alt="Religious Places" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -534,9 +856,9 @@
         <!-- Forest Category -->
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
-                <div class="activity-icon">
+                <div class="activity-icon"  style="text-align: -webkit-center;">
                     <a href="forest">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/icon9.webp" alt="Forest" loading="lazy">
+                        <img src="~/assets/index_image/Forest.png" style="border-radius:40px;"  alt="Forest" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -551,8 +873,8 @@
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
                 <div class="activity-icon">
-                    <a href="snow-peaks">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/002-safari.webp" alt="Snow Peaks" loading="lazy">
+                    <a href="snow-peaks"  style="text-align: -webkit-center;">
+                         <img src="~/assets/index_image/snow peaks.png" style="border-radius:40px;" alt="Snow Peaks" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -567,8 +889,8 @@
         <div class="col-lg-2 col-md-4 col-sm-6">
             <div class="activity-item">
                 <div class="activity-icon">
-                    <a href="mountain-destination">
-                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/icon/008-cycling.webp" alt="Mountain" loading="lazy">
+                    <a href="mountain-destination"  style="text-align: -webkit-center;">
+                        <img src="~/assets/index_image/mountain.png" style="border-radius:40px;" alt="Mountain" loading="lazy">
                     </a>
                 </div>
                 <div class="activity-content">
@@ -585,54 +907,8 @@
     </div>
 </div>
 </section>
-<!-- Trending Destinations Section -->
-<section class="popular-destinations" id="trending-destinations">
-    <div class="container">
-        <div class="section-heading text-center">
-            <h2>Popular Destinations</h2>
-        </div>
 
-        <div class="cards-wrapper">
-            <!-- Bali Card -->
-            <div class="card" data-destination="bali" onclick="showDetails(this)">
-                <img src="~/assets/travel_blog_image/bali_temple.jpg" alt="Bali">
-                <div class="card-content">
-                    <h3>Bali, Indonesia</h3>
-                    <p>Bali blends spiritual calm with natural beauty. From forest temples and waterfalls to beach parties and yoga retreats, it has something for everyone.</p>
-                </div>
-            </div>
-
-            <!-- Cappadocia Card -->
-            <div class="card" data-destination="cappadocia" onclick="showDetails(this)">
-                <img src="~/assets/travel_blog_image/cappadocia.jpg" alt="Cappadocia">
-                <div class="card-content">
-                    <h3>Cappadocia, Turkey</h3>
-                    <p>Famous for its fairy chimneys and hot air balloon rides, Cappadocia offers a magical landscape, underground cities, and rich history for travelers.</p>
-                </div>
-            </div>
-            <!-- Kyoto -->
-            <div class="card" data-destination="kyoto" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
-                <img src="~/assets/travel_blog_image/tokyo.jpg" alt="Kyoto" style="width: 100%; height: 200px; object-fit: cover;">
-                <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
-                    <h3>Kyoto, Japan</h3>
-                    <p>Known for cherry blossoms, ancient temples, and traditional tea ceremonies, Kyoto is Japan’s cultural heart that remains timeless and enchanting.</p>
-                </div>
-            </div>
-
-            <!-- Jaipur -->
-            <div class="card" data-destination="chennai" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
-                <img src="~/assets/travel_blog_image/jaipur.jpg" alt="Jaipur" style="width: 100%; height: 200px; object-fit: cover;">
-                <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
-                    <h3>Jaipur, India</h3>
-                    <p>The Pink City of Jaipur offers a royal glimpse into India’s majestic past. With palaces, it’s a treat for history lovers and photographers alike.</p>
-                </div>
-            </div>
-            <!-- Add more destination cards here if needed -->
-        </div>
-    </div>
-</section>
-
-
+<!--Why section-->
 <section class="callback-section">
     <div class="container">
         <div class="row align-items-center no-gutters">
@@ -649,56 +925,92 @@
 
                     <!-- Heading -->
                     <div class="section-heading section-heading-white">
-                        <h5 class="dash-style">GO TRAVEL. DISCOVER. REMEMBER US!!</h5>
-                        <h2>Why Choose Rao Holidays?</h2>
+                        <h5 style="
+        padding-left: 80px;
+        position: relative;
+        color: #009563;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        display: inline-block;
+      ">
+                            EXPLORE. EXPERIENCE. REMEMBER US!
+                            <span style="
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        background-color: #009563;
+        transform: translateY(-50%);
+      "></span>
+                        </h5>
+
+                        <h4 style="
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin: 0;
+      ">
+                            Why Travel with Haven Club Holidays?
+                        </h4>
                     </div>
 
                     <!-- About Services -->
                     <div class="about-service-container">
 
-                        <div class="about-service">
-                            <div class="about-service-icon">
+                        <div class="about-service d-flex align-items-start" style="gap: 15px;">
+                            <div class="d-flex align-items-center" style="gap: 10px;">
                                 <i class="bi bi-cash-coin" style="font-size: 2rem; color: #007bff;"></i>
+                                <span style="font-size: 1.5rem; color: #ccc;">|</span>
                             </div>
                             <div class="about-service-content">
                                 <h4>BEST PRICE GUARANTEED</h4>
-                                <p>Offerings its members an extensive selection of Hotels, Resorts, adventures & travel services to meet every budget and activities of every kind at competitive rates.</p>
+                                <p>We provide unbeatable deals on hotels, resorts, adventure tours, and travel services to suit every budget and travel style.</p>
                             </div>
                         </div>
 
-                        <div class="about-service">
-                            <div class="about-service-icon">
+
+                        <div class="about-service d-flex align-items-start" style="gap: 15px;">
+                            <div class="d-flex align-items-center" style="gap: 10px;">
                                 <i class="bi bi-geo-alt-fill" style="font-size: 2rem; color: #007bff;"></i>
+                                <span style="font-size: 1.5rem; color: #ccc;">|</span>
                             </div>
                             <div class="about-service-content">
-                                <h4>AMAZING DESTINATION</h4>
-                                <p>Enjoy premium resorts across India & overseas. Experience the best customer support.</p>
+                                <h4>INCREDIBLE DESTINATIONS</h4>
+                                <p>Discover breathtaking destinations across India and abroad. Enjoy memorable stays and world-class support every step of the way.</p>
                             </div>
                         </div>
 
-                        <div class="about-service">
-                            <div class="about-service-icon">
+
+                        <div class="about-service d-flex align-items-start" style="gap: 15px;">
+                            <div class="d-flex align-items-center" style="gap: 10px;">
                                 <i class="bi bi-person-lines-fill" style="font-size: 2rem; color: #007bff;"></i>
+                                <span style="font-size: 1.5rem; color: #ccc;">|</span>
                             </div>
                             <div class="about-service-content">
-                                <h4>PERSONAL SERVICES</h4>
-                                <p>Assured and best holiday booking & We commit to quality.</p>
+                                <h4>PERSONALIZED SERVICE</h4>
+                                <p>Enjoy a hassle-free booking experience with expert support. We are committed to quality and customer satisfaction.</p>
                             </div>
                         </div>
+
 
                         <!-- Support Area -->
-                        <div class="support-area">
-                            <div class="support-icon">
+                        <div class="support-area d-flex align-items-start" style="gap: 15px;">
+                            <div class="d-flex align-items-center" style="gap: 10px;">
                                 <i class="bi bi-telephone-inbound-fill" style="font-size: 2rem; color: #007bff;"></i>
+                                <span style="font-size: 1.5rem; color: #ccc;">|</span>
                             </div>
                             <div class="support-content">
-                                <h4>Our 24/7 Emergency Phone Services</h4>
+                                <h4>24/7 Emergency Support</h4>
                                 <h3><a href="tel:18002677022">Call: 18002677022</a></h3>
                             </div>
                         </div>
 
-
-                    </div
+                    </div>
 
                 </div>
             </div>
@@ -707,6 +1019,7 @@
     </div>
 </section>
 
+<!--Register Agency-->
 <section class="features-section">
   <div class="container">
     <div class="row">
@@ -755,13 +1068,423 @@
   </div>
 </section>
 
-<!-- Trusted Partners Section -->
-<section id="brands" style="background: #f9f9f9; padding: 40px 0;">
-    <div class="text-center" data-aos="fade-up">
-        <h2>Our Trusted Partners</h2>
-        <p>We collaborate with leading travel brands</p>
+<!--Palnner Section-->
+
+<section class="services-section-two" style="padding: 50px 0;">
+    <div class="section-heading text-center" style="margin-bottom: 40px; position: relative;">
+        <div class="col-lg-12" style="position: relative;">
+            <h5 style="
+        padding-left: 80px;
+        position: relative;
+        color: #009563;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 22px;
+        text-transform: uppercase;
+        display: inline-block;
+      ">
+                HAVEN CLUB AND RESORT HOLIDAYS PLANNER
+                <span style="
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        background-color: #009563;
+        transform: translateY(-50%);
+      "></span>
+            </h5>
+
+            <h2 style="
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin: 0;
+      ">
+                THE HAVEN CLUB
+            </h2>
+        </div>
     </div>
 
+
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <div class="row" style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+            <!-- Service Block 1 -->
+            <div class="service-block-two unique-service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+                 style="flex: 1 1 calc(25% - 20px); box-sizing: border-box;"
+                 data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="inner-box" style="border: 1px solid #ccc; overflow: hidden; border-radius: 8px;">
+                    <div class="image" style="text-align: center; background: #f9f9f9;">
+                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/featured-image-34.webp" alt="Domestic Tour" width="263" height="185" loading="lazy" style="max-width: 100%; height: auto;">
+                    </div>
+                    <div class="lower-box" style="background: #003c70; padding: 30px 20px; transition: background 0.3s;">
+                        <div class="title-box" style="text-align: center;">
+                            <div class="subtitle" style="color: #fff; font-size: 13px; text-transform: uppercase; margin-bottom: 15px;">Haven Club and Resort</div>
+                            <hr style="border: 0; height: 1px; background: #fff; width: 50%; margin: 0 auto 15px auto;">
+                            <h4 style="margin: 0;"><a href="your-domestic-tour-link" style="color: #fff; font-size: 20px; text-decoration: none;">Domestic Tour</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Block 2 -->
+            <div class="service-block-two unique-service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+                 style="flex: 1 1 calc(25% - 20px); box-sizing: border-box;"
+                 data-wow-delay="300ms" data-wow-duration="1500ms">
+                <div class="inner-box" style="border: 1px solid #ccc; overflow: hidden; border-radius: 8px;">
+                    <div class="image" style="text-align: center; background: #f9f9f9;">
+                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/featured-image-34.webp" alt="International Tour" width="263" height="185" loading="lazy" style="max-width: 100%; height: auto;">
+                    </div>
+                    <div class="lower-box" style="background: #003c70; padding: 30px 20px; transition: background 0.3s;">
+                        <div class="title-box" style="text-align: center;">
+                            <div class="subtitle" style="color: #fff; font-size: 13px; text-transform: uppercase; margin-bottom: 15px;">Haven Club and Resort</div>
+                            <hr style="border: 0; height: 1px; background: #fff; width: 50%; margin: 0 auto 15px auto;">
+                            <h4 style="margin: 0;"><a href="your-international-tour-link" style="color: #fff; font-size: 20px; text-decoration: none;">International Tour</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Block 3 -->
+            <div class="service-block-two unique-service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+                 style="flex: 1 1 calc(25% - 20px); box-sizing: border-box;"
+                 data-wow-delay="600ms" data-wow-duration="1500ms">
+                <div class="inner-box" style="border: 1px solid #ccc; overflow: hidden; border-radius: 8px;">
+                    <div class="image" style="text-align: center; background: #f9f9f9;">
+                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/featured-image-34.webp" alt="Hotel Booking" width="263" height="185" loading="lazy" style="max-width: 100%; height: auto;">
+                    </div>
+                    <div class="lower-box" style="background: #003c70; padding: 30px 20px; transition: background 0.3s;">
+                        <div class="title-box" style="text-align: center;">
+                            <div class="subtitle" style="color: #fff; font-size: 13px; text-transform: uppercase; margin-bottom: 15px;">Haven Club and Resort</div>
+                            <hr style="border: 0; height: 1px; background: #fff; width: 50%; margin: 0 auto 15px auto;">
+                            <h4 style="margin: 0;"><a href="your-hotel-booking-link" style="color: #fff; font-size: 20px; text-decoration: none;">Hotel Booking</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Block 4 -->
+            <div class="service-block-two unique-service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp"
+                 style="flex: 1 1 calc(25% - 20px); box-sizing: border-box;"
+                 data-wow-delay="900ms" data-wow-duration="1500ms">
+                <div class="inner-box" style="border: 1px solid #ccc; overflow: hidden; border-radius: 8px;">
+                    <div class="image" style="text-align: center; background: #f9f9f9;">
+                        <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/featured-image-34.webp" alt="Ticketing" width="263" height="185" loading="lazy" style="max-width: 100%; height: auto;">
+                    </div>
+                    <div class="lower-box" style="background: #003c70; padding: 30px 20px; transition: background 0.3s;">
+                        <div class="title-box" style="text-align: center;">
+                            <div class="subtitle" style="color: #fff; font-size: 13px; text-transform: uppercase; margin-bottom: 15px;">Haven Club and Resort</div>
+                            <hr style="border: 0; height: 1px; background: #fff; width: 50%; margin: 0 auto 15px auto;">
+                            <h4 style="margin: 0;"><a href="your-ticketing-link" style="color: #fff; font-size: 20px; text-decoration: none;">Ticketing</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End row -->
+    </div> <!-- End container -->
+</section>
+
+
+
+<!--Testimonial-->
+<section>
+    <div style="position: relative; background-image: url('https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/15.webp'); background-size: cover; background-attachment: fixed; background-position: center; padding: 60px 0 0 0;">
+
+        <!-- Dark overlay (60% opacity) -->
+        <div style="position:absolute; top:0; left:0; width:100%; height:100%; background-color: rgba(15,36,84,0.6); z-index:1;"></div>
+
+        <div style="max-width: 1200px; margin: auto; padding: 0 15px; position: relative; z-index:2;">
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+                <!-- Call Now -->
+                <div style="flex: 1 1 33%; margin-bottom: 30px; margin-top: 30px; color: white;">
+                    <p style="color: gold; font-size: 20px;">★★★★★</p>
+                    <h5 style="font-size: 30px; color:white;">We Provide Top Destinations Especially For You Book Now &amp; Enjoy!</h5>
+                    <div style="display: flex; align-items: center; margin: 20px 0;">
+                        <div style="font-size: 24px; color: #ffc107; margin-right: 10px;">
+                            <i class="fas fa-phone fa-rotate-90"></i>
+                        </div>
+                        <div>
+                            <p style="margin: 0; font-weight: bold;">Call Now</p>
+                            <a href="tel:18002677022" style="color: white; text-decoration: underline;">18002677022</a>
+                        </div>
+                    </div>
+                    <p style="font-size: 14px;"><i class="ti-check"></i> <small>Call us, it's toll-free.</small></p>
+                </div>
+
+                <!-- Testimonials -->
+                <div style="flex: 1 1 60%;">
+                    <div style="background: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 10px; max-height: 300px; overflow-y: auto;">
+                        <div style="margin-bottom: 20px;">
+                            <h6 style="
+        padding-left: 80px;
+        position: relative;
+        color: #009563;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        display: inline-block;
+      ">
+                                Testimonials
+                                <span style="
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        background-color: #009563;
+        transform: translateY(-50%);
+      "></span>
+                            </h6>
+                            <h4 style="
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 1.1;
+        text-transform: uppercase;
+        margin: 0;
+      ">
+                                What They’re Saying...
+                            </h4>
+                        </div>
+
+                        <!-- Testimonial Item -->
+                        <div style="margin-bottom: 20px;">
+                            <p style="margin: 0 0 10px;">I truly do not have the words to express the amazing vacation that was planned for us by this travel agent and his staff...</p>
+                            <div style="display: flex; align-items: center;">
+                                <div style="margin-right: 15px;">
+                                    <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/user.png" alt="Author" style="width: 60px; height: 60px; border-radius: 50%;">
+                                </div>
+                                <div>
+                                    <div style="color: gold;">★★★★★</div>
+                                    <h6 style="margin: 0;">Sanjeev Khana</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Another Testimonial -->
+                        <div>
+                            <p style="margin: 0 0 10px;">Everyone was incredible in helping us plan and carry out our trip. Thank you Rachel for helping us plan out the most amazing trip ever!</p>
+                            <div style="display: flex; align-items: center;">
+                                <div style="margin-right: 15px;">
+                                    <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/user.png" alt="Author" style="width: 60px; height: 60px; border-radius: 50%;">
+                                </div>
+                                <div>
+                                    <div style="color: gold;">★★★★★</div>
+                                    <h6 style="margin: 0;">Rahul Pandya</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Another Testimonial -->
+                        <div>
+                            <p style="margin: 0 0 10px;">Everyone was incredible in helping us plan and carry out our trip. Thank you Rachel for helping us plan out the most amazing trip ever!</p>
+                            <div style="display: flex; align-items: center;">
+                                <div style="margin-right: 15px;">
+                                    <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/user.png" alt="Author" style="width: 60px; height: 60px; border-radius: 50%;">
+                                </div>
+                                <div>
+                                    <div style="color: gold;">★★★★★</div>
+                                    <h6 style="margin: 0;">Rahul Pandya</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Another Testimonial -->
+                        <div>
+                            <p style="margin: 0 0 10px;">Everyone was incredible in helping us plan and carry out our trip. Thank you Rachel for helping us plan out the most amazing trip ever!</p>
+                            <div style="display: flex; align-items: center;">
+                                <div style="margin-right: 15px;">
+                                    <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/user.png" alt="Author" style="width: 60px; height: 60px; border-radius: 50%;">
+                                </div>
+                                <div>
+                                    <div style="color: gold;">★★★★★</div>
+                                    <h6 style="margin: 0;">Rahul Pandya</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trending Destinations Section -->
+<section class="popular-destinations" id="trending-destinations">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2>Popular Destinations</h2>
+        </div>
+
+        <div class="cards-wrapper">
+            <!-- Bali Card -->
+            <div class="card" data-destination="bali" onclick="showDetails(this)">
+                <img src="~/assets/travel_blog_image/bali_temple.jpg" alt="Bali">
+                <div class="card-content">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Bali blends spiritual calm with natural beauty. From forest temples and waterfalls to beach parties and yoga retreats, it has something for everyone.</p>
+                </div>
+            </div>
+
+            <!-- Cappadocia Card -->
+            <div class="card" data-destination="cappadocia" onclick="showDetails(this)">
+                <img src="~/assets/travel_blog_image/cappadocia.jpg" alt="Cappadocia">
+                <div class="card-content">
+                    <h3>Cappadocia, Turkey</h3>
+                    <p>Famous for its fairy chimneys and hot air balloon rides, Cappadocia offers a magical landscape, underground cities, and rich history for travelers.</p>
+                </div>
+            </div>
+            <!-- Kyoto -->
+            <div class="card" data-destination="kyoto" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                <img src="~/assets/travel_blog_image/tokyo.jpg" alt="Kyoto" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                    <h3>Kyoto, Japan</h3>
+                    <p>Known for cherry blossoms, ancient temples, and traditional tea ceremonies, Kyoto is Japan’s cultural heart that remains timeless and enchanting.</p>
+                </div>
+            </div>
+
+            <!-- Jaipur -->
+            <div class="card" data-destination="chennai" onclick="showDetails(this)" style="width: 300px; display: flex; flex-direction: column; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                <img src="~/assets/travel_blog_image/jaipur.jpg" alt="Jaipur" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 15px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+                    <h3>Jaipur, India</h3>
+                    <p>The Pink City of Jaipur offers a royal glimpse into India’s majestic past. With palaces, it’s a treat for history lovers and photographers alike.</p>
+                </div>
+            </div>
+            <!-- Add more destination cards here if needed -->
+        </div>
+    </div>
+</section>
+
+
+<section class="article-section py-12 bg-gray-100">
+  <div class="section-heading text-center mb-10 relative">
+    <div class="col-lg-12 relative">
+      <h5 
+      style="
+        padding-left: 80px; 
+        position: relative; 
+        color: #009563; 
+        font-size: 15px; 
+        font-weight: 700; 
+        line-height: 1.2; 
+        margin-bottom: 22px; 
+        text-transform: uppercase; 
+        display: inline-block;
+      ">
+      OUR BLOGS
+      <span style="
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        background-color: #009563;
+        transform: translateY(-50%);
+      "></span>
+    </h5>
+
+    <h4
+      style="
+        font-size: 30px; 
+        font-weight: 900; 
+        line-height: 1.1; 
+        text-transform: uppercase;
+        margin: 0;
+      ">
+      OUR RECENT POSTS
+    </h4>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap -mx-4">
+      
+      <!-- Card 1 -->
+      <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+        <div class="bg-blue-700 shadow-lg overflow-hidden h-full flex flex-col">
+          <img src="~/assets/images/travel_img3.jpg" alt="Blog Image" class="w-full h-80 object-cover">
+          <div class="flex-1 p-6 flex flex-col justify-center items-center text-center">
+            <h1 class="text-2xl font-bold text-white uppercase">Memories Last Forever</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+        <div class="bg-blue-700 shadow-lg overflow-hidden h-full flex flex-col">
+          <img src="~/assets/images/travel_img3.jpg" alt="Blog Image" class="w-full h-80 object-cover">
+          <div class="flex-1 p-6 flex flex-col justify-center items-center text-center">
+            <h1 class="text-2xl font-bold text-white uppercase">Embrace Adventure</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+        <div class="bg-blue-700 shadow-lg overflow-hidden h-full flex flex-col">
+          <img src="~/assets/images/travel_img3.jpg" alt="Blog Image" class="w-full h-100 object-cover">
+          <div class="flex-1 p-6 flex flex-col justify-center items-center text-center">
+            <h1 class="text-2xl font-bold text-white uppercase">Explore The World</h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!--Get IN Touch-->
+
+<!-- Trusted Partners Section -->
+<section id="brands" style="background: #f9f9f9; padding: 40px 0;">
+    <div class="section-heading text-center" style="margin-bottom: 40px; position: relative;">
+  <div class="col-lg-12" style="position: relative;">
+    <h5 
+      style="
+        padding-left: 80px; 
+        position: relative; 
+        color: #009563; 
+        font-size: 15px; 
+        font-weight: 700; 
+        line-height: 1.2; 
+        margin-bottom: 22px; 
+        text-transform: uppercase; 
+        display: inline-block;
+      ">
+      Our Trusted Partners
+      <span style="
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        background-color: #009563;
+        transform: translateY(-50%);
+      "></span>
+    </h5>
+
+    <h4
+      style="
+        font-size: 30px; 
+        font-weight: 900; 
+        line-height: 1.1; 
+        text-transform: uppercase;
+        margin: 0;
+      ">
+      We collaborate with leading travel brands
+    </h4>
+  </div>
+</div>
     <div class="logo-slider" data-aos="fade-up" data-aos-delay="100">
         <div class="logo-track">
             <img src="/assets/index_image/makemytrip.png" alt="MakeMyTrip">
@@ -780,4 +1503,7 @@
         </div>
     </div>
 </section>
+
+
+
 
