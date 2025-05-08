@@ -1191,7 +1191,7 @@
 .haven-gallery-thumbs {
     display: flex;
     gap: 15px;
-    height: 100px;
+    height: 50%;
 }
 
 .haven-thumb-item {
@@ -1448,7 +1448,7 @@
     }
 
     .haven-gallery-thumbs {
-        height: 80px;
+        height: 40%;
     }
 
     .haven-gallery-main {
@@ -1458,7 +1458,7 @@
 
 @media (max-width: 576px) {
     .haven-gallery-thumbs {
-        height: 60px;
+        height: 20%;
     }
 
     .haven-image-overlay h3 {
