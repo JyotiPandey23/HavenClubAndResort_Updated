@@ -1530,823 +1530,1206 @@
     margin: 0;
 }
 
-/* Enhanced Planner Section Styling */
-.haven-planner-section {
-    padding: 2rem 0;
-    background-color: #f8fafc;
+/* Futuristic Travel Planner Styles */
+.nexus-planner {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #0a192f 0%, #172a45 100%);
+    color: white;
     position: relative;
-}
-
-.haven-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
-
-.haven-planner-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.haven-section-subtitle {
-    display: inline-block;
-    color: #009563;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 50px;
-}
-
-    .haven-section-subtitle::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 40px;
-        height: 2px;
-        background-color: #009563;
-        transform: translateY(-50%);
-    }
-
-.haven-planner-header h2 {
-    font-size: 36px;
-    font-weight: 800;
-    color: #003c70;
-    margin-bottom: 15px;
-    line-height: 1.3;
-}
-
-    .haven-planner-header h2 .highlight {
-        color: #009563;
-    }
-
-.haven-planner-header .intro-text {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 0;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.haven-planner-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-}
-
-.haven-service-card {
-    perspective: 1000px;
-}
-
-.haven-service-wrapper {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-    height: 100%;
-}
-
-.haven-service-card:hover .haven-service-wrapper {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-
-.haven-service-image {
-    position: relative;
-    height: 200px;
     overflow: hidden;
 }
 
-    .haven-service-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-    }
-
-.haven-service-card:hover .haven-service-image img {
-    transform: scale(1.1);
-}
-
-.haven-image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 60, 112, 0.7) 0%, transparent 50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.haven-service-card:hover .haven-image-overlay {
-    opacity: 1;
-}
-
-.haven-service-content {
-    padding: 1.5rem;
-    background: white;
-    position: relative;
-}
-
-.haven-service-badge {
-    display: inline-block;
-    background-color: #009563;
-    color: white;
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 0.25rem 0.75rem;
-    border-radius: 999px;
-    margin-bottom: 0.75rem;
-}
-
-.haven-service-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #003c70;
-    margin-bottom: 0.5rem;
-}
-
-    .haven-service-title a {
-        color: inherit;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-.haven-service-card:hover .haven-service-title a {
-    color: #009563;
-}
-
-.haven-service-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 60, 112, 0.9);
-    color: white;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.haven-service-card:hover .haven-service-hover {
-    opacity: 1;
-}
-
-.haven-service-hover p {
-    margin-bottom: 1.5rem;
-    font-size: 0.9375rem;
-    line-height: 1.6;
-}
-
-.haven-service-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-}
-
-    .haven-service-link svg {
-        width: 1rem;
-        height: 1rem;
-        transition: transform 0.3s ease;
-    }
-
-.haven-service-card:hover .haven-service-link:hover {
-    transform: translateX(5px);
-}
-
-    .haven-service-card:hover .haven-service-link:hover svg {
-        transform: translateX(3px);
-    }
-
-/* Testimonial Section */
-.haven-testimonial-section {
-    position: relative;
-    background-image: url('https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/15.webp');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    padding: 3.75rem 0 0 0;
-}
-
-.haven-testimonial-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(15, 36, 84, 0.6);
-    z-index: 1;
-}
-
-.haven-testimonial-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 15px;
+.nexus-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
     position: relative;
     z-index: 2;
 }
 
-.haven-testimonial-flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.25rem;
+.nexus-header {
+    text-align: center;
+    margin-bottom: 5rem;
+    position: relative;
 }
 
-.haven-testimonial-call {
-    flex: 1 1 33%;
-    margin-bottom: 1.875rem;
-    margin-top: 1.875rem;
-    color: white;
+.nexus-subtitle {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #64ffda;
+    margin-bottom: 1.5rem;
+    position: relative;
 }
 
-.haven-testimonial-stars {
-    color: gold;
-    font-size: 1.25rem;
-}
-
-.haven-testimonial-title {
-    font-size: 1.875rem;
-    color: white;
-}
-
-.haven-testimonial-phone {
-    display: flex;
-    align-items: center;
-    margin: 1.25rem 0;
-}
-
-.haven-testimonial-phone-icon {
-    font-size: 1.5rem;
-    color: #ffc107;
-    margin-right: 0.625rem;
-}
-
-.haven-testimonial-phone-text {
-    font-weight: bold;
-}
-
-.haven-testimonial-phone-link {
-    color: white;
-    text-decoration: underline;
-}
-
-.haven-testimonial-note {
-    font-size: 0.875rem;
-}
-
-.haven-testimonial-content {
-    flex: 1 1 60%;
-}
-
-.haven-testimonial-box {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 1.875rem;
-    border-radius: 0.625rem;
-    max-height: 18.75rem;
-    overflow-y: auto;
-}
-
-.haven-testimonial-box-heading {
-    margin-bottom: 1.25rem;
-}
-
-.haven-testimonial-item {
-    margin-bottom: 1.25rem;
-}
-
-.haven-testimonial-text {
-    margin: 0 0 0.625rem;
-}
-
-.haven-testimonial-author {
-    display: flex;
-    align-items: center;
-}
-
-.haven-testimonial-avatar {
-    margin-right: 0.9375rem;
-}
-
-    .haven-testimonial-avatar img {
-        width: 3.75rem;
-        height: 3.75rem;
-        border-radius: 50%;
+    .nexus-subtitle::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 2px;
+        background: #64ffda;
     }
 
-.haven-testimonial-rating {
-    color: gold;
+.nexus-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    background: linear-gradient(90deg, #ffffff 50%, #64ffda 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.haven-testimonial-name {
-    margin: 0;
-}
-
-/* Trending Destinations Section */
-.haven-trending-section {
+.nexus-accent {
     position: relative;
-    padding: 5rem 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+    .nexus-accent::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 100%;
+        height: 10px;
+        background: rgba(100, 255, 218, 0.3);
+        z-index: -1;
+        transform: skewX(-15deg);
+    }
+
+.nexus-description {
+    font-size: 1.25rem;
+    color: #ccd6f6;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.nexus-services {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.nexus-service {
+    position: relative;
+    display: flex;
+    min-height: 500px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+    .nexus-service:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+.service-visual {
+    position: relative;
+    flex: 1;
     overflow: hidden;
 }
 
-.haven-trending-bg-pattern {
+.visual-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="%2300d082" stroke-width="0.5" stroke-opacity="0.1"><path d="M0,0 L100,100 M100,0 L0,100" /></svg>');
-    background-size: 100px 100px;
-    opacity: 0.3;
-    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease;
 }
 
-.haven-trending-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-    z-index: 1;
-}
-
-.haven-trending-heading {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-    .haven-trending-heading .haven-section-subtitle {
-        display: inline-block;
-        color: #009563;
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 15px;
-        position: relative;
-        padding-left: 50px;
-    }
-
-        .haven-trending-heading .haven-section-subtitle::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            width: 40px;
-            height: 2px;
-            background-color: #009563;
-            transform: translateY(-50%);
-        }
-
-    .haven-trending-heading h2 {
-        font-size: 36px;
-        font-weight: 800;
-        color: #003c70;
-        margin-bottom: 15px;
-        line-height: 1.3;
-    }
-
-        .haven-trending-heading h2 .highlight {
-            color: #009563;
-        }
-
-    .haven-trending-heading .haven-section-intro {
-        font-size: 16px;
-        color: #555;
-        line-height: 1.6;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-.haven-trending-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 25px;
-    margin-bottom: 40px;
-}
-
-.haven-trending-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    position: relative;
-    z-index: 1;
-}
-
-    .haven-trending-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-    }
-
-.haven-card-image {
-    position: relative;
-    height: 220px;
-    overflow: hidden;
-}
-
-    .haven-card-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-    }
-
-.haven-trending-card:hover .haven-card-image img {
+.nexus-service:hover .visual-image {
     transform: scale(1.1);
 }
 
-.haven-card-overlay {
+.visual-overlay {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
-    padding: 15px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+    height: 100%;
+    background: linear-gradient(135deg, rgba(10, 25, 47, 0.8) 0%, rgba(23, 42, 69, 0.4) 100%);
+}
+
+.service-content {
+    position: relative;
+    flex: 1;
+    padding: 4rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
 }
 
-.haven-card-price, .haven-card-duration {
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 5px 10px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-}
-
-.haven-trending-content {
-    padding: 20px;
-}
-
-.haven-card-rating {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    color: #ffb400;
-}
-
-    .haven-card-rating i {
-        margin-right: 3px;
-        font-size: 14px;
-    }
-
-    .haven-card-rating span {
-        color: #666;
-        font-size: 12px;
-        margin-left: 8px;
-    }
-
-.haven-trending-content h3 {
-    font-size: 20px;
+.service-marker {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #003c70;
-    margin-bottom: 10px;
+    color: rgba(100, 255, 218, 0.2);
 }
 
-.haven-trending-content p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 15px;
+.service-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #ffffff 0%, #ccd6f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.haven-card-cta {
+.service-desc {
+    font-size: 1.1rem;
+    color: #ccd6f6;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+
+.service-cta {
     display: inline-flex;
     align-items: center;
-    color: white;
+    gap: 0.5rem;
+    color: #64ffda;
     font-weight: 600;
-    font-size: 14px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-    .haven-card-cta i {
-        margin-left: 5px;
+    .service-cta svg {
+        stroke: #64ffda;
         transition: transform 0.3s ease;
     }
 
-    .haven-card-cta:hover {
-        color: #007a4d;
+    .service-cta:hover {
+        color: white;
     }
 
-        .haven-card-cta:hover i {
-            transform: translateX(3px);
-        }
-
-.haven-trending-footer {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.haven-view-all-btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 25px;
-    background: linear-gradient(135deg, #009563 0%, #007a4d 100%);
-    color: white;
-    font-weight: 600;
-    border-radius: 30px;
-    text-decoration: none;
-    box-shadow: 0 5px 15px rgba(0, 149, 99, 0.3);
-    transition: all 0.3s ease;
-}
-
-    .haven-view-all-btn i {
-        margin-left: 8px;
-        transition: transform 0.3s ease;
-    }
-
-    .haven-view-all-btn:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0, 149, 99, 0.4);
-    }
-
-        .haven-view-all-btn:hover i {
+        .service-cta:hover svg {
+            stroke: white;
             transform: translateX(5px);
         }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .haven-trending-section {
-        padding: 3rem 0;
+/* Unique Layout Variations */
+.service-diagonal {
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+.service-vertical {
+    flex-direction: column;
+}
+
+.service-fullwidth {
+    flex-direction: column;
+    min-height: 600px;
+}
+
+    .service-fullwidth .service-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(10, 25, 47, 0.7);
+        padding: 3rem;
     }
 
-    .haven-trending-heading h2 {
-        font-size: 28px;
+.service-geometric {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .nexus-service {
+        flex-direction: column;
+        clip-path: none !important;
     }
 
-    .haven-trending-cards {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .service-diagonal,
+    .service-vertical,
+    .service-geometric {
+        flex-direction: column;
     }
 
-    .haven-card-image {
-        height: 200px;
+    .service-content {
+        padding: 2rem;
+    }
+
+    .nexus-title {
+        font-size: 2.5rem;
     }
 }
 
-/* Blog/Article Section */
-.haven-blog-section {
-    /*padding: 5rem 0;*/
-    background: linear-gradient(135deg, #f8fafc 0%, #eef2f6 100%);
+@media (max-width: 768px) {
+    .nexus-planner {
+        padding: 4rem 0;
+    }
+
+    .nexus-title {
+        font-size: 2rem;
+    }
+
+    .service-title {
+        font-size: 1.8rem;
+    }
+}
+/* Holographic Testimonial Styles */
+.nexus-testimonials {
     position: relative;
+    background: linear-gradient(135deg, #0a192f 0%, #172a45 100%);
+    padding: 6rem 0;
     overflow: hidden;
 }
 
-    .haven-blog-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 300px;
-        height: 300px;
-        background: radial-gradient(circle, rgba(0, 208, 130, 0.1) 0%, rgba(0, 208, 130, 0) 70%);
-        z-index: 0;
-    }
-
-.haven-blog-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
+.nexus-testimonial-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/15.webp') center/cover no-repeat;
+    opacity: 0.15;
     z-index: 1;
 }
 
-.haven-blog-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.haven-blog-subtitle {
-    display: inline-block;
-    color: #009563;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+.nexus-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
     position: relative;
-    padding-left: 50px;
+    z-index: 2;
 }
 
-    .haven-blog-subtitle::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 40px;
-        height: 2px;
-        background-color: #009563;
-        transform: translateY(-50%);
-    }
-
-.haven-blog-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: #003c70;
-    margin-bottom: 15px;
-    line-height: 1.3;
-}
-
-    .haven-blog-title .highlight {
-        color: #009563;
-    }
-
-.haven-blog-description {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-
-.haven-blog-grid {
+.nexus-testimonial-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
 }
 
-.haven-blog-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
+/* Call Panel Styles */
+.nexus-call-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 3rem;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    align-self: center;
+}
+
+.nexus-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.stars {
+    color: gold;
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+}
+
+.rating-text {
+    color: #ccd6f6;
+    font-size: 0.9rem;
+}
+
+.nexus-call-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #ffffff 0%, #ccd6f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nexus-accent {
+    color: #64ffda;
+    position: relative;
+}
+
+.nexus-cta-box {
+    background: rgba(10, 25, 47, 0.7);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 3px solid #64ffda;
+}
+
+.nexus-phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.phone-icon {
+    width: 24px;
+    height: 24px;
+    fill: #64ffda;
+    margin-right: 1rem;
+}
+
+.nexus-phone-label {
+    color: #ccd6f6;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.nexus-phone-number {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+    .nexus-phone-number:hover {
+        color: #64ffda;
+    }
+
+.nexus-call-note {
+    display: flex;
+    align-items: center;
+    color: #8892b0;
+    font-size: 0.85rem;
+}
+
+.check-icon {
+    width: 16px;
+    height: 16px;
+    fill: #64ffda;
+    margin-right: 0.5rem;
+}
+
+/* Testimonial Panel Styles */
+.nexus-testimonial-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 3rem;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.nexus-panel-header {
+    margin-bottom: 2.5rem;
+}
+
+.nexus-panel-subtitle {
+    display: inline-block;
+    color: #64ffda;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.nexus-panel-header h4 {
+    font-size: 1.75rem;
+    color: white;
+    margin: 0;
+}
+
+.nexus-testimonial-scroll {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+    /* Custom Scrollbar */
+    .nexus-testimonial-scroll::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .nexus-testimonial-scroll::-webkit-scrollbar-track {
+        background: rgba(100, 255, 218, 0.1);
+    }
+
+    .nexus-testimonial-scroll::-webkit-scrollbar-thumb {
+        background: #64ffda;
+        border-radius: 2px;
+    }
+
+.nexus-testimonial {
+    background: rgba(10, 25, 47, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid #64ffda;
+}
+
+.nexus-testimonial-quote {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.quote-icon {
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    fill: rgba(100, 255, 218, 0.1);
+    z-index: 0;
+}
+
+.nexus-testimonial-quote p {
+    position: relative;
+    color: #ccd6f6;
+    line-height: 1.8;
+    z-index: 1;
+    margin: 0;
+}
+
+.nexus-testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.nexus-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 2px solid #64ffda;
+}
+
+.nexus-author-info {
     display: flex;
     flex-direction: column;
 }
 
-    .haven-blog-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+.nexus-author-rating {
+    color: gold;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.nexus-author-name {
+    color: white;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .nexus-testimonial-grid {
+        grid-template-columns: 1fr;
     }
 
-.haven-blog-image-container {
+    .nexus-call-panel {
+        text-align: center;
+    }
+
+    .nexus-phone {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nexus-testimonials {
+        padding: 4rem 0;
+    }
+
+    .nexus-call-title {
+        font-size: 1.75rem;
+    }
+
+    .nexus-phone-number {
+        font-size: 1.25rem;
+    }
+}
+
+/* Futuristic Destination Explorer */
+.nexus-destinations {
+    position: relative;
+    padding: 8rem 0;
+    background: linear-gradient(135deg, #0a192f 0%, #172a45 100%);
+    overflow: hidden;
+}
+
+.nexus-particle-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 30%, rgba(100, 255, 218, 0.1) 0%, transparent 25%), radial-gradient(circle at 80% 70%, rgba(100, 255, 218, 0.1) 0%, transparent 25%);
+    z-index: 1;
+}
+
+.nexus-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.nexus-section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.nexus-section-badge {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #64ffda;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+    .nexus-section-badge::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 2px;
+        background: #64ffda;
+    }
+
+.nexus-section-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    background: linear-gradient(90deg, #ffffff 50%, #64ffda 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nexus-accent {
+    position: relative;
+}
+
+    .nexus-accent::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 100%;
+        height: 10px;
+        background: rgba(100, 255, 218, 0.3);
+        z-index: -1;
+        transform: skewX(-15deg);
+    }
+
+.nexus-section-desc {
+    font-size: 1.25rem;
+    color: #ccd6f6;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Destination Grid */
+.nexus-destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Holographic Destination Card */
+.nexus-destination-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+    .nexus-destination-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        border-color: rgba(100, 255, 218, 0.3);
+    }
+
+.nexus-card-visual {
     position: relative;
     height: 250px;
     overflow: hidden;
 }
 
-.haven-blog-image {
+.nexus-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease;
 }
 
-.haven-blog-card:hover .haven-blog-image {
-    transform: scale(1.05);
+.nexus-destination-card:hover .nexus-image {
+    transform: scale(1.1);
 }
 
-.haven-blog-overlay {
+.nexus-hologram-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(10, 25, 47, 0.8) 0%, rgba(23, 42, 69, 0.4) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.nexus-destination-card:hover .nexus-hologram-effect {
+    opacity: 1;
+}
+
+.nexus-card-badge {
     position: absolute;
     top: 20px;
-    left: 20px;
     right: 20px;
     display: flex;
-    justify-content: space-between;
+    gap: 0.5rem;
 }
 
-.haven-blog-category {
-    background-color: #009563;
+.nexus-price, .nexus-duration {
+    background: rgba(10, 25, 47, 0.8);
     color: white;
-    font-size: 12px;
+    font-size: 0.9rem;
     font-weight: 600;
-    padding: 5px 15px;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
-    text-transform: uppercase;
+    backdrop-filter: blur(5px);
 }
 
-.haven-blog-date {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    font-size: 12px;
-    padding: 5px 15px;
-    border-radius: 20px;
+.nexus-price {
+    background: rgba(100, 255, 218, 0.2);
+    color: #64ffda;
 }
 
-.haven-blog-content {
-    padding: 25px;
-    flex: 1;
+.nexus-location-pin {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    background: rgba(10, 25, 47, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.9rem;
+    backdrop-filter: blur(5px);
 }
 
-.haven-blog-post-title {
-    font-size: 22px;
+    .nexus-location-pin svg {
+        width: 16px;
+        height: 16px;
+        fill: #64ffda;
+        margin-right: 0.5rem;
+    }
+
+.nexus-card-content {
+    padding: 1.5rem;
+}
+
+.nexus-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.nexus-stars {
+    color: gold;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-right: 0.5rem;
+}
+
+.nexus-review-count {
+    color: #8892b0;
+    font-size: 0.85rem;
+}
+
+.nexus-card-title {
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #003c70;
-    margin-bottom: 15px;
-    line-height: 1.4;
+    color: white;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
 }
 
-.haven-blog-excerpt {
-    font-size: 15px;
-    color: #666;
+.nexus-card-desc {
+    font-size: 0.95rem;
+    color: #ccd6f6;
     line-height: 1.6;
-    margin-bottom: 20px;
-    flex-grow: 1;
+    margin-bottom: 1.5rem;
 }
 
-.haven-blog-meta {
+.nexus-card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto;
 }
 
-.haven-blog-author {
+.nexus-explore-btn {
     display: flex;
     align-items: center;
-}
-
-.haven-author-avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    margin-right: 10px;
-    object-fit: cover;
-}
-
-.haven-blog-author span {
-    font-size: 13px;
-    color: #666;
-}
-
-.haven-read-more {
-    display: inline-flex;
-    align-items: center;
-    color: #009563;
+    gap: 0.5rem;
+    color: #64ffda;
     font-weight: 600;
-    font-size: 14px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-    .haven-read-more i {
-        margin-left: 5px;
-        transition: transform 0.3s ease;
+    .nexus-explore-btn svg {
+        width: 18px;
+        height: 18px;
+        stroke: #64ffda;
+        transition: all 0.3s ease;
     }
 
-    .haven-read-more:hover {
-        color: #007a4d;
+    .nexus-explore-btn:hover {
+        color: white;
     }
 
-        .haven-read-more:hover i {
-            transform: translateX(3px);
+        .nexus-explore-btn:hover svg {
+            stroke: white;
+            transform: translateX(5px);
         }
 
-.haven-blog-footer {
-    text-align: center;
-    margin-top: 30px;
+.nexus-wishlist-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
 }
 
-.haven-view-all-articles {
+    .nexus-wishlist-btn svg {
+        width: 20px;
+        height: 20px;
+        fill: transparent;
+        stroke: #ccd6f6;
+        stroke-width: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .nexus-wishlist-btn:hover svg {
+        stroke: #64ffda;
+        transform: scale(1.1);
+    }
+
+    .nexus-wishlist-btn.active svg {
+        fill: #ff4081;
+        stroke: #ff4081;
+    }
+
+/* Hover Content */
+.nexus-card-hover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(10, 25, 47, 0.9);
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    z-index: 3;
+}
+
+.nexus-destination-card:hover .nexus-card-hover {
+    transform: translateY(0);
+}
+
+.nexus-popular-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+    .nexus-popular-tags span {
+        background: rgba(100, 255, 218, 0.1);
+        color: #64ffda;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.75rem;
+        border-radius: 20px;
+    }
+
+.nexus-weather-info {
+    display: flex;
+    justify-content: space-between;
+    color: #ccd6f6;
+    font-size: 0.85rem;
+}
+
+/* View All Button */
+.nexus-view-all {
+    text-align: center;
+}
+
+.nexus-view-all-btn {
     display: inline-flex;
     align-items: center;
-    padding: 12px 30px;
+    gap: 0.75rem;
+    padding: 1rem 2.5rem;
     background: linear-gradient(135deg, #009563 0%, #007a4d 100%);
     color: white;
     font-weight: 600;
-    border-radius: 30px;
+    border-radius: 50px;
     text-decoration: none;
     box-shadow: 0 5px 15px rgba(0, 149, 99, 0.3);
     transition: all 0.3s ease;
 }
 
-    .haven-view-all-articles i {
-        margin-left: 8px;
-        transition: transform 0.3s ease;
+    .nexus-view-all-btn svg {
+        width: 18px;
+        height: 18px;
+        stroke: white;
+        transition: all 0.3s ease;
     }
 
-    .haven-view-all-articles:hover {
+    .nexus-view-all-btn:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0, 149, 99, 0.4);
+        box-shadow: 0 8px 25px rgba(0, 149, 99, 0.4);
     }
 
-        .haven-view-all-articles:hover i {
+        .nexus-view-all-btn:hover svg {
             transform: translateX(5px);
         }
 
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .nexus-section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nexus-destinations {
+        padding: 5rem 0;
+    }
+
+    .nexus-section-title {
+        font-size: 2rem;
+    }
+
+    .nexus-section-desc {
+        font-size: 1rem;
+    }
+
+    .nexus-destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nexus-card-visual {
+        height: 200px;
+    }
+}
+
+/* Modern Travel Stories Section Styles */
+.travel-stories-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.section-subtitle {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #009563;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+    .section-subtitle::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -8px;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 2px;
+        background-color: #009563;
+    }
+
+.section-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #003c70;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+    .section-title span {
+        color: #009563;
+        position: relative;
+    }
+
+        .section-title span::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            width: 100%;
+            height: 8px;
+            background-color: rgba(0, 149, 99, 0.2);
+            z-index: -1;
+        }
+
+.section-description {
+    font-size: 18px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Story Item Styles */
+.story-item {
+    display: flex;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.story-left {
+    flex-direction: row;
+}
+
+.story-right {
+    flex-direction: row-reverse;
+}
+
+.story-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+}
+
+    .story-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.8s ease;
+    }
+
+.story-item:hover .story-image img {
+    transform: scale(1.05);
+}
+
+.story-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #009563;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+.story-content {
+    flex: 1;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.story-left .story-content {
+    padding-left: 60px;
+}
+
+.story-right .story-content {
+    padding-right: 60px;
+}
+
+.story-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+.story-date {
+    margin-right: 20px;
+    position: relative;
+}
+
+    .story-date::after {
+        content: '•';
+        position: absolute;
+        right: -12px;
+    }
+
+.story-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #003c70;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.story-excerpt {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.story-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #009563;
+}
+
+.author-name {
+    display: block;
+    font-weight: 600;
+    color: #003c70;
+    margin-bottom: 2px;
+}
+
+.author-title {
+    display: block;
+    font-size: 13px;
+    color: #777;
+}
+
+.story-link {
+    display: inline-block;
+    font-weight: 600;
+    color: #009563;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+    .story-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 1px;
+        background-color: #009563;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+    }
+
+    .story-link:hover {
+        color: #007a4d;
+    }
+
+        .story-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+.section-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.view-all-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #009563;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 149, 99, 0.3);
+}
+
+    .view-all-button:hover {
+        background-color: #007a4d;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0, 149, 99, 0.4);
+    }
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .story-item {
+        flex-direction: column;
+    }
+
+    .story-left .story-content,
+    .story-right .story-content {
+        padding: 30px 20px;
+    }
+
+    .story-image {
+        min-height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .travel-stories-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .story-title {
+        font-size: 26px;
+    }
+}
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .haven-blog-grid {
