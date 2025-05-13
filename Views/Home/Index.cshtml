@@ -9,132 +9,123 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <!-- Video Section -->
-    <section class="haven-video-section">
-        <div class="haven-video-overlay"></div>
-        <iframe class="haven-video-iframe" src="https://www.youtube.com/embed/SIR1Gul1DD4?list=PLOhV0FrFphUcZnVciz7KtPaaXGAa5wTyP"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="haven-video-content">
-            <h2>Discover Your Next Adventure</h2>
+    <!-- Video Hero Section -->
+    <section class="video-hero">
+        <!-- Video Background -->
+        <video class="video-hero-background" autoplay muted loop playsinline>
+            <source src="~/assets/video/homepagevideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Gradient Overlay -->
+        <div class="video-hero-overlay"></div>
+
+        <!-- Content -->
+        <div class="video-hero-content">
+            <h2 class="video-hero-title">Discover Your Next Adventure</h2>
+            <p class="video-hero-subtitle">Unleash your wanderlust with unforgettable experiences</p>
+            <div class="video-hero-cta">
+                <a href="#" class="nexus-stories-cta">Explore Now</a>
+                <a href="#" class="cta-button-outline">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span></span>
         </div>
     </section>
 
-    <!-- Modern About Us Section -->
-    <section class="haven-about-section">
-        <div class="haven-about-container">
-            <!-- Section Header with Decorative Elements -->
-            <div class="haven-section-header">
-                <div class="haven-section-subtitle">
-                    <span>About Our Journey</span>
-                </div>
-                <h2 class="haven-section-title">
-                    <span class="haven-title-accent">Discover</span> the Haven Experience
-                </h2>
-                <div class="haven-section-intro">
-                    Where luxury meets adventure in perfect harmony
-                </div>
+    <!-- Holographic About Section -->
+    <section class="nexus-about">
+        <div class="nexus-particle-overlay"></div>
+        <div class="nexus-container">
+            <div class="nexus-section-header">
+                <span class="nexus-section-badge">QUANTUM TRAVEL NETWORK</span>
+                <h2 class="nexus-section-title">Redefining Luxury Exploration</h2>
+                <p class="nexus-section-desc">Where dimensional travel meets unparalleled hospitality</p>
             </div>
 
-            <div class="haven-about-flex">
-                <!-- Enhanced Image Gallery -->
-                <div class="haven-about-gallery-unique">
-                    <!-- Main Image with Floating Card -->
-                    <div class="haven-gallery-main-unique">
-                        <div class="haven-image-frame-unique">
-                            <img src="/assets/images/travel_img1.jpg" alt="Luxury Resort" loading="lazy">
-                            <div class="haven-image-overlay-unique">
-                                <div class="haven-floating-card-unique">
-                                    <h3>Your Dream Vacation Awaits</h3>
-                                    <p>Explore our exclusive membership benefits</p>
-                                    <a href="#" class="haven-floating-btn-unique">
-                                        Explore More
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+            <div class="nexus-about-grid">
+                <!-- Holographic Image Display -->
+                <div class="nexus-holo-display">
+                    <div class="nexus-main-hologram">
+                        <div class="nexus-holo-image" style="background-image: url('/assets/images/travel_img1.jpg')"></div>
+                        <div class="nexus-holo-effect"></div>
+                        <div class="nexus-holo-badge">Member Exclusive</div>
                     </div>
 
-                    <!-- Secondary Images with Hover Effects -->
-                    <div class="haven-gallery-secondary-unique">
-                        <div class="haven-image-frame-unique haven-image-frame-small-unique">
-                            <img src="/assets/images/travel_img2.jpg" alt="Beach Resort" loading="lazy">
-                            <div class="haven-image-label-unique">
-                                <span>Tropical Getaways</span>
-                            </div>
+                    <div class="nexus-holo-thumbnails">
+                        <div class="nexus-holo-thumb" style="background-image: url('/assets/images/travel_img2.jpg')">
+                            <div class="nexus-thumb-overlay">Tropical Gateways</div>
                         </div>
-                        <div class="haven-image-frame-unique haven-image-frame-small-unique">
-                            <img src="/assets/images/travel_img3.jpg" alt="Mountain Resort" loading="lazy">
-                            <div class="haven-image-label-unique">
-                                <span>Adventure Retreats</span>
-                            </div>
+                        <div class="nexus-holo-thumb" style="background-image: url('/assets/images/travel_img3.jpg')">
+                            <div class="nexus-thumb-overlay">Mountain Retreats</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Enhanced Content Section -->
-                <div class="haven-about-content">
-                    <div class="haven-content-highlight">
-                        <p>Since our founding in 2022, Haven Club & Resorts has redefined luxury travel through innovative membership experiences tailored to discerning globetrotters.</p>
+                <!-- Quantum Travel Content -->
+                <div class="nexus-quantum-content">
+                    <div class="nexus-mission-statement">
+                        <p>Since our quantum inception in 2022, Haven Club & Resorts has transcended traditional travel through multi-dimensional experiences crafted for visionary explorers.</p>
                     </div>
 
-                    <div class="haven-feature-list">
-                        <!-- Feature 1 with Animated Icon -->
-                        <div class="haven-feature-item">
-                            <div class="haven-feature-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2z"></path>
+                    <div class="nexus-quantum-features">
+                        <!-- Feature 1 -->
+                        <div class="nexus-qfeature">
+                            <div class="nexus-qfeature-orb">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2z" />
                                 </svg>
                             </div>
-                            <div class="haven-feature-text">
-                                <h4>Premium Destinations</h4>
-                                <p>Access our curated collection of 5-star resorts and boutique properties worldwide, with exclusive member rates.</p>
+                            <div class="nexus-qfeature-content">
+                                <h3>Dimensional Destinations</h3>
+                                <p>Access our curated collection of 5-star quantum resorts across multiple realities with exclusive member rates.</p>
                             </div>
                         </div>
 
-                        <!-- Feature 2 with Animated Icon -->
-                        <div class="haven-feature-item">
-                            <div class="haven-feature-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <path d="M12 8v4l3 3"></path>
+                        <!-- Feature 2 -->
+                        <div class="nexus-qfeature">
+                            <div class="nexus-qfeature-orb">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 8v4l3 3" />
                                 </svg>
                             </div>
-                            <div class="haven-feature-text">
-                                <h4>Tailored Experiences</h4>
-                                <p>Our travel designers craft personalized itineraries that transform ordinary trips into extraordinary memories.</p>
+                            <div class="nexus-qfeature-content">
+                                <h3>Temporal Itineraries</h3>
+                                <p>Our quantum travel designers craft personalized journeys that bend space-time to create unforgettable experiences.</p>
                             </div>
                         </div>
 
-                        <!-- Feature 3 with Animated Icon -->
-                        <div class="haven-feature-item">
-                            <div class="haven-feature-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        <!-- Feature 3 -->
+                        <div class="nexus-qfeature">
+                            <div class="nexus-qfeature-orb">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                                 </svg>
                             </div>
-                            <div class="haven-feature-text">
-                                <h4>VIP Treatment</h4>
-                                <p>Enjoy priority access, room upgrades, and special amenities at our global network of partner properties.</p>
+                            <div class="nexus-qfeature-content">
+                                <h3>VIP Quantum Treatment</h3>
+                                <p>Enjoy priority access across dimensions, reality upgrades, and special amenities at our inter-dimensional network.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Call to Action -->
-                    <div class="haven-cta-wrapper">
-                        <a href="#" class="haven-primary-btn">
-                            Join Our Club Today
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    <div class="nexus-join-cta">
+                        <a href="#" class="nexus-join-button">
+                            <span>Initiate Membership</span>
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
                         </a>
-                        <div class="haven-cta-note">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        <div class="nexus-cta-note">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                                <path d="M22 4L12 14.01l-3-3" />
                             </svg>
-                            <span>No commitment - Cancel anytime</span>
+                            <span>No temporal commitment - Cancel across all dimensions</span>
                         </div>
                     </div>
                 </div>
@@ -142,235 +133,220 @@
         </div>
     </section>
 
-    <!-- REMEMBER US Section -->
-    <section class="haven-remember-section">
-        <div class="haven-remember-overlay"></div>
-        <div class="haven-remember-container">
-            <div class="haven-remember-heading">
-                <h2>GO TRAVEL. DISCOVER.</h2>
-                <h2>REMEMBER US!!</h2>
+    <!-- REMEMBER US Section - Enhanced Design -->
+    <section class="haven-memorable-section">
+        <div class="haven-memorable-bg"></div>
+        <div class="haven-memorable-content">
+            <div class="haven-memorable-heading">
+                <span class="haven-memorable-subtitle">WHY CHOOSE US</span>
+                <h2 class="haven-memorable-title">Go Travel. Discover. <span>Remember Us</span></h2>
+                <p class="haven-memorable-description">Creating unforgettable travel experiences since 2015</p>
             </div>
 
-            <div class="haven-feature-blocks">
-                <div class="haven-feature-block">
-                    <div class="haven-feature-item">
-                        <i class="bi bi-clock haven-feature-icon"></i>
-                        <span class="haven-feature-separator">|</span>
-                        <div class="haven-feature-content">
-                            <h4>6+</h4>
-                            <small>Years Of Experience</small>
-                        </div>
+            <div class="haven-memorable-stats">
+                <div class="haven-stat-item">
+                    <div class="haven-stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
                     </div>
+                    <div class="haven-stat-value">6+</div>
+                    <div class="haven-stat-label">Years of Excellence</div>
                 </div>
 
-                <div class="haven-feature-block">
-                    <div class="haven-feature-item">
-                        <i class="bi bi-star haven-feature-icon"></i>
-                        <span class="haven-feature-separator">|</span>
-                        <div class="haven-feature-content">
-                            <h4>100%</h4>
-                            <small>Satisfied Clients</small>
-                        </div>
+                <div class="haven-stat-item">
+                    <div class="haven-stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
                     </div>
+                    <div class="haven-stat-value">100%</div>
+                    <div class="haven-stat-label">Client Satisfaction</div>
                 </div>
 
-                <div class="haven-feature-block">
-                    <div class="haven-feature-item">
-                        <i class="bi bi-people haven-feature-icon"></i>
-                        <span class="haven-feature-separator">|</span>
-                        <div class="haven-feature-content">
-                            <h4>8600+</h4>
-                            <small>Members</small>
-                        </div>
+                <div class="haven-stat-item">
+                    <div class="haven-stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
                     </div>
+                    <div class="haven-stat-value">8,600+</div>
+                    <div class="haven-stat-label">Happy Travelers</div>
                 </div>
 
-                <div class="haven-feature-block">
-                    <div class="haven-feature-item">
-                        <i class="bi bi-building haven-feature-icon"></i>
-                        <span class="haven-feature-separator">|</span>
-                        <div class="haven-feature-content">
-                            <h4>200+</h4>
-                            <small>Resorts</small>
-                        </div>
+                <div class="haven-stat-item">
+                    <div class="haven-stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
                     </div>
+                    <div class="haven-stat-value">200+</div>
+                    <div class="haven-stat-label">Premium Resorts</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Enhanced Image Gallery Section -->
-    <section class="haven-gallery-section">
-        <div class="haven-container">
-            <div class="haven-gallery-header">
-                <div class="haven-section-subtitle">Where do you want to unlock yourself?</div>
-                <h2 class="haven-section-title">Discover <span>Popular Destinations</span></h2>
-                <div class="haven-section-description">Explore our curated collection of breathtaking destinations around the world</div>
+    <!-- Holographic Destination Portal -->
+    <section class="nexus-destinations">
+        <div class="nexus-particle-overlay"></div>
+        <div class="nexus-container">
+            <div class="nexus-portal-header">
+                <span class="nexus-portal-badge">QUANTUM TRAVEL NETWORK</span>
+                <h2 class="nexus-portal-title">Explore Dimensional Gateways</h2>
+                <p class="nexus-portal-desc">Access our curated collection of interdimensional travel experiences</p>
             </div>
 
-            <div class="haven-gallery-grid">
-                <!-- Gallery Item 1 -->
-                <div class="haven-gallery-item">
-                    <div class="haven-gallery-card">
-                        <div class="haven-image-container">
-                            <img src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Destination 1">
-                            <div class="haven-gallery-image-overlay"></div>
+            <div class="nexus-portal-grid">
+                <!-- Destination 1 - Holographic Portal -->
+                <div class="nexus-portal-item" data-destination="bali">
+                    <div class="nexus-portal-gate">
+                        <div class="nexus-portal-image" style="background-image: url('https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+                        <div class="nexus-portal-effect"></div>
+                        <div class="nexus-portal-marker">BALI</div>
+                    </div>
+                    <div class="nexus-portal-info">
+                        <div class="nexus-portal-stats">
+                            <span class="nexus-stat">From $1,299</span>
+                            <span class="nexus-stat">7 Days</span>
                         </div>
-                        <div class="haven-card-content">
-                            <h3>Bali, Indonesia</h3>
-                            <div class="haven-card-meta">
-                                <span class="haven-price">From $1,299</span>
-                                <span class="haven-duration">7 Days</span>
-                            </div>
-                            <div class="haven-card-hover">
-                                <p>Experience the island of gods with pristine beaches and lush jungles</p>
-                                <a href="#" class="haven-explore-btn">
-                                    Explore
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
+                        <div class="nexus-portal-cta">
+                            <span class="nexus-cta-text">Island of Gods</span>
+                            <a href="#" class="nexus-cta-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Gallery Item 2 -->
-                <div class="haven-gallery-item">
-                    <div class="haven-gallery-card">
-                        <div class="haven-image-container">
-                            <img src="https://images.unsplash.com/photo-1551978429-3dbfed5cacc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Destination 2">
-                            <div class="haven-image-overlay"></div>
+                <!-- Destination 2 - Holographic Portal -->
+                <div class="nexus-portal-item" data-destination="santorini">
+                    <div class="nexus-portal-gate">
+                        <div class="nexus-portal-image" style="background-image: url('https://images.unsplash.com/photo-1551978429-3dbfed5cacc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+                        <div class="nexus-portal-effect"></div>
+                        <div class="nexus-portal-marker">SANTORINI</div>
+                    </div>
+                    <div class="nexus-portal-info">
+                        <div class="nexus-portal-stats">
+                            <span class="nexus-stat">From $2,499</span>
+                            <span class="nexus-stat">5 Days</span>
                         </div>
-                        <div class="haven-card-content">
-                            <h3>Santorini, Greece</h3>
-                            <div class="haven-card-meta">
-                                <span class="haven-price">From $2,499</span>
-                                <span class="haven-duration">5 Days</span>
-                            </div>
-                            <div class="haven-card-hover">
-                                <p>Whitewashed buildings and stunning sunsets over the Aegean Sea</p>
-                                <a href="#" class="haven-explore-btn">
-                                    Explore
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
+                        <div class="nexus-portal-cta">
+                            <span class="nexus-cta-text">Aegean Paradise</span>
+                            <a href="#" class="nexus-cta-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Gallery Item 3 -->
-                <div class="haven-gallery-item">
-                    <div class="haven-gallery-card">
-                        <div class="haven-image-container">
-                            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Destination 3">
-                            <div class="haven-image-overlay"></div>
+                <!-- Destination 3 - Holographic Portal -->
+                <div class="nexus-portal-item" data-destination="kyoto">
+                    <div class="nexus-portal-gate">
+                        <div class="nexus-portal-image" style="background-image: url('https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+                        <div class="nexus-portal-effect"></div>
+                        <div class="nexus-portal-marker">KYOTO</div>
+                    </div>
+                    <div class="nexus-portal-info">
+                        <div class="nexus-portal-stats">
+                            <span class="nexus-stat">From $3,199</span>
+                            <span class="nexus-stat">10 Days</span>
                         </div>
-                        <div class="haven-card-content">
-                            <h3>Kyoto, Japan</h3>
-                            <div class="haven-card-meta">
-                                <span class="haven-price">From $3,199</span>
-                                <span class="haven-duration">10 Days</span>
-                            </div>
-                            <div class="haven-card-hover">
-                                <p>Ancient temples, traditional tea houses, and cherry blossoms</p>
-                                <a href="#" class="haven-explore-btn">
-                                    Explore
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
+                        <div class="nexus-portal-cta">
+                            <span class="nexus-cta-text">Ancient Traditions</span>
+                            <a href="#" class="nexus-cta-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Gallery Item 4 -->
-                <div class="haven-gallery-item">
-                    <div class="haven-gallery-card">
-                        <div class="haven-image-container">
-                            <img src="https://images.unsplash.com/photo-1523437237164-d442d57cc3c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Destination 4">
-                            <div class="haven-image-overlay"></div>
+                <!-- Destination 4 - Holographic Portal -->
+                <div class="nexus-portal-item" data-destination="paris">
+                    <div class="nexus-portal-gate">
+                        <div class="nexus-portal-image" style="background-image: url('https://images.unsplash.com/photo-1523437237164-d442d57cc3c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+                        <div class="nexus-portal-effect"></div>
+                        <div class="nexus-portal-marker">PARIS</div>
+                    </div>
+                    <div class="nexus-portal-info">
+                        <div class="nexus-portal-stats">
+                            <span class="nexus-stat">From $1,899</span>
+                            <span class="nexus-stat">6 Days</span>
                         </div>
-                        <div class="haven-card-content">
-                            <h3>Paris, France</h3>
-                            <div class="haven-card-meta">
-                                <span class="haven-price">From $1,899</span>
-                                <span class="haven-duration">6 Days</span>
-                            </div>
-                            <div class="haven-card-hover">
-                                <p>The city of love with iconic landmarks and world-class cuisine</p>
-                                <a href="#" class="haven-explore-btn">
-                                    Explore
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
+                        <div class="nexus-portal-cta">
+                            <span class="nexus-cta-text">City of Light</span>
+                            <a href="#" class="nexus-cta-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Gallery Item 5 -->
-                <div class="haven-gallery-item">
-                    <div class="haven-gallery-card">
-                        <div class="haven-image-container">
-                            <img src="https://images.unsplash.com/photo-1494625927555-6ec4433b1571?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Destination 5">
-                            <div class="haven-image-overlay"></div>
+                <!-- Destination 5 - Holographic Portal -->
+                <div class="nexus-portal-item" data-destination="new-york">
+                    <div class="nexus-portal-gate">
+                        <div class="nexus-portal-image" style="background-image: url('https://images.unsplash.com/photo-1494625927555-6ec4433b1571?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+                        <div class="nexus-portal-effect"></div>
+                        <div class="nexus-portal-marker">NEW YORK</div>
+                    </div>
+                    <div class="nexus-portal-info">
+                        <div class="nexus-portal-stats">
+                            <span class="nexus-stat">From $1,599</span>
+                            <span class="nexus-stat">5 Days</span>
                         </div>
-                        <div class="haven-card-content">
-                            <h3>New York, USA</h3>
-                            <div class="haven-card-meta">
-                                <span class="haven-price">From $1,599</span>
-                                <span class="haven-duration">5 Days</span>
-                            </div>
-                            <div class="haven-card-hover">
-                                <p>The city that never sleeps with endless entertainment options</p>
-                                <a href="#" class="haven-explore-btn">
-                                    Explore
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
+                        <div class="nexus-portal-cta">
+                            <span class="nexus-cta-text">Urban Wonder</span>
+                            <a href="#" class="nexus-cta-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Gallery Item 6 -->
-                <div class="haven-gallery-item">
-                    <div class="haven-gallery-card">
-                        <div class="haven-image-container">
-                            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Destination 6">
-                            <div class="haven-image-overlay"></div>
+                <!-- Destination 6 - Holographic Portal -->
+                <div class="nexus-portal-item" data-destination="swiss-alps">
+                    <div class="nexus-portal-gate">
+                        <div class="nexus-portal-image" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
+                        <div class="nexus-portal-effect"></div>
+                        <div class="nexus-portal-marker">SWISS ALPS</div>
+                    </div>
+                    <div class="nexus-portal-info">
+                        <div class="nexus-portal-stats">
+                            <span class="nexus-stat">From $2,799</span>
+                            <span class="nexus-stat">7 Days</span>
                         </div>
-                        <div class="haven-card-content">
-                            <h3>Swiss Alps</h3>
-                            <div class="haven-card-meta">
-                                <span class="haven-price">From $2,799</span>
-                                <span class="haven-duration">7 Days</span>
-                            </div>
-                            <div class="haven-card-hover">
-                                <p>Majestic mountains, crystal-clear lakes, and charming villages</p>
-                                <a href="#" class="haven-explore-btn">
-                                    Explore
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                    </svg>
-                                </a>
-                            </div>
+                        <div class="nexus-portal-cta">
+                            <span class="nexus-cta-text">Mountain Majesty</span>
+                            <a href="#" class="nexus-cta-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="haven-gallery-cta">
-                <a href="destinations" class="haven-primary-btn">
-                    View All Destinations
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            <div class="nexus-portal-footer">
+                <a href="#" class="nexus-view-all">
+                    <span>Access All Portals</span>
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                 </a>
             </div>
