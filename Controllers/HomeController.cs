@@ -40,7 +40,7 @@ namespace HavenClubAndResort.Controllers
         {
             return View();
         }
-        public IActionResult Privacy()
+        public IActionResult PrivacyAndPolicy()
         {
             return View();
         }
@@ -52,7 +52,7 @@ namespace HavenClubAndResort.Controllers
         {
             return View();
         } 
-        public IActionResult PaymentandPolicy()
+        public IActionResult PayAndPolicy()
         {
             return View();
         }
