@@ -692,17 +692,6 @@ body {
     }
 }
 
-
-/* CSS */
-:root {
-    --primary: #00d082;
-    --dark: #0a192f;
-    --darker: #061121;
-    --light: #ccd6f6;
-    --lighter: #e6f1ff;
-    --accent: #64ffda;
-}
-
 .quantum-hero {
     position: relative;
     height: 100vh;

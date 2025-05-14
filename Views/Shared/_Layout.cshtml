@@ -1,391 +1,378 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<!-- Basic -->
-
+<!-- In _Layout.cshtml -->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Font Awesome 6 Free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="~/assets/css/layout_style.css" rel="stylesheet" />
 
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Site Metas -->
-    <title>Haven Club And Resort Pvt.ltd</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="~/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="~/assets/images/apple-touch-icon.png">
-
-    <!-- Bootstrap CSS -->
-    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Site CSS -->
-    <link rel="stylesheet" href="~/assets/css/style.css">
-     <link href="~/css/site.css" rel="stylesheet" />        
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="~/assets/css/responsive.css">
-    <!-- Custom CSS -->
-    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet" />
-    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="~/assets/css/custom.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-        
-
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-   
-
-    <style>
-
-        .dark-background {
-            --background-color: #0e1d34;
-            --default-color: #ffffff;
-            --heading-color: #ffffff;
-            --surface-color: #19335c;
-            --contrast-color: #ffffff;
-        }
-
-       .call-to-action {
-  padding: 80px 0;
-  position: relative;
-  clip-path: inset(0);
-}
-
-.call-to-action img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.call-to-action:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 20%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-
-.call-to-action .container {
-  position: relative;
-  z-index: 3;
-}
-
-.call-to-action h3 {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--default-color);
-}
-
-.call-to-action p {
-  color: var(--default-color);
-}
-
-.call-to-action .cta-btn {
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 5px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid var(--contrast-color);
-  color: var(--contrast-color);
-}
-
-.call-to-action .cta-btn:hover {            
-  background: blue;
-  border: 2px solid var(--accent-color);
-}
-
-
-
-
-
-        </style>
-</head> 
-
+    <!-- Then page-specific styles -->
+    @RenderSection("Styles", required: false)
+</head>
 <body>
     @Html.Partial("_BodyModalPartialView")
 
-    <!-- Start Main Top -->
-    <div class="main-top">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <di v class="custom-select-box">
-                       
-                    </di>
-                    <div class="right-phone-box">
-                        <p>Call US :- <a href="#">18002122750</a></p>
+    <!-- HTML -->
+<header class="haven-header">
+    <nav class="haven-navbar">
+        <div class="haven-container">
+            <a class="haven-logo" href="/">
+                <img src="~/assets/images/logo.png" alt="Haven Club & Resort">
+            </a>
+            <button class="haven-menu-toggle" type="button" aria-label="Toggle navigation">
+                <span class="haven-hamburger"></span>
+            </button>
+            <div class="haven-nav-menu">
+                <ul class="haven-nav-list">
+                    <li class="haven-nav-item active">
+                        <a class="haven-nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="haven-nav-item">
+                        <a class="haven-nav-link" asp-controller="Home" asp-action="AboutUs">About Us</a>
+                    </li>
+                    <li class="haven-nav-item">
+                        <a class="haven-nav-link" href="#">Destination</a>
+                    </li>
+                    <li class="haven-nav-item">
+                        <a class="haven-nav-link" asp-controller="Home" asp-action="Memberships">Membership Plan</a>
+                    </li>
+                    <li class="haven-nav-item">
+                        <a class="haven-nav-link" asp-controller="Home" asp-action="ContatUs">Contact Us</a>
+                    </li>
+                    <li class="haven-nav-item">
+                        <a class="haven-nav-link" asp-controller="Home" asp-action="TravelBlog">Travel Blog</a>
+                    </li>
+                    <li class="haven-nav-item">
+                        <a class="haven-nav-link" asp-controller="Home" asp-action="MemberLogin">Member Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <!-- Main Content -->
+    <main>
+        @RenderBody()
+    </main>
+
+    <!-- Call to Action -->
+    <section class="haven-cta-section text-center">
+        <img src="~/assets/images/back.jpg" alt="Call to Action Background" class="haven-cta-bg">
+        <div class="container">
+            <div class="row justify-content-center" data-aos="zoom-in">
+                <div class="col-lg-8">
+                    <h3 class="haven-cta-title">Give Us a Ring: We're Ready to Help!</h3>
+                    <p class="haven-cta-text mb-4">The world is a book, and those who do not travel read only one page.</p>
+                    <a href="tel:18002122750" class="haven-cta-btn">
+                        <i class="fas fa-phone-alt mr-2"></i> 18002122750
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="haven-footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                      opacity=".25" fill="var(--haven-primary)"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                      opacity=".5" fill="var(--haven-primary)"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                      fill="var(--haven-primary)"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- About Column -->
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <img src="~/assets/images/logo-white.png" alt="Haven Club & Resort" class="logo-img">
                     </div>
-                    <div class="our-link">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
-                            <li><a href="#"><i class="fas fa-location-arrow"></i> Our location</a></li>
-                            <li><a href="#"><i class="fas fa-headset"></i> Contact Us</a></li>
+                    <p class="footer-description">We offer unforgettable family holidays in India and Asia at budget friendly prices. Create lasting memories year after year with our vacation ownership memberships.</p>
+                    <div class="footer-newsletter">
+                        <h5>Subscribe to Newsletter</h5>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-col footer-links">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="links-grid">
+                        <ul class="links-list">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Destinations</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Membership Plans</a></li>
+                        </ul>
+                        <ul class="links-list">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Travel Blog</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Member Login</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="login-box">
-                        <but    ton type="button" class="btn btn-warning ">Pay Now</but>
-                    </div>
-                    <div class="text-slid-box">
-                        <div id="offer-box" class="carouselTicker">
-                            <ul class="offer-box">
-                                <li>
-                                    <i class="fab fa-opencart"></i> Jobs fill your pocket, but adventures fill your soul
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> To Travel is to Live
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Blessed are the curious for they shall have adventures
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Take only memories, leave only footprints
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Live your life by a compass not a clock
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Not all those who wander are lostion
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Oh the places you’ll go
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Adventure is worthwhile
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Main Top -->
-    <!-- Start Main Top -->
-    <header class="main-header">
-        <!-- Start Navigation -->
-        <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
-            <div class="container">
-                <!-- Header -->
-                <div class="navbar-header">
-                    <button class="navbar-toggler" type="button">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                </div>
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li class="nav-item"><a class="nav-link"  asp-controller="Home" asp-action="AboutUs">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">Destination</a></li>
-                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Memberships">Membership Plan</a></li>
-                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="ContatUs">Contact Us</a></li>
-                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="TravelBlog">Travel Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="MemberLogin">Member Login</a></li>
+
+                <!-- Contact Column -->
+                <div class="footer-col footer-contact">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                Sun West Bank Ashram Road, B 1322, Ashram Road, Sadar Bazar, Ahmedabad, Gujarat 380009
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <a href="tel:+919687199136">+91 96871 99136</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+                            </div>
+                        </li>
                     </ul>
+
+                    <div class="payment-methods">
+                        <h5>We Accept</h5>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                            <i class="fab fa-cc-amex"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
 
-        <!-- End Navigation -->
-    </header>
-    <!-- End Main Top -->
-    <!-- Start Top Search -->
-    <div class="top-search">
-        <div class="container">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                <input type="text" class="form-control" placeholder="Search">
-                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-            </div>
-        </div>
-    </div>
-    <!-- End Top Search -->
-    <!-- Start Slider -->
-
-    <!-- End Slider -->
-    <!-- Start Categories  -->
-   @RenderBody()
-
-    <!-- End Instagram Feed  -->
-    <!-- Start Footer  -->
-    <!-- Start Instagram Feed  -->
-
-
-
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-    @*     <img src="assets/img/cta-bg.jpg" alt=""> *@
-        <img src="~/assets/images/back.jpg"  alt="">
-
-        <div class="container"> 
-            <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">    
-                <div class="col-xl-10">
-                    <div class="text-center">
-                        <h3>Give Us a Ring: We're Ready to Help!</h3>
-                        <p>The world is a book, and those who do not travel read only one page.</p>
-                        <a class="cta-btn" href="tel:18002677022"> <i class="fas fa-phone fa-rotate-90"></i> 18002122750</a>
-                    </div>
+            <!-- Social and Copyright -->
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
                 </div>
-            </div>  
-        </div>
 
-    </section>
-   
-    <footer>
-        <div class="footer-main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-top-box">
-                            <h3>Business Time</h3>
-                            <ul class="list-time">
-                                <li>Monday - Friday: 10.00am to 06.00pm</li>
-                                <li>Saturday: 10.00am to 06.00pm</li>
-                                <li>Sunday: <span>Closed</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-top-box">
-                            <h3>Newsletter</h3>
-                            <form class="newsletter-box">
-                                <div class="form-group">
-                                    <input class="" type="email" name="Email" placeholder="Email Address*" />
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                                <button class="btn hvr-hover" type="submit">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-top-box">
-                            <h3>Social Media</h3>
-                            <p>Join our community of explorers and share your travel stories with us.</p>
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-widget">
-                            <h4>About Haven Club And Resort Private Limited</h4>
-                            <p>We offer unforgettable family holidays in India and Asia at budget friendly prices. With our vacation ownership memberships</p>
-                            <p>you can create lasting memories year after year. We prioritize reliability, trust, and customer satisfaction </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-link">
-                            <h4>Information</h4>
-                            <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Our Sitemap</a></li>
-                                <li><a asp-controller="Home" asp-action="termsCondition">Terms &amp; Conditions</a></li>
-                                <li><a asp-controller="Home" asp-action="PrivacyAndPolicy">Privacy And Policy</a></li>
-                                <li><a asp-controller="Home" asp-action="PayAndPolicy">Payment And Policy</a></li>
-                                <li><a href="#">Delivery Information</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-link-contact">
-                            <h4>Contact Us</h4>
-                            <ul>
-                                <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address:Sun West Bank Ashram Road <br>B 1322, Ashram Road,,<br>P.o, Sadar Bazar, Ahmedabad<br> Gujarat 380009 </p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+91-96871 99136">+9196871 99136</a></p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">xyz@gmail.com</a></p>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="copyright">
+                    <p>&copy; @DateTime.Now.Year Haven Club And Resort Pvt. Ltd. All Rights Reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- End Footer  -->
-    <!-- Start copyright  -->
-    <div class="footer-copyright">
-        <p class="footer-company">
-            All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
-            <a href="https://html.design/">html design</a>
-        </p>
-    </div>
-    <!-- End copyright  -->
 
-    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
-    <!-- ALL JS FILES -->
+    <!-- JavaScript Libraries -->
     <script src="~/assets/js/jquery-3.2.1.min.js"></script>
     <script src="~/assets/js/popper.min.js"></script>
-    <script src="~/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-            
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   
-
-@*     <script src="~/assets/js/bootstrap.min.js"></script>
- *@    <!-- ALL PLUGINS -->
-
-    <script src="~/assets/js/jquery.superslides.min.js"></script>
-    <script src="~/assets/js/bootstrap-select.js"></script>
-    <script src="~/assets/js/inewsticker.js"></script>
-    <script src="~/assets/js/images-loded.min.js"></script>
-    <script src="~/assets/js/isotope.min.js"></script>
-    <script src="~/assets/js/owl.carousel.min.js"></script>
-    <script src="~/assets/js/baguetteBox.min.js"></script>
-    <script src="~/assets/js/form-validator.min.js"></script>
-    <script src="~/assets/js/contact-form-script.js"></script>
-    @* <script src="~/assets/js/bootsnav.js."></script> *@
-    <script src="~/assets/js/custom.js"></script>
-    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-@*     <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script> *@
-
+    <script src="~/assets/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out'
+        });
+        
+        // Show modal once per session
+        $(document).ready(function() {
+            if (!sessionStorage.getItem("modalShown")) {
+                $('#inquiryModal').modal('show');
+                sessionStorage.setItem("modalShown", "true");
+            }
+            
+            // Back to top button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            
+            $('#back-to-top').click(function() {
+                $('html, body').animate({scrollTop: 0}, 800);
+                return false;
+            });
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.haven-menu-toggle');
+        const navMenu = document.querySelector('.haven-nav-menu');
+        
+        // Toggle menu on button click
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            
+            // Toggle body overflow when menu is open
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close menu when clicking outside or on a link
+        document.addEventListener('click', function(event) {
+            const isClickInsideMenu = navMenu.contains(event.target);
+            const isClickOnToggle = menuToggle.contains(event.target);
+            
+            if (!isClickInsideMenu && !isClickOnToggle && navMenu.classList.contains('active')) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close menu when clicking on a link (for mobile)
+        const navLinks = document.querySelectorAll('.haven-nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 991) {
+                    menuToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    });
+
+        // Back to Top Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const backToTopButton = document.getElementById('back-to-top');
+
+            // Show/hide button based on scroll position
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('active');
+                } else {
+                    backToTopButton.classList.remove('active');
+                }
+            });
+
+            // Smooth scroll to top
+            backToTopButton.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+
+                // Add click animation
+                this.classList.add('clicked');
+                setTimeout(() => {
+                    this.classList.remove('clicked');
+                }, 300);
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.haven-menu-toggle');
+            const navMenu = document.querySelector('.haven-nav-menu');
+            const navItems = document.querySelectorAll('.haven-nav-item');
+            const navLinks = document.querySelectorAll('.haven-nav-link');
+
+            // Toggle menu on button click
+            menuToggle.addEventListener('click', function () {
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
+
+                // Toggle body overflow when menu is open
+                if (navMenu.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Set active menu item based on current page
+            function setActiveMenuItem() {
+                const currentPath = window.location.pathname;
+
+                navItems.forEach(item => {
+                    const link = item.querySelector('.haven-nav-link');
+                    const linkPath = link.getAttribute('href');
+
+                    // Remove active class from all items first
+                    item.classList.remove('active');
+
+                    // Check if current path matches link path
+                    if (currentPath === linkPath ||
+                        (currentPath.startsWith(linkPath) && linkPath !== '/')) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+
+            // Set active menu item on page load
+            setActiveMenuItem();
+
+            // Update active state when clicking menu items
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    // Remove active class from all items
+                    navItems.forEach(item => {
+                        item.classList.remove('active');
+                    });
+
+                    // Add active class to clicked item's parent
+                    this.parentElement.classList.add('active');
+
+                    // Close mobile menu if open
+                    if (window.innerWidth <= 991) {
+                        menuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function (event) {
+                const isClickInsideMenu = navMenu.contains(event.target);
+                const isClickOnToggle = menuToggle.contains(event.target);
+
+                if (!isClickInsideMenu && !isClickOnToggle && navMenu.classList.contains('active')) {
+                    menuToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+    </script>
+    
+    @RenderSection("Scripts", required: false)
 </body>
-
 </html>
-<script>
-      AOS.init();   
-    $(document).ready(function () {
-        if (!sessionStorage.getItem("modalShown")) {
-            $('#inquiryModal').modal('show');
-            sessionStorage.setItem("modalShown", "true"); 
-        }
-    });
-
-    $('.navbar-toggler').click(function () {
-        $('#navbar-menu').stop(true, true).slideToggle(300);
-    });
-
-</script>
