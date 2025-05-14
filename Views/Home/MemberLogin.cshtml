@@ -1,95 +1,125 @@
-﻿<!-- Top Banner -->
-<div class="page-title d-flex align-items-center justify-content-center text-center"
-     style="background-image: url('/assets/img/traveLogin.jpg'); height: 300px; background-size: cover; background-position: center;">
-    <h1 class="text-white fw-bold display-4 z-2" style="position: relative; z-index: 2;">Member Login</h1>
-</div>
+﻿<link href="~/assets/css/memberslogin.css" rel="stylesheet" />
+    <!-- Login Hero -->
+    <section class="login-hero">
+        <div class="container">
+            <div class="nexus-section-header">
+                <span class="nexus-section-badge">Exclusive Access</span>
+                <h2 class="nexus-section-title">Member Login Portal</h2>
+                <p class="nexus-section-desc">
+                    Welcome back to your Haven Club experience. Access your membership details,
+                    upcoming reservations, and exclusive member benefits.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<!-- Split Card with Gradient Background Form -->
-<div class="container my-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-10">
-            <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
-                <div class="row g-0">
-
-                    <!-- Left Side Image -->
-                    <div class="col-md-6">
-                        <img src="/assets/images/loginform.jpg" alt="Login Visual" class="img-fluid h-100 w-100" style="object-fit: cover;">
+    <!-- Login Grid -->
+    <div class="container">
+        <div class="login-grid">
+            <!-- Login Benefits -->
+            <div class="login-info">
+                <div class="login-info-container">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-calendar-star"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Reservation Management</h3>
+                            <p>View, modify, or cancel your upcoming stays with our easy-to-use interface.</p>
+                        </div>
                     </div>
-
-                    <!-- Right Side Gradient Form -->
-                    <div class="col-md-6" style="background: linear-gradient(to right, #2c3e50, #8e44ad); color: white;">
-                        <div class="p-4 p-md-5">
-                            <h3 class="text-center mb-4 fw-bold">Welcome Back, Member 👋</h3>
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control bg-transparent text-white border-light rounded-3 shadow-sm" id="memberId" placeholder="Member ID">
-                                            <label for="memberId">Member ID</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control bg-transparent text-white border-light rounded-3 shadow-sm" id="memberName" placeholder="Your Name">
-                                            <label for="memberName">Your Name</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control bg-transparent text-white border-light rounded-3 shadow-sm" id="email" placeholder="Your Email">
-                                            <label for="email">Your Email</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control bg-transparent text-white border-light rounded-3 shadow-sm" id="location" placeholder="Location">
-                                            <label for="location">Location</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="number" class="form-control bg-transparent text-white border-light rounded-3 shadow-sm" id="adults" placeholder="Number Of Adults">
-                                            <label for="adults">Number Of Adults</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="number" class="form-control bg-transparent text-white border-light rounded-3 shadow-sm" id="kids" placeholder="Number Of Kids">
-                                            <label for="kids">Number Of Kids</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="date" class="form-control bg-transparent text-white border-light rounded-3 shadow-sm" id="checkIn" placeholder="Check In Date">
-                                            <label for="checkIn">Check In Date</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="date" class="form-control bg-transparent text-white border-light rounded-3 shadow-sm" id="checkOut" placeholder="Check Out Date">
-                                            <label for="checkOut">Check Out Date</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="text-center mt-4">
-                                    <button type="submit" class="btn btn-primary fw-bold px-4 py-2 rounded-pill shadow-lg" style="transition: all 0.3s ease;">
-                                        Login
-                                    </button>
-                                </div>
-                            </form>
-                        </div> <!-- /.p-5 -->
-                    </div> <!-- /.col-md-6 -->
-                </div> <!-- /.row -->
-            </div> <!-- /.card -->
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Exclusive Offers</h3>
+                            <p>Access members-only deals and special promotions not available to the public.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Personal Concierge</h3>
+                            <p>Request special services, amenities, or experiences for your next stay.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3>Reward Points</h3>
+                            <p>Track and redeem your loyalty points for room upgrades and special perks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enhanced Login Form -->
+            <div class="login-form-container">
+                <h2>Member Sign In</h2>
+                <form class="login-form" action="#" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="memberId" placeholder=" " required>
+                        <label for="memberId" class="form-label">Member ID</label>
+                        <div class="input-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder=" " required>
+                        <label for="password" class="form-label">Password</label>
+                        <div class="password-toggle" id="togglePassword">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="verification" placeholder=" ">
+                        <label for="verification" class="form-label">Verification Code (Optional)</label>
+                        <div class="input-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">Sign In</button>
+                    
+                    <a href="#" class="forgot-link">Forgot your password?</a>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
+    <!-- Footer Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Password toggle functionality
+            const togglePassword = document.querySelector('#togglePassword');
+            const password = document.querySelector('#password');
+            
+            togglePassword.addEventListener('click', function() {
+                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                password.setAttribute('type', type);
+                this.innerHTML = type === 'password' ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
+            });
+            
+            // Add focus effects to form controls
+            const formControls = document.querySelectorAll('.form-control');
+            formControls.forEach(control => {
+                control.addEventListener('focus', function() {
+                    this.parentElement.classList.add('focused');
+                });
+                
+                control.addEventListener('blur', function() {
+                    this.parentElement.classList.remove('focused');
+                });
+            });
+        });
+    </script>
