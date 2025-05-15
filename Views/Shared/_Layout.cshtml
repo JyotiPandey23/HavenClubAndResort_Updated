@@ -19,7 +19,7 @@
     <nav class="haven-navbar">
         <div class="haven-container">
             <a class="haven-logo" href="/">
-                <img src="~/assets/images/logo.png" alt="Haven Club & Resort">
+                    <img src="~/assets/images/transparent.png" alt="Haven Club & Resort">
             </a>
             <button class="haven-menu-toggle" type="button" aria-label="Toggle navigation">
                 <span class="haven-hamburger"></span>
@@ -91,7 +91,7 @@
                 <!-- About Column -->
                 <div class="footer-col footer-about">
                     <div class="footer-logo">
-                        <img src="~/assets/images/logo-white.png" alt="Haven Club & Resort" class="logo-img">
+                        <img src="~/assets/images/transparent.png" alt="Haven Club & Resort" class="logo-img">
                     </div>
                     <p class="footer-description">We offer unforgettable family holidays in India and Asia at budget friendly prices. Create lasting memories year after year with our vacation ownership memberships.</p>
                     <div class="footer-newsletter">
@@ -204,71 +204,137 @@
             duration: 800,
             easing: 'ease-in-out'
         });
-        
+
         // Show modal once per session
-        $(document).ready(function() {
+        $(document).ready(function () {
             if (!sessionStorage.getItem("modalShown")) {
                 $('#inquiryModal').modal('show');
                 sessionStorage.setItem("modalShown", "true");
             }
-            
+
             // Back to top button
-            $(window).scroll(function() {
+            $(window).scroll(function () {
                 if ($(this).scrollTop() > 100) {
                     $('#back-to-top').fadeIn();
                 } else {
                     $('#back-to-top').fadeOut();
                 }
             });
-            
-            $('#back-to-top').click(function() {
-                $('html, body').animate({scrollTop: 0}, 800);
+
+            $('#back-to-top').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
                 return false;
             });
         });
 
+        // Enhanced mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.haven-menu-toggle');
+            const navMenu = document.querySelector('.haven-nav-menu');
+            const dropdowns = document.querySelectorAll('.haven-dropdown, .haven-nested-dropdown');
 
-        document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.querySelector('.haven-menu-toggle');
-        const navMenu = document.querySelector('.haven-nav-menu');
-        
-        // Toggle menu on button click
-        menuToggle.addEventListener('click', function() {
-            this.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            
-            // Toggle body overflow when menu is open
-            if (navMenu.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
-            }
-        });
-        
-        // Close menu when clicking outside or on a link
-        document.addEventListener('click', function(event) {
-            const isClickInsideMenu = navMenu.contains(event.target);
-            const isClickOnToggle = menuToggle.contains(event.target);
-            
-            if (!isClickInsideMenu && !isClickOnToggle && navMenu.classList.contains('active')) {
-                menuToggle.classList.remove('active');
-                navMenu.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-        
-        // Close menu when clicking on a link (for mobile)
-        const navLinks = document.querySelectorAll('.haven-nav-link');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                if (window.innerWidth <= 991) {
+            // Toggle main menu
+            menuToggle.addEventListener('click', function () {
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
+
+                // Toggle body overflow when menu is open
+                if (navMenu.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                    // Close all dropdowns when closing main menu
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove('active');
+                    });
+                }
+            });
+
+            // Handle dropdown toggles on mobile
+            dropdowns.forEach(dropdown => {
+                const link = dropdown.querySelector('a');
+                const arrow = dropdown.querySelector('.dropdown-arrow');
+                const subMenu = dropdown.querySelector('ul');
+
+                link.addEventListener('click', function (e) {
+                    if (window.innerWidth <= 991) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+
+                        // Rotate arrow
+                        if (arrow) {
+                            arrow.style.transform = dropdown.classList.contains('active') ? 'rotate(180deg)' : '';
+                        }
+
+                        // Close other dropdowns at the same level
+                        const siblings = Array.from(dropdown.parentElement.children).filter(child => child !== dropdown);
+                        siblings.forEach(sibling => {
+                            sibling.classList.remove('active');
+                            const siblingArrow = sibling.querySelector('.dropdown-arrow');
+                            if (siblingArrow) {
+                                siblingArrow.style.transform = '';
+                            }
+                        });
+                    }
+                });
+            });
+
+            // Close menu when clicking outside or on a link
+            document.addEventListener('click', function (event) {
+                const isClickInsideMenu = navMenu.contains(event.target);
+                const isClickOnToggle = menuToggle.contains(event.target);
+
+                if (!isClickInsideMenu && !isClickOnToggle && navMenu.classList.contains('active')) {
                     menuToggle.classList.remove('active');
                     navMenu.classList.remove('active');
                     document.body.style.overflow = '';
+
+                    // Close all dropdowns
+                    dropdowns.forEach(dropdown => {
+                        dropdown.classList.remove('active');
+                        const arrow = dropdown.querySelector('.dropdown-arrow');
+                        if (arrow) {
+                            arrow.style.transform = '';
+                        }
+                    });
                 }
             });
+
+            // Close menu when clicking on a link (for mobile)
+            const navLinks = document.querySelectorAll('.haven-nav-link:not(.haven-dropdown > a)');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    if (window.innerWidth <= 991) {
+                        menuToggle.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+
+            // Set active menu item based on current page
+            function setActiveMenuItem() {
+                const currentPath = window.location.pathname;
+                const navItems = document.querySelectorAll('.haven-nav-item');
+
+                navItems.forEach(item => {
+                    const link = item.querySelector('.haven-nav-link');
+                    const linkPath = link.getAttribute('href');
+
+                    // Remove active class from all items first
+                    item.classList.remove('active');
+
+                    // Check if current path matches link path
+                    if (currentPath === linkPath ||
+                        (currentPath.startsWith(linkPath) && linkPath !== '/')) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+
+            // Set active menu item on page load
+            setActiveMenuItem();
         });
-    });
 
         // Back to Top Functionality
         document.addEventListener('DOMContentLoaded', function () {
@@ -296,79 +362,6 @@
                 setTimeout(() => {
                     this.classList.remove('clicked');
                 }, 300);
-            });
-        });
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.querySelector('.haven-menu-toggle');
-            const navMenu = document.querySelector('.haven-nav-menu');
-            const navItems = document.querySelectorAll('.haven-nav-item');
-            const navLinks = document.querySelectorAll('.haven-nav-link');
-
-            // Toggle menu on button click
-            menuToggle.addEventListener('click', function () {
-                this.classList.toggle('active');
-                navMenu.classList.toggle('active');
-
-                // Toggle body overflow when menu is open
-                if (navMenu.classList.contains('active')) {
-                    document.body.style.overflow = 'hidden';
-                } else {
-                    document.body.style.overflow = '';
-                }
-            });
-
-            // Set active menu item based on current page
-            function setActiveMenuItem() {
-                const currentPath = window.location.pathname;
-
-                navItems.forEach(item => {
-                    const link = item.querySelector('.haven-nav-link');
-                    const linkPath = link.getAttribute('href');
-
-                    // Remove active class from all items first
-                    item.classList.remove('active');
-
-                    // Check if current path matches link path
-                    if (currentPath === linkPath ||
-                        (currentPath.startsWith(linkPath) && linkPath !== '/')) {
-                        item.classList.add('active');
-                    }
-                });
-            }
-
-            // Set active menu item on page load
-            setActiveMenuItem();
-
-            // Update active state when clicking menu items
-            navLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    // Remove active class from all items
-                    navItems.forEach(item => {
-                        item.classList.remove('active');
-                    });
-
-                    // Add active class to clicked item's parent
-                    this.parentElement.classList.add('active');
-
-                    // Close mobile menu if open
-                    if (window.innerWidth <= 991) {
-                        menuToggle.classList.remove('active');
-                        navMenu.classList.remove('active');
-                        document.body.style.overflow = '';
-                    }
-                });
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', function (event) {
-                const isClickInsideMenu = navMenu.contains(event.target);
-                const isClickOnToggle = menuToggle.contains(event.target);
-
-                if (!isClickInsideMenu && !isClickOnToggle && navMenu.classList.contains('active')) {
-                    menuToggle.classList.remove('active');
-                    navMenu.classList.remove('active');
-                    document.body.style.overflow = '';
-                }
             });
         });
     </script>

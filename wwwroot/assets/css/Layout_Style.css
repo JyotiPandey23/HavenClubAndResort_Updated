@@ -288,7 +288,7 @@ body {
 
     .footer-logo .logo-img {
         height: 50px;
-        filter: brightness(0) invert(1);
+       /* filter: brightness(0) invert(1);*/
     }
 
 .footer-description {
