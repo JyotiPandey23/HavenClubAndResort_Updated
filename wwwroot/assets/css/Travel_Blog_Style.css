@@ -694,7 +694,7 @@ body {
 
 .quantum-hero {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     min-height: 700px;
     display: flex;
     align-items: center;
