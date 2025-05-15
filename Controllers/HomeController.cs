@@ -56,6 +56,26 @@ namespace HavenClubAndResort.Controllers
         {
             return View();
         }
+        public IActionResult Destination()
+        {
+            return View();
+        }
+        public IActionResult NorthZone()
+        {
+            return View();
+        }
+        public IActionResult SouthZone()
+        {
+            return View();
+        }
+        public IActionResult AsiaZone()
+        {
+            return View();
+        }
+        public IActionResult EuropeZone()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

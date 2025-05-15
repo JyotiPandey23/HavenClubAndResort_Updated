@@ -1,0 +1,475 @@
+﻿
+/* Maintain existing root variables and base styles */
+:root {
+    --haven-primary: #07254f;
+    --haven-secondary: #25508c;
+    --haven-accent: #64ffda;
+    --haven-light: #ffffff;
+    --haven-dark: #0a192f;
+    --haven-text: #8892b0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--haven-light);
+    background-color: var(--haven-dark);
+    overflow-x: hidden;
+    line-height: 1.6;
+    padding-top: 80px;
+}
+
+/* Hero Section */
+.destination-hero {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(rgba(7, 37, 79, 0.7), rgba(7, 37, 79, 0.7));
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+/* Section Header Styles */
+.nexus-section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.nexus-section-badge {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--haven-accent);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+    .nexus-section-badge::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 2px;
+        background: var(--haven-accent);
+    }
+
+.nexus-section-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    background: linear-gradient(90deg, var(--haven-light) 50%, var(--haven-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nexus-section-desc {
+    font-size: 1.25rem;
+    color: var(--haven-text);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Holographic Card Styles */
+.holographic-card {
+    background: rgba(10, 25, 47, 0.7);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    transition: all 0.3s ease;
+}
+
+    .holographic-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient( to bottom right, transparent 0%, rgba(100, 255, 218, 0.1) 50%, transparent 100% );
+        transform: rotate(30deg);
+        animation: holographicEffect 6s linear infinite;
+        z-index: -1;
+    }
+
+@keyframes holographicEffect {
+    0% {
+        transform: rotate(30deg) translate(-10%, -10%);
+    }
+
+    50% {
+        transform: rotate(30deg) translate(10%, 10%);
+    }
+
+    100% {
+        transform: rotate(30deg) translate(-10%, -10%);
+    }
+}
+
+/* Overview Section */
+.overview-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.overview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.overview-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+    .overview-image img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;
+    }
+
+    .overview-image:hover img {
+        transform: scale(1.05);
+    }
+
+/* Resorts Section */
+.resorts-section {
+    padding: 100px 0;
+    background: rgba(7, 37, 79, 0.3);
+}
+
+.resort-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.resort-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+    .resort-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(100, 255, 218, 0.1);
+        border-color: var(--haven-accent);
+    }
+
+.resort-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+    .resort-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+.resort-card:hover .resort-image img {
+    transform: scale(1.1);
+}
+
+.resort-info {
+    padding: 20px;
+}
+
+.resort-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--haven-accent);
+}
+
+.resort-location {
+    display: flex;
+    align-items: center;
+    color: var(--haven-text);
+    margin-bottom: 15px;
+}
+
+    .resort-location i {
+        margin-right: 8px;
+        color: var(--haven-accent);
+    }
+
+/* Experiences Section */
+.experiences-section {
+    padding: 100px 0;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.experience-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+    .experience-card:hover {
+        background: rgba(100, 255, 218, 0.05);
+        transform: translateY(-5px);
+    }
+
+.experience-icon {
+    font-size: 2.5rem;
+    color: var(--haven-accent);
+    margin-bottom: 20px;
+}
+
+.experience-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 100px 0;
+    background: rgba(7, 37, 79, 0.3);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+    transition: all 0.3s ease;
+}
+
+    .gallery-item:hover {
+        transform: scale(1.03);
+        box-shadow: 0 10px 20px rgba(100, 255, 218, 0.2);
+    }
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 100px 0;
+}
+
+.testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    border: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+    .testimonial-text:before {
+        content: '"';
+        font-size: 4rem;
+        color: var(--haven-accent);
+        opacity: 0.3;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+    }
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--haven-accent);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 100px 0;
+    background: linear-gradient(rgba(7, 37, 79, 0.9), rgba(7, 37, 79, 0.7)), url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1968&q=80');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--haven-accent);
+    color: var(--haven-primary);
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .overview-content {
+        grid-template-columns: 1fr;
+    }
+
+    .nexus-section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nexus-section-title {
+        font-size: 2rem;
+    }
+
+    .nexus-section-desc {
+        font-size: 1rem;
+    }
+}
+
+/* North Zone Hero Section Styles */
+.north-zone-hero {
+    background: linear-gradient(rgba(7, 37, 79, 0.9), rgba(7, 37, 79, 0.7)), url('https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nexus-section-badge {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #64ffda;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+    .nexus-section-badge::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 2px;
+        background: #64ffda;
+    }
+
+.nexus-section-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    background: linear-gradient(90deg, #ffffff 50%, #64ffda 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #64ffda;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #ccd6f6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .north-zone-hero {
+        height: 70vh;
+    }
+
+    .nexus-section-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
