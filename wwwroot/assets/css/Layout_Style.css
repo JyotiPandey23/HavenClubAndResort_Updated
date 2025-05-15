@@ -644,3 +644,162 @@ body {
         right: auto;
         left: 30px;
     }
+
+
+/* ===== DROPDOWN MENU STYLES ===== */
+.haven-dropdown,
+.haven-nested-dropdown {
+    position: relative;
+}
+
+    /* Fix alignment for Destination menu */
+    .haven-dropdown > .haven-nav-link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 0;
+    }
+
+.dropdown-arrow,
+.nested-dropdown-arrow {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+    margin-left: 3px;
+}
+
+.haven-submenu,
+.haven-nested-submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: rgba(10, 25, 47, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    margin-top: 10px;
+}
+
+.haven-nested-submenu {
+    top: -10px;
+    left: 100%;
+    margin-left: 5px;
+}
+
+.haven-dropdown:hover .haven-submenu,
+.haven-nested-dropdown:hover .haven-nested-submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.haven-dropdown:hover .dropdown-arrow,
+.haven-nested-dropdown:hover .nested-dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.haven-submenu .haven-nav-item,
+.haven-nested-submenu .haven-nav-item {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.haven-submenu .haven-nav-link,
+.haven-nested-submenu .haven-nav-link {
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: none;
+    white-space: nowrap;
+}
+
+    .haven-submenu .haven-nav-link:hover,
+    .haven-nested-submenu .haven-nav-link:hover {
+        background: rgba(100, 255, 218, 0.1);
+        color: var(--haven-accent);
+        transform: none;
+    }
+
+    .haven-submenu .haven-nav-link::after,
+    .haven-nested-submenu .haven-nav-link::after {
+        display: none;
+    }
+
+/* Mobile dropdown styles */
+@media (max-width: 991px) {
+    .haven-submenu,
+    .haven-nested-submenu {
+        position: static;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0;
+        margin-top: 0;
+        margin-left: 15px;
+        border-left: 2px solid var(--haven-accent);
+        width: calc(100% - 15px);
+    }
+
+        .haven-submenu.active,
+        .haven-nested-submenu.active {
+            display: block;
+        }
+
+        .haven-submenu .haven-nav-link,
+        .haven-nested-submenu .haven-nav-link {
+            padding: 10px 15px 10px 30px;
+        }
+
+        .haven-nested-submenu .haven-nav-link {
+            padding-left: 45px;
+        }
+
+    .nested-dropdown-arrow {
+        transform: rotate(90deg) !important;
+        margin-left: auto;
+    }
+
+    .haven-nested-dropdown.active .nested-dropdown-arrow {
+        transform: rotate(270deg) !important;
+    }
+}
+
+/* Ensure all nav items have same alignment */
+.haven-nav-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.haven-nav-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+/* Fix for mobile menu alignment */
+@media (max-width: 991px) {
+    .haven-nav-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .haven-nav-link {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
