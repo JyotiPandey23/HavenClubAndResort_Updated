@@ -1940,13 +1940,12 @@
 }
 
 .nexus-testimonial-overlay {
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('~/assets/images/payment-icon/resorts.jpg') center/ no-repeat;
-    opacity: 0.15;
+    background: url("/assets/images/payment-icon/resorts.jpg") center/ no-repeat;
     z-index: 1;
 }
 
@@ -2000,7 +1999,7 @@
     background: linear-gradient(90deg, #ffffff 0%, #ccd6f6 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+}   
 
 .nexus-accent {
     color: #64ffda;
