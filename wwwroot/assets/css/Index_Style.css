@@ -70,7 +70,7 @@
 
 .cta-button {
     display: inline-block;
-    padding: 15px 30px;
+       padding: 15px 30px;
     background-color: #FF6B6B;
     color: white;
     border-radius: 50px;
@@ -1945,7 +1945,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://raoholidays.in/wp-content/themes/harshaholidays/assets/images/15.webp') center/cover no-repeat;
+    background: url('~/assets/images/payment-icon/resorts.jpg') center/ no-repeat;
     opacity: 0.15;
     z-index: 1;
 }
