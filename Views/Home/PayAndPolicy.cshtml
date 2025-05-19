@@ -1,88 +1,157 @@
-﻿<div class="page-title dark-background d-flex align-items-center justify-content-center text-center"
-     style="background-image: url('/assets/img/member.jpg'); height: 300px; background-size: cover; background-position: center;">
-    <h1 class="text-white display-3 fw-bold uppercase">
-Payment And Policy
-    </h1>
+﻿
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .page-title {
+        background-image: url('/assets/img/member.jpg');
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+        .page-title h1 {
+            color: white;
+            font-size: 36px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .card {
+        background-color: white;
+        border-left: 6px solid #007bff;
+        padding: 30px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .card:hover h3 {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #007bff;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .card.yellow {
+            border-left-color: #ffc107;
+        }
+
+            .card.yellow h3 {
+                color: #ffc107;
+            }
+
+        .card.red {
+            border-left-color: #dc3545;
+        }
+
+            .card.red h3 {
+                color: #dc3545;
+            }
+
+        .card.green {
+            border-left-color: #28a745;
+        }
+
+            .card.green h3 {
+                color: #28a745;
+            }
+
+        .card.purple {
+            border-left-color: #6f42c1;
+        }
+
+            .card.purple h3 {
+                color: #6f42c1;
+            }
+
+    ul {
+        margin-left: 20px;
+        padding-left: 10px;
+    }
+
+        ul li {
+            margin-bottom: 10px;
+            list-style-type: disc;
+        }
+
+</style>
+
+
+<!-- Header Section -->
+<div class="page-title">
+    <h1>Terms and Conditions</h1>
 </div>
 
-<section class="bg-gray-50 py-20 px-6 md:px-20 text-gray-800 font-sans text-lg leading-relaxed">
-    <div class="max-w-5xl mx-auto space-y-16">
-        <!-- Use of Personal Data -->
-        <div class="bg-white rounded-xl shadow-md p-8 space-y-4 border-l-4 border-blue-600">
-            <h3 class="text-3xl font-bold text-blue-700">Use of Personal Data</h3>
-            <p>
-                At Haven Club & Resorts Private Limited, we use your personal information to provide a seamless experience and mutual benefit. This data may be shared with trusted third parties to facilitate bookings, inquiries, and transactions.
-            </p>
-            <p>
-                Please note that the collected information may be processed outside India to fulfill your requested services. Customers are prompted to give their consent for such data sharing during the booking process.
-            </p>
-            <p>
-                The personal data collected may also be used to share product announcements, promotions, offers, and event updates from Haven Club & Resorts Private Limited. These communications help us enhance our products and services. Customers can unsubscribe at any time.
-            </p>
-            <p>
-                Additionally, your data may be used to improve existing services, content, and advertising, as well as for internal research, analysis, and auditing.
-            </p>
+<!-- Main Section -->
+<section>
+    <div class="container">
+
+        <!-- Utilization of Personal Data -->
+        <div class="card">
+            <h3>Utilization of Personal Data</h3>
+            <p>At Haven Club & Resorts Private Limited, we utilize user personal information for mutual benefit, ensuring a seamless experience for both parties. This data is shared with trusted third parties to facilitate bookings, inquiries, and transactions.</p>
+            <p>Please note that the collected information may be processed beyond India's borders to fulfill your requested products and services. Customers will be prompted to affirm their consent for information sharing during the booking process.</p>
+            <p>The personal data obtained is also used to share the latest product announcements, promotions, offers, and events from Haven Club & Resorts Private Limited. Customers have the option to unsubscribe from these announcements at any time.</p>
+            <p>Additionally, we use your information to enhance our existing products, services, content, and advertising. Occasionally, this data is used internally for research, analysis, and auditing purposes.</p>
         </div>
 
-        <!-- Use of Cookies and Technologies -->
-        <div class="bg-white rounded-xl shadow-md p-8 space-y-4 border-l-4 border-yellow-500">
-            <h3 class="text-3xl font-bold text-yellow-700">Use of Cookies and Technologies</h3>
-            <p>
-                At Haven Club & Resorts Private Limited, we use cookies and similar technologies to enhance your browsing experience. These tools help analyze traffic, personalize content, and tailor advertisements.
-            </p>
-            <p>
-                By using our website, you consent to the use of cookies as outlined in our privacy policy. You may manage cookie preferences through your browser settings.
-            </p>
+        <!-- Utilization of Cookies and Technologies -->
+        <div class="card yellow">
+            <h3>Utilization of Cookies and Technologies</h3>
+            <p>At Haven Club & Resorts Private Limited, we employ cookies and similar technologies to improve your browsing experience. These tools help us analyze website traffic, personalize content, and tailor advertisements to your interests.</p>
+            <p>By using our website, you consent to the use of cookies and similar technologies, as outlined in our privacy policy. You may manage your cookie preferences through your browser settings.</p>
         </div>
 
         <!-- Sharing Information with Third Parties -->
-        <div class="bg-white rounded-xl shadow-md p-8 space-y-4 border-l-4 border-red-500">
-            <h3 class="text-3xl font-bold text-red-700">Sharing Information with Third Parties</h3>
-            <p>
-                Haven Club & Resorts Private Limited may disclose personal information to trusted third parties to support bookings, inquiries, and transactions.
-            </p>
-            <p>
-                We share only the information required for efficient service delivery. Your data is handled with strict confidentiality in accordance with applicable laws and regulations.
-            </p>
+        <div class="card red">
+            <h3>Sharing Information with Third Parties</h3>
+            <p>At Haven Club & Resorts Private Limited, we may disclose your personal information to trusted third parties to facilitate bookings, inquiries, and transactions.</p>
+            <p>Rest assured, we only share the necessary information required for seamless service delivery. We prioritize the protection and confidentiality of your data, and all disclosures comply with applicable laws and regulations.</p>
         </div>
 
         <!-- Collaboration with Service Providers and Partners -->
-        <div class="bg-white rounded-xl shadow-md p-8 space-y-4 border-l-4 border-green-500">
-            <h3 class="text-3xl font-bold text-green-700">Collaboration with Service Providers and Partners</h3>
-            <p>
-                Haven Club & Resorts Private Limited collaborates with a trusted network of service providers to ensure high-quality offerings for our customers.
-            </p>
-            <p>
-                These partnerships allow us to offer a variety of services, including accommodations, transportation, and excursions. We carefully select partners based on expertise, reliability, and service quality.
-            </p>
-            <p>
-                Personal data is shared only with authorized partners and strictly for fulfilling travel-related requirements.
-            </p>
+        <div class="card green">
+            <h3>Collaboration with Service Providers and Partners</h3>
+            <p>At Haven Club & Resorts Private Limited, we work closely with a network of trusted service providers and partners to ensure the highest quality of service for our customers.</p>
+            <p>These collaborations allow us to offer a wide range of services, from accommodations to transportation, excursions, and more. We carefully select our partners based on their expertise, reliability, and commitment to customer satisfaction.</p>
+            <p>Your personal information is shared only with authorized partners solely to fulfill your travel needs and preferences.</p>
         </div>
 
         <!-- Partners with Whom We Share Your Personal Information -->
-        <div class="bg-white rounded-xl shadow-md p-8 space-y-4 border-l-4 border-purple-500">
-            <h3 class="text-3xl font-bold text-purple-700">Partners with Whom We Share Your Information</h3>
-            <p>
-                We may share anonymized data and reports with our suppliers, advertisers, and business partners. Haven Club & Resorts Private Limited encourages customers to review our privacy policy before booking.
-            </p>
-            <p>
-                Customers typically provide personal information in the following situations:
-            </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-2">
-                <li>When booking tickets or holiday packages via our website, you may be asked to provide your email address, mailing address, or contact number.</li>
-                <li>When registering or interacting with our customer service, you may be invited to participate in surveys or sign up for newsletters.</li>
-                <li>Participation in surveys may require personal details via a secure link to ensure privacy.</li>
+        <div class="card purple">
+            <h3>Partners with Whom We Share Your Personal Information</h3>
+            <p>We typically share anonymized data and reports with our trusted suppliers, advertisers, and potential business partners. Haven Club & Resorts Private Limited strongly encourages all customers to review our privacy policy before proceeding with a booking to fully understand our practices.</p>
+            <p>Customers usually provide their personal information in the following situations:</p>
+            <ul>
+                <li>When booking tickets or holiday packages through our website, you will be asked to provide details such as your email address, mailing address, or fax number.</li>
+                <li>During registration, our customer service team may invite you to participate in competitions or subscribe to promotional newsletters.</li>
+                <li>Participation in surveys may require you to provide personal details through a secure link, ensuring full privacy protection.</li>
             </ul>
         </div>
+
     </div>
 </section>
 
-<section class="bg-white py-20 px-6 md:px-20 text-gray-800 font-sans text-lg leading-relaxed">
-    <div class="max-w-5xl mx-auto space-y-10">
-        <p><strong>Haven Club & Resorts Private Limited</strong>, established in 2022, is a leading organization specializing in luxury vacation experiences.</p>
-        <p><strong>Haven Club & Resorts Private Limited</strong> is a limited liability partnership registered under the Companies Act, 2022.</p>
-        <p><strong>"Applicant"</strong> refers to any individual(s) applying for membership with <strong>Haven Club & Resorts Private Limited</strong>.</p>
-        <p><strong>"Vacationer/User"</strong> refers to the applicant whose membership application has been approved and in whose name the <strong>Haven Club & Resorts Private Limited</strong> certificate is issued.</p>
-    </div>
-</section>
