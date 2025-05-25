@@ -833,6 +833,8 @@
 
     .nexus-portal-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 2rem;
     }
 
     .nexus-portal-gate {
