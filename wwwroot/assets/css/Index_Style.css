@@ -994,7 +994,7 @@
     }
 
     .haven-stat-item {
-        min-width: 150px;
+        min-width: 100%;
         padding: 1.5rem 1rem;
     }
 
@@ -1031,21 +1031,45 @@
     padding: 0.5rem;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
     .haven-category-item {
         width: 50%;
     }
+    .haven-stat-item {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        /* optionally adjust font size or other styles here */
+    }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .haven-category-item {
         width: 33.333333%;
+    }
+    .haven-stat-item {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        /* optionally adjust font size or other styles here */
     }
 }
 
 @media (min-width: 1024px) {
     .haven-category-item {
         width: 16.666667%;
+    }
+    .haven-stat-item {
+        min-width: 200px;
+        max-width: 250px;
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        /* optionally adjust font size or other styles here */
     }
 }
 
@@ -1069,7 +1093,7 @@
     text-align: center;
 }
 
-    .haven-activity-icon img {
+    .haven-activity-icon img {  
         width: 4.5rem;
         height: 4.5rem;
         object-fit: contain;
