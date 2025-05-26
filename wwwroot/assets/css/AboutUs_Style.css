@@ -135,11 +135,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .value-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(200, 200, 200, 0.05);
     border-radius: 10px;
     padding: 40px 30px;
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(240,  255, 255, 0.1);
 }
 
     .value-card:hover {
@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .team-member {
     text-align: center;
-    position: relative;
+    position: relative; 
     overflow: hidden;
     border-radius: 10px;
 }
