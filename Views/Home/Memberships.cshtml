@@ -90,7 +90,7 @@
                         <li>₹8,333 annual AMC</li>
                         <li>Priority check-in</li>
                     </ul>
-                    <button class="plan-button" data-bs-toggle="modal" data-bs-target="#membershipModal">Join Now</button>
+                    <button class="plan-button" onclick="membershipModal()">Join Now</button>
                 </div>
             </div>
             
@@ -110,7 +110,7 @@
                         <li>₹6,999 annual AMC</li>
                         <li>Complimentary breakfast</li>
                     </ul>
-                    <button class="plan-button" data-bs-toggle="modal" data-bs-target="#membershipModal">Join Now</button>
+                    <button class="plan-button" onclick="membershipModal()">Join Now</button>
                 </div>
             </div>
             
@@ -359,3 +359,55 @@
         </div>
     </div>
 </div>
+
+
+<!-- Membership Modal -->
+<div id="subscribeModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title">Subscribe Now</h2>
+            <button class="btn-close" onclick="closeModal()">×</button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="row">
+                    <div class="col"><input type="text" placeholder="Your Name"></div>
+                    <div class="col"><input type="text" placeholder="Phone"></div>
+                </div>
+                <div class="row">
+                    <div class="col"><input type="email" placeholder="Your Email"></div>
+                    <div class="col">
+                        <select>
+                            <option selected>Orange membership</option>
+                            <option>Green membership</option>
+                            <option>Blue membership</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"><input type="number" placeholder="Number Of Adults"></div>
+                    <div class="col"><input type="number" placeholder="Number Of Kids"></div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function membershipModal() {
+      document.getElementById('subscribeModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('subscribeModal').classList.remove('active');
+    }
+
+    window.addEventListener('click', function(e) {
+      const modal = document.getElementById('subscribeModal');
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+</script>
