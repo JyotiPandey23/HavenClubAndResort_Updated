@@ -148,7 +148,7 @@ body {
         width: 80%;
         max-width: 350px;
         /*height: 40vh;*/
-        background: rgba(10, 10, 40, 0.95), linear-gradient(135deg, rgba(80, 20, 120, 0.8) 0%, rgba(0, 150, 200, 0.8) 100%);
+        background: rgba(10, 10, 40, 0.95);
         flex-direction: column;
         justify-content: center;
         box-shadow: -5px 0 30px rgba(100, 200, 255, 0.2);
