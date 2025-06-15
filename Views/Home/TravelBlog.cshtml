@@ -1,342 +1,357 @@
-﻿
-    <link href="~/assets/css/travel_blog_style.css" rel="stylesheet" />
-    <!-- Particle Background -->
-    <div class="quantum-bg"></div>
-    <!-- HTML -->
-<div class="quantum-hero" style="background: linear-gradient(rgba(6, 7, 8, 0.9), rgba(11, 15, 20, 0.7)), url('/assets/images/Aisa/traveler (3).jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0; display: flex; justify-content: center; align-items: center; color: white; font-family: Arial, sans-serif;">
-        <div class="particle-background"></div>
+﻿<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="~/assets/css/travel_blog_style.css" rel="stylesheet" />
+
+<!-- Hero Section -->
+<section class="travel-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center; background-size: cover;">
+    <div class="container">
         <div class="hero-content">
-            <span class="nexus-badge">Explore the Multiverse</span>
-            <h1 class="hero-title"> Travel Chronicles</h1>
-            <p class="hero-subtitle">Journey through holographic travel narratives from across the multiverse. Explore destinations beyond imagination through our quantum portal.</p>
-           
+            <h1>Travel Chronicles</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Travel Blog</li>
+                </ol>
+            </nav>
         </div>
-        <div class="scanner-beam"></div>
     </div>
-    
-    <!-- Featured Stories -->
-    <section class="quantum-grid">
-        <!-- Bali -->
-        <article class="quantum-item">
-            <div class="quantum-visual">
-                <img src="/assets/travel_blog_image/bali_temple.jpg" alt="Bali" class="quantum-image">
-                <div class="quantum-overlay"></div>
-                <span class="quantum-tag">Featured</span>
-            </div>
-            <div class="quantum-content">
-                <h3 class="quantum-title">Bali: Island of Gods</h3>
-                <p class="quantum-excerpt">Discover how Bali blends spiritual calm with natural beauty. From forest temples to beach parties, this island has something for every quantum traveler.</p>
-                <a href="#" class="quantum-link">
-                    <span>Access Memory File</span>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="quantum-beam"></div>
-        </article>
-        
-        <!-- Cappadocia -->
-        <article class="quantum-item">
-            <div class="quantum-visual">
-                <img src="/assets/travel_blog_image/cappadocia.jpg" alt="Cappadocia" class="quantum-image">
-                <div class="quantum-overlay"></div>
-                <span class="quantum-tag">Adventure</span>
-            </div>
-            <div class="quantum-content">
-                <h3 class="quantum-title">Cappadocia's Fairy Chimneys</h3>
-                <p class="quantum-excerpt">Float above otherworldly landscapes in hot air balloons and explore ancient underground cities in this Turkish wonderland.</p>
-                <a href="#" class="quantum-link">
-                    <span>Access Memory File</span>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="quantum-beam"></div>
-        </article>
-        
-        <!-- Kyoto -->
-        <article class="quantum-item">
-            <div class="quantum-visual">
-                <img src="/assets/travel_blog_image/tokyo.jpg" alt="Kyoto" class="quantum-image">
-                <div class="quantum-overlay"></div>
-                <span class="quantum-tag">Culture</span>
-            </div>
-            <div class="quantum-content">
-                <h3 class="quantum-title">Kyoto's Timeless Beauty</h3>
-                <p class="quantum-excerpt">Walk through cherry blossom tunnels and participate in ancient tea ceremonies in Japan's cultural heart.</p>
-                <a href="#" class="quantum-link">
-                    <span>Access Memory File</span>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="quantum-beam"></div>
-        </article>
-    </section>
-    
-    <!-- Destination Portal -->
-    <section class="destination-portal">
-        <div class="portal-header">
-            <span class="portal-label">Quantum Coordinates</span>
-            <h2 class="portal-heading">Multidimensional Destinations</h2>
-            <p class="portal-desc">Select your next journey through our holographic interface. Each pin represents a unique reality waiting to be explored.</p>
+</section>
+
+<!-- Featured Stories -->
+<section class="travel-stories">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Featured Stories</span>
+            <h2 class="title">Explore Our Travel Experiences</h2>
         </div>
-        
-        <div class="holo-map">
-            <img src="/assets/travel_blog_image/bali_temple.jpg" alt="World Map" class="map-image">
-            <div class="map-overlay"></div>
+
+        <div class="row">
+            <!-- Bali -->
+            <div class="col-lg-4 col-md-6">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="/assets/travel_blog_image/bali_temple.jpg" alt="Bali" class="img-fluid">
+                        <div class="story-tag">Featured</div>
+                    </div>
+                    <div class="story-content">
+                        <h3>Bali: Island of Gods</h3>
+                        <p>Discover how Bali blends spiritual calm with natural beauty. From forest temples to beach parties, this island has something for every traveler.</p>
+                        <a href="#" class="story-link">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cappadocia -->
+            <div class="col-lg-4 col-md-6">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="/assets/travel_blog_image/cappadocia.jpg" alt="Cappadocia" class="img-fluid">
+                        <div class="story-tag">Adventure</div>
+                    </div>
+                    <div class="story-content">
+                        <h3>Cappadocia's Fairy Chimneys</h3>
+                        <p>Float above otherworldly landscapes in hot air balloons and explore ancient underground cities in this Turkish wonderland.</p>
+                        <a href="#" class="story-link">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kyoto -->
+            <div class="col-lg-4 col-md-6">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="/assets/travel_blog_image/tokyo.jpg" alt="Kyoto" class="img-fluid">
+                        <div class="story-tag">Culture</div>
+                    </div>
+                    <div class="story-content">
+                        <h3>Kyoto's Timeless Beauty</h3>
+                        <p>Walk through cherry blossom tunnels and participate in ancient tea ceremonies in Japan's cultural heart.</p>
+                        <a href="#" class="story-link">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Destination Map -->
+<section class="destination-map">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Our Destinations</span>
+            <h2 class="title">Explore The World With Us</h2>
+        </div>
+
+        <div class="map-container">
+            <img src="https://mapsvg.com/static/maps/geo/asia/india.svg" alt="World Map" class="img-fluid">
+
             <div class="map-pins">
-                <!-- Bali -->
-                <div class="map-pin" style="top: 65%; left: 85%;">
-                    <div class="map-tooltip">
-                        <h4 class="tooltip-title">Bali, Indonesia</h4>
-                        <p class="tooltip-desc">Tropical paradise with spiritual temples and vibrant culture</p>
+                <div class="map-pin" style="top: 20%; left: 85%;" data-destination="bali">
+                    <div class="pin-tooltip">
+                        <h4>Bali, Indonesia</h4>
+                        <p>Tropical paradise with spiritual temples</p>
                     </div>
                 </div>
-                
-                <!-- Cappadocia -->
-                <div class="map-pin" style="top: 40%; left: 60%;">
-                    <div class="map-tooltip">
-                        <h4 class="tooltip-title">Cappadocia, Turkey</h4>
-                        <p class="tooltip-desc">Surreal landscapes and hot air balloon adventures</p>
+
+                <div class="map-pin" style="top: 40%; left: 60%;" data-destination="cappadocia">
+                    <div class="pin-tooltip">
+                        <h4>Cappadocia, Turkey</h4>
+                        <p>Surreal landscapes and hot air balloons</p>
                     </div>
                 </div>
-                
-                <!-- Kyoto -->
-                <div class="map-pin" style="top: 40%; left: 90%;">
-                    <div class="map-tooltip">
-                        <h4 class="tooltip-title">Kyoto, Japan</h4>
-                        <p class="tooltip-desc">Ancient temples and cherry blossom wonders</p>
+
+                <div class="map-pin" style="top: 40%; left: 90%;" data-destination="kyoto">
+                    <div class="pin-tooltip">
+                        <h4>Kyoto, Japan</h4>
+                        <p>Ancient temples and cherry blossoms</p>
                     </div>
                 </div>
-                
-                <!-- Kashmir -->
-                <div class="map-pin" style="top: 35%; left: 70%;">
-                    <div class="map-tooltip">
-                        <h4 class="tooltip-title">Kashmir, India</h4>
-                        <p class="tooltip-desc">Heaven on earth with majestic mountains and lakes</p>
+
+                <div class="map-pin" style="top: 35%; left: 70%;" data-destination="kashmir">
+                    <div class="pin-tooltip">
+                        <h4>Kashmir, India</h4>
+                        <p>Majestic mountains and serene lakes</p>
                     </div>
                 </div>
-                
-                <!-- Goa -->
-                <div class="map-pin" style="top: 50%; left: 75%;">
-                    <div class="map-tooltip">
-                        <h4 class="tooltip-title">Goa, India</h4>
-                        <p class="tooltip-desc">Golden beaches and Portuguese heritage</p>
+
+                <div class="map-pin" style="top: 50%; left: 75%;" data-destination="goa">
+                    <div class="pin-tooltip">
+                        <h4>Goa, India</h4>
+                        <p>Golden beaches and vibrant culture</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- More Quantum Stories -->
-    <section class="quantum-grid">
-        <!-- Kashmir -->
-        <article class="quantum-item">
-            <div class="quantum-visual">
-                <img src="/assets/travel_blog_image/kashmir.jpg" alt="Kashmir" class="quantum-image">
-                <div class="quantum-overlay"></div>
-                <span class="quantum-tag">Nature</span>
-            </div>
-            <div class="quantum-content">
-                <h3 class="quantum-title">Kashmir: Heaven on Earth</h3>
-                <p class="quantum-excerpt">Float on serene Dal Lake and trek through breathtaking Himalayan valleys in this paradise destination.</p>
-                <a href="#" class="quantum-link">
-                    <span>Access Memory File</span>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="quantum-beam"></div>
-        </article>
-        
-        <!-- Goa -->
-        <article class="quantum-item">
-            <div class="quantum-visual">
-                <img src="/assets/travel_blog_image/beach.jpg" alt="Goa" class="quantum-image">
-                <div class="quantum-overlay"></div>
-                <span class="quantum-tag">Beach</span>
-            </div>
-            <div class="quantum-content">
-                <h3 class="quantum-title">Goa's Golden Shores</h3>
-                <p class="quantum-excerpt">From vibrant beach parties to peaceful sunset views, Goa offers the perfect coastal escape.</p>
-                <a href="#" class="quantum-link">
-                    <span>Access Memory File</span>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="quantum-beam"></div>
-        </article>
-        
-        <!-- Andaman -->
-        <article class="quantum-item">
-            <div class="quantum-visual">
-                <img src="/assets/travel_blog_image/lake.jpg" alt="Andaman" class="quantum-image">
-                <div class="quantum-overlay"></div>
-                <span class="quantum-tag">Adventure</span>
-            </div>
-            <div class="quantum-content">
-                <h3 class="quantum-title">Andaman Islands</h3>
-                <p class="quantum-excerpt">Dive into crystal clear waters and explore untouched beaches in this tropical paradise.</p>
-                <a href="#" class="quantum-link">
-                    <span>Access Memory File</span>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="quantum-beam"></div>
-        </article>
-    </section>
-    <!-- Quantum Travel Essentials -->
-    <section class="quantum-essentials">
-        <div class="portal-header">
-            <span class="portal-label">Preparation Matrix</span>
-            <h2 class="portal-heading">Quantum Travel Essentials</h2>
-            <p class="portal-desc">Equip yourself with the necessary gear and knowledge for safe interdimensional travel.</p>
+    </div>
+</section>
+
+<!-- More Stories -->
+<section class="travel-stories">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">More Adventures</span>
+            <h2 class="title">Discover More Travel Stories</h2>
         </div>
 
-        <div class="essentials-container">
-            <div class="essentials-visual">
-                <div class="holo-device">
-                    <div class="device-screen"></div>
-                    <div class="device-glow"></div>
+        <div class="row">
+            <!-- Kashmir -->
+            <div class="col-lg-4 col-md-6">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="/assets/travel_blog_image/kashmir.jpg" alt="Kashmir" class="img-fluid">
+                        <div class="story-tag">Nature</div>
+                    </div>
+                    <div class="story-content">
+                        <h3>Kashmir: Heaven on Earth</h3>
+                        <p>Float on serene Dal Lake and trek through breathtaking Himalayan valleys in this paradise destination.</p>
+                        <a href="#" class="story-link">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="essentials-list">
-                <div class="essential-item">
-                    <div class="essential-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm0 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
-                        </svg>
+            <!-- Goa -->
+            <div class="col-lg-4 col-md-6">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="/assets/travel_blog_image/beach.jpg" alt="Goa" class="img-fluid">
+                        <div class="story-tag">Beach</div>
                     </div>
-                    <div class="essential-content">
-                        <h3 class="essential-title">Quantum Stabilizer</h3>
-                        <p class="essential-desc">Maintain your molecular integrity during dimensional jumps with this essential device.</p>
-                    </div>
-                </div>
-
-                <div class="essential-item">
-                    <div class="essential-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
-                        </svg>
-                    </div>
-                    <div class="essential-content">
-                        <h3 class="essential-title">Temporal Translator</h3>
-                        <p class="essential-desc">Communicate across timelines and dimensions with this universal language matrix.</p>
+                    <div class="story-content">
+                        <h3>Goa's Golden Shores</h3>
+                        <p>From vibrant beach parties to peaceful sunset views, Goa offers the perfect coastal escape.</p>
+                        <a href="#" class="story-link">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
+            </div>
 
-                <div class="essential-item">
-                    <div class="essential-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z" />
-                        </svg>
+            <!-- Andaman -->
+            <div class="col-lg-4 col-md-6">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="/assets/travel_blog_image/lake.jpg" alt="Andaman" class="img-fluid">
+                        <div class="story-tag">Adventure</div>
                     </div>
-                    <div class="essential-content">
-                        <h3 class="essential-title">Atmospheric Harmonizer</h3>
-                        <p class="essential-desc">Adapt to any planetary atmosphere or dimensional energy signature.</p>
-                    </div>
-                </div>
-
-                <div class="essential-item">
-                    <div class="essential-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z" />
-                        </svg>
-                    </div>
-                    <div class="essential-content">
-                        <h3 class="essential-title">Currency Matrix</h3>
-                        <p class="essential-desc">Automatically converts any local currency or value system across dimensions.</p>
+                    <div class="story-content">
+                        <h3>Andaman Islands</h3>
+                        <p>Dive into crystal clear waters and explore untouched beaches in this tropical paradise.</p>
+                        <a href="#" class="story-link">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Quantum Testimonials -->
-    <section class="quantum-testimonials">
-        <div class="portal-header">
-            <span class="portal-label">Traveler Echoes</span>
-            <h2 class="portal-heading">Quantum Explorer Testimonials</h2>
-            <p class="portal-desc">Hear from fellow travelers who have journeyed through our quantum portals to extraordinary destinations.</p>
+    </div>
+</section>
+
+<!-- Travel Tips -->
+<section class="travel-tips">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Travel Smart</span>
+            <h2 class="title">Essential Travel Tips</h2>
         </div>
 
-        <div class="testimonial-grid">
-            <!-- Testimonial 1 -->
-            <div class="testimonial-card">
-                <div class="hologram-avatar">
-                    <div class="holo-ring"></div>
-                    <img src="/assets/travel_blog_image/bali_temple.jpg" alt="Sarah K.">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h4>Documentation</h4>
+                    <p>Always keep copies of your passport and important documents in separate locations.</p>
                 </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-suitcase-rolling"></i>
+                    </div>
+                    <h4>Packing</h4>
+                    <p>Pack light but include versatile clothing items that can be layered.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h4>Currency</h4>
+                    <p>Carry multiple forms of payment and notify your bank of travel plans.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h4>Health</h4>
+                    <p>Research any required vaccinations and pack a basic medical kit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="travel-testimonials">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Traveler Stories</span>
+            <h2 class="title">What Our Travelers Say</h2>
+        </div>
+
+        <div class="testimonial-slider">
+            <div class="testimonial-item">
                 <div class="testimonial-content">
-                    <p class="testimonial-text">"The Bali quantum portal transported me to spiritual dimensions I never knew existed. The temple energies were amplified through the quantum interface!"</p>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"The Bali experience was absolutely magical. From the spiritual temples to the vibrant beach culture, every moment was unforgettable."</p>
                     <div class="traveler-info">
-                        <h4 class="traveler-name">Sarah K.</h4>
-                        <span class="traveler-origin">Quantum Explorer from Earth-616</span>
+                        <div class="traveler-img">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah K.">
+                        </div>
+                        <div class="traveler-details">
+                            <h5>Sarah K.</h5>
+                            <span>From Mumbai, India</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Testimonial 2 -->
-            <div class="testimonial-card">
-                <div class="hologram-avatar">
-                    <div class="holo-ring"></div>
-                    <img src="/assets/travel_blog_image/bali_temple.jpg" alt="Raj P.">
-                </div>
+            <div class="testimonial-item">
                 <div class="testimonial-content">
-                    <p class="testimonial-text">"Kashmir through the quantum lens was breathtaking. The floating markets on Dal Lake shimmered with temporal energy signatures!"</p>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Kashmir through Haven Club was breathtaking. The floating markets on Dal Lake were like something from a dream!"</p>
                     <div class="traveler-info">
-                        <h4 class="traveler-name">Raj P.</h4>
-                        <span class="traveler-origin">Temporal Tourist from Earth-3490</span>
+                        <div class="traveler-img">
+                            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Raj P.">
+                        </div>
+                        <div class="traveler-details">
+                            <h5>Raj P.</h5>
+                            <span>From Delhi, India</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Testimonial 3 -->
-            <div class="testimonial-card">
-                <div class="hologram-avatar">
-                    <div class="holo-ring"></div>
-                    <img src="/assets/travel_blog_image/bali_temple.jpg" alt="Mia T.">
-                </div>
+            <div class="testimonial-item">
                 <div class="testimonial-content">
-                    <p class="testimonial-text">"Cappadocia's balloon ride at sunrise was already magical, but viewing it through quantum-enhanced reality filters? Absolutely transcendent!"</p>
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Cappadocia's balloon ride at sunrise was already magical, but with Haven Club's expert guides, it became truly transcendent!"</p>
                     <div class="traveler-info">
-                        <h4 class="traveler-name">Mia T.</h4>
-                        <span class="traveler-origin">Dimensional Drifter from Earth-742</span>
+                        <div class="traveler-img">
+                            <img src="https://randomuser.me/api/portraits/women/67.jpg" alt="Mia T.">
+                        </div>
+                        <div class="traveler-details">
+                            <h5>Mia T.</h5>
+                            <span>From Bangalore, India</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <script>
-        // Simple animation for navigation orb
-        document.querySelector('.nav-orb').addEventListener('click', function() {
-            this.classList.toggle('active');
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="travel-cta" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1968&q=80') no-repeat center center; background-size: cover;">
+    <div class="container">
+        <div class="cta-content text-center">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Explore our exclusive travel packages and start planning your dream getaway today.</p>
+            <a href="/contact" class="btn btn-primary">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    $(document).ready(function(){
+        // Initialize testimonial slider
+        $('.testimonial-slider').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 5000
         });
-        
-        // Animate quantum items on scroll
-        const quantumItems = document.querySelectorAll('.quantum-item');
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                }
+
+        // Map pin hover effect
+        $('.map-pin').hover(function(){
+            $(this).find('.pin-tooltip').css({
+                'opacity': '1',
+                'visibility': 'visible',
+                'bottom': '40px'
             });
-        }, { threshold: 0.1 });
-        
-        quantumItems.forEach(item => {
-            item.style.opacity = 0;
-            item.style.transform = 'translateY(20px)';
-            item.style.transition = 'all 0.5s ease';
-            observer.observe(item);
+        }, function(){
+            $(this).find('.pin-tooltip').css({
+                'opacity': '0',
+                'visibility': 'hidden',
+                'bottom': '30px'
+            });
         });
-    </script>
+    });
+</script>

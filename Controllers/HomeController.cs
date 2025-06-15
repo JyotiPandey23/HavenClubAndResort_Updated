@@ -85,5 +85,9 @@ namespace HavenClubAndResort.Controllers
         {
             return View();
         }
+        public IActionResult NewIndexPage()
+        {
+            return View();
+        }
     }
 }

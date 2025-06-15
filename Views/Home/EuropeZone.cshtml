@@ -1,244 +1,309 @@
-﻿<link href="~/assets/css/europezone.css" rel="stylesheet" />
+﻿<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="~/assets/css/europezone.css" rel="stylesheet" />
 
-    <!-- Hero Section -->
-<section class="hero-section" style="background: linear-gradient(rgba(6, 7, 8, 0.9), rgba(11, 15, 20, 0.7)), url('/assets/images/Aisa/france.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0; display: flex; justify-content: center; align-items: center; color: white; font-family: Arial, sans-serif;">
+<!-- Hero Section -->
+<section class="europe-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80') no-repeat center center; background-size: cover;">
     <div class="container">
         <div class="hero-content">
-            <span class="nexus-section-badge">Discover Europe</span>
-            <h1 class="nexus-section-title">European Elegance</h1>
-            <p class="hero-subtitle">Where History Meets Luxury</p>
-            <p>Experience the sophistication and charm of Europe's most enchanting destinations with our exclusive resorts.</p>
+            <h1>European Elegance</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Europe</li>
+                </ol>
+            </nav>
         </div>
     </div>
 </section>
 
-    <!-- Overview Section -->
-    <section class="overview-section">
-        <div class="container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">Discover Europe</span>
-                <h2 class="nexus-section-title">The Continental Experience</h2>
-                <p class="nexus-section-desc">From Alpine retreats to Mediterranean escapes, Europe offers timeless elegance and diverse experiences</p>
-            </div>
-            
-            <div class="overview-content">
-                <div class="overview-text">
-                    <div class="holographic-card">
-                        <p>Europe is a continent of unparalleled diversity, where centuries of history meet modern luxury. Our carefully curated properties across Europe offer:</p>
-                        
-                        <ul style="margin: 20px 0; padding-left: 20px;">
-                            <li style="margin-bottom: 10px;">Luxury Alpine chalets with ski-in/ski-out access</li>
-                            <li style="margin-bottom: 10px;">Historic city palaces in cultural capitals</li>
-                            <li style="margin-bottom: 10px;">Seaside villas along the Mediterranean coast</li>
-                            <li style="margin-bottom: 10px;">Countryside castles with modern amenities</li>
-                            <li>Vineyard estates in famous wine regions</li>
-                        </ul>
-                        
-                        <p>Whether you seek cultural immersion, gourmet experiences, or scenic relaxation, our European properties provide the perfect setting for your continental journey.</p>
-                    </div>
+<!-- Overview Section -->
+<section class="overview-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Discover Europe</span>
+            <h2 class="title">The Continental Experience</h2>
+            <p>From Alpine retreats to Mediterranean escapes, Europe offers timeless elegance and diverse experiences</p>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="content-card">
+                    <p>Europe is a continent of unparalleled diversity, where centuries of history meet modern luxury. Our carefully curated properties across Europe offer:</p>
+
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Luxury Alpine chalets with ski-in/ski-out access</li>
+                        <li><i class="fas fa-check"></i> Historic city palaces in cultural capitals</li>
+                        <li><i class="fas fa-check"></i> Seaside villas along the Mediterranean coast</li>
+                        <li><i class="fas fa-check"></i> Countryside castles with modern amenities</li>
+                        <li><i class="fas fa-check"></i> Vineyard estates in famous wine regions</li>
+                    </ul>
+
+                    <p>Whether you seek cultural immersion, gourmet experiences, or scenic relaxation, our European properties provide the perfect setting for your continental journey.</p>
                 </div>
-                
-                <div class="overview-image">
-                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Swiss Alps">
+            </div>
+            <div class="col-lg-6">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Swiss Alps" class="img-fluid">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Resorts Section -->
-    <section class="resorts-section">
-        <div class="container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">Our Properties</span>
-                <h2 class="nexus-section-title">Featured European Resorts</h2>
-                <p class="nexus-section-desc">Handpicked luxury accommodations across Europe's most spectacular locations</p>
-            </div>
-            
-            <div class="resort-grid">
+<!-- Resorts Section -->
+<section class="resorts-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Our Properties</span>
+            <h2 class="title">Featured European Resorts</h2>
+            <p>Handpicked luxury accommodations across Europe's most spectacular locations</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
                 <div class="resort-card">
                     <div class="resort-image">
-                        <img src="~/assets/images/Aisa/euorop1.jpg" alt="Swiss Resort">
+                        <img src="~/assets/images/Aisa/euorop1.jpg" alt="Swiss Resort" class="img-fluid">
                     </div>
                     <div class="resort-info">
-                        <h3 class="resort-name"> Alpine Retreat</h3>
-                        <div class="resort-location">
+                        <h3>Alpine Retreat</h3>
+                        <div class="location">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>Interlaken, Switzerland</span>
                         </div>
                         <p>Luxury chalet with panoramic mountain views, private ski lift access, and world-class spa facilities in the heart of the Swiss Alps.</p>
-                        <a href="#" class="cta-button" style="display: inline-block; margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Explore</a>
+                        <a href="#" class="btn btn-outline">Explore</a>
                     </div>
                 </div>
-                
+            </div>
+
+            <div class="col-lg-4 col-md-6">
                 <div class="resort-card">
                     <div class="resort-image">
-                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="French Villa">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="French Villa" class="img-fluid">
                     </div>
                     <div class="resort-info">
-                        <h3 class="resort-name">Riviera</h3>
-                        <div class="resort-location">
+                        <h3>Riviera</h3>
+                        <div class="location">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>Nice, France</span>
                         </div>
                         <p>Belle Époque villa on the French Riviera with private beach access, Michelin-star dining, and panoramic Mediterranean views.</p>
-                        <a href="#" class="cta-button" style="display: inline-block; margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Explore</a>
+                        <a href="#" class="btn btn-outline">Explore</a>
                     </div>
                 </div>
-                
+            </div>
+
+            <div class="col-lg-4 col-md-6">
                 <div class="resort-card">
                     <div class="resort-image">
-                        <img src="~/assets/images/Aisa/euorop2.jpg" alt="Italian Lake Resort">
+                        <img src="~/assets/images/Aisa/euorop2.jpg" alt="Italian Lake Resort" class="img-fluid">
                     </div>
                     <div class="resort-info">
-                        <h3 class="resort-name">Lago di Como</h3>
-                        <div class="resort-location">
+                        <h3>Lago di Como</h3>
+                        <div class="location">
                             <i class="fas fa-map-marker-alt"></i>
                             <span>Lake Como, Italy</span>
                         </div>
                         <p>18th-century waterfront villa on Lake Como with private boat dock, Renaissance gardens, and authentic Italian cooking classes.</p>
-                        <a href="#" class="cta-button" style="display: inline-block; margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Explore</a>
+                        <a href="#" class="btn btn-outline">Explore</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Experiences Section -->
-    <section class="experiences-section">
-        <div class="container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">Unique Experiences</span>
-                <h2 class="nexus-section-title">European Adventures</h2>
-                <p class="nexus-section-desc">Curated activities that showcase the best of Europe's diverse offerings</p>
-            </div>
-            
-            <div class="experience-grid">
+<!-- Experiences Section -->
+<section class="experiences-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Unique Experiences</span>
+            <h2 class="title">European Adventures</h2>
+            <p>Curated activities that showcase the best of Europe's diverse offerings</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
                 <div class="experience-card">
                     <div class="experience-icon">
                         <i class="fas fa-skiing"></i>
                     </div>
-                    <h3 class="experience-title">Alpine Skiing</h3>
+                    <h4>Alpine Skiing</h4>
                     <p>Private guided skiing in the Swiss Alps with Olympic-level instructors and helicopter drop-offs.</p>
                 </div>
-                
+            </div>
+
+            <div class="col-lg-3 col-md-6">
                 <div class="experience-card">
                     <div class="experience-icon">
                         <i class="fas fa-wine-glass-alt"></i>
                     </div>
-                    <h3 class="experience-title">Wine Tasting</h3>
+                    <h4>Wine Tasting</h4>
                     <p>Exclusive vineyard tours and tastings in Bordeaux, Tuscany, and other famous wine regions.</p>
                 </div>
-                
+            </div>
+
+            <div class="col-lg-3 col-md-6">
                 <div class="experience-card">
                     <div class="experience-icon">
                         <i class="fas fa-utensils"></i>
                     </div>
-                    <h3 class="experience-title">Gourmet Tours</h3>
+                    <h4>Gourmet Tours</h4>
                     <p>Michelin-star dining experiences and private cooking classes with celebrity chefs.</p>
                 </div>
-                
+            </div>
+
+            <div class="col-lg-3 col-md-6">
                 <div class="experience-card">
                     <div class="experience-icon">
                         <i class="fas fa-landmark"></i>
                     </div>
-                    <h3 class="experience-title">Cultural Immersion</h3>
+                    <h4>Cultural Immersion</h4>
                     <p>Private after-hours tours of Europe's most famous museums and historical sites.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Gallery Section -->
-    <section class="gallery-section">
-        <div class="container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">Visual Journey</span>
-                <h2 class="nexus-section-title">European Moments</h2>
-                <p class="nexus-section-desc">Capturing the essence of Europe through breathtaking imagery</p>
+<!-- Gallery Section -->
+<section class="gallery-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Visual Journey</span>
+            <h2 class="title">European Moments</h2>
+            <p>Capturing the essence of Europe through breathtaking imagery</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Swiss Alps" class="img-fluid">
+                </div>
             </div>
-            
-            <div class="gallery-grid">
+            <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Swiss Alps" class="gallery-image">
+                    <img src="~/assets/images/Aisa/alpinevillage.jpg" alt="Alpine Village" class="img-fluid">
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="~/assets/images/Aisa/alpinevillage.jpg" alt="Alpine Village" class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="French Riviera" class="img-fluid">
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="French Riviera" class="gallery-image">
+                    <img src="~/assets/images/Aisa/lakecomo.jpg" alt="Lake Como" class="img-fluid">
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="~/assets/images/Aisa/lakecomo.jpg" alt="Lake Como" class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2087&q=80" alt="Tuscany" class="img-fluid">
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2087&q=80" alt="Tuscany" class="gallery-image">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Paris" class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80" alt="Paris" class="img-fluid">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">Guest Stories</span>
-                <h2 class="nexus-section-title">European Experiences</h2>
-                <p class="nexus-section-desc">What our members say about their European adventures</p>
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Guest Stories</span>
+            <h2 class="title">European Experiences</h2>
+            <p>What our members say about their European adventures</p>
+        </div>
+
+        <div class="testimonial-slider">
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>Our stay at Alpine Retreat was beyond spectacular. The private ski instructor arranged for our family made all the difference, and returning to our chalet with its roaring fireplace and hot tub was pure bliss.</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                        </div>
+                        <div class="client-details">
+                            <h5>The Trivedi Family</h5>
+                            <span>Surat, India</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="testimonial-slider">
-                <div class="testimonial">
-                    <p class="testimonial-text">Our stay at Alpine Retreat was beyond spectacular. The private ski instructor arranged for our family made all the difference, and returning to our chalet with its roaring fireplace and hot tub was pure bliss. The concierge even arranged a private fondue dinner at a mountain peak!</p>
-                    <h4 class="testimonial-author">— The Trivedi Family, Surat</h4>
+
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>The wine tasting experiences arranged by Haven in Tuscany were extraordinary. We visited small family vineyards we would never have found on our own, and the private lunches among the vines were unforgettable.</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                        </div>
+                        <div class="client-details">
+                            <h5>Mr. & Mrs. Saxena</h5>
+                            <span>Ahmedabad, India</span>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="testimonial">
-                    <p class="testimonial-text">The wine tasting experiences arranged by Haven in Tuscany were extraordinary. We visited small family vineyards we would never have found on our own, and the private lunches among the vines were unforgettable. Our villa in the countryside was the perfect retreat after days of exploration.</p>
-                    <h4 class="testimonial-author">— Mr. & Mrs. Saxena, Ahmedabad</h4>
-                </div>
-                
-                <div class="testimonial">
-                    <p class="testimonial-text">Celebrating our anniversary on the French Riviera with Haven was magical. The private yacht day along the coast, the Michelin-star chef who cooked for us in our villa, and the exclusive access to events during the Cannes Film Festival made this a once-in-a-lifetime experience.</p>
-                    <h4 class="testimonial-author">— Mr. & Mrs. Kataria, Mumbai</h4>
+            </div>
+
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>Celebrating our anniversary on the French Riviera with Haven was magical. The private yacht day along the coast, the Michelin-star chef who cooked for us in our villa made this a once-in-a-lifetime experience.</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Client">
+                        </div>
+                        <div class="client-details">
+                            <h5>Mr. & Mrs. Kataria</h5>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <span class="nexus-section-badge">Begin Your Journey</span>
-            <h2 class="nexus-section-title">Ready for Your European Escape?</h2>
-            <p class="nexus-section-desc">Contact our travel specialists to plan your perfect continental getaway</p>
-            <a href="#" class="cta-button">Book Now</a>
+<!-- CTA Section -->
+<section class="cta-section" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1968&q=80') no-repeat center center; background-size: cover;">
+    <div class="container">
+        <div class="cta-content text-center">
+            <h2>Ready for Your European Escape?</h2>
+            <p>Contact our travel specialists to plan your perfect continental getaway</p>
+            <a href="/contact" class="btn btn-primary">Book Now</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Simple testimonial slider
-        let currentTestimonial = 0;
-        const testimonials = document.querySelectorAll('.testimonial');
-        
-        function showTestimonial(index) {
-            testimonials.forEach(testimonial => {
-                testimonial.style.display = 'none';
-            });
-            testimonials[index].style.display = 'block';
-        }
-        
-        function nextTestimonial() {
-            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-            showTestimonial(currentTestimonial);
-        }
-        
-        // Initialize
-        showTestimonial(0);
-        setInterval(nextTestimonial, 5000);
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Initialize testimonial slider
+    $(document).ready(function(){
+        $('.testimonial-slider').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 5000
+        });
+    });
+</script>
 
-                    

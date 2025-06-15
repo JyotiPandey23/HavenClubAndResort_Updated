@@ -1,240 +1,294 @@
-﻿<link href="~/assets/css/northzone.css" rel="stylesheet" />
-    <!-- Hero Section for North Zone -->        
-<section class="hero-section north-zone-hero" style="background: linear-gradient(rgba(6, 7, 8, 0.9), rgba(11, 15, 20, 0.7)), url('/assets/images/Aisa/mountain_resort.jpg'); background-size: cover; background-position: center; height: 100vh; margin: 0; display: flex; justify-content: center; align-items: center; color: white; font-family: Arial, sans-serif;">
+﻿<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="~/assets/css/northzone.css" rel="stylesheet" />
+
+<!-- Hero Section -->
+<section class="north-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center; background-size: cover;">
     <div class="container">
         <div class="hero-content">
-            <span class="nexus-section-badge">Discover North India</span>
-            <h1 class="nexus-section-title">Himalayan Majesty</h1>
-            <p class="hero-subtitle">Where Peaks Meet Serenity</p>
-            <p>Experience the breathtaking beauty of the Himalayas with our exclusive mountain retreats and heritage properties.</p>
+            <h1>Himalayan Majesty</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">North Zone</li>
+                </ol>
+            </nav>
         </div>
     </div>
 </section>
 
-    <!-- Overview Section -->
-    <section class="overview-section">
-        <div class="container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">Discover North India</span>
-                <h2 class="nexus-section-title">The Himalayan Experience</h2>
-                <p class="nexus-section-desc">From snow-capped peaks to royal heritage, the North Zone offers unparalleled diversity for your perfect getaway</p>
-            </div>
-            
-            <div class="overview-content">
-                <div class="overview-text">
-                    <div class="holographic-card">
-                        <p>The North Zone of India is a treasure trove of breathtaking landscapes, rich cultural heritage, and unforgettable experiences. Our carefully curated properties in this region offer:</p>
-                        
-                        <ul style="margin: 20px 0; padding-left: 20px;">
-                            <li style="margin-bottom: 10px;">Luxury resorts with panoramic Himalayan views</li>
-                            <li style="margin-bottom: 10px;">Heritage palace hotels with royal treatment</li>
-                            <li style="margin-bottom: 10px;">Adventure activities from skiing to white-water rafting</li>
-                            <li style="margin-bottom: 10px;">Wellness retreats with traditional Ayurvedic therapies</li>
-                            <li>Cultural immersion in ancient temples and local traditions</li>
-                        </ul>
-                        
-                        <p>Whether you seek adventure, relaxation, or cultural exploration, our North Zone properties provide the perfect base for your Himalayan journey.</p>
-                    </div>
+<!-- Overview Section -->
+<section class="overview-section">
+    <div class="container">
+        <div class="section-heading">
+            <span class="subtitle">Discover North India</span>
+            <h2 class="title">The Himalayan Experience</h2>
+            <p>From snow-capped peaks to royal heritage, the North Zone offers unparalleled diversity for your perfect getaway</p>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="overview-content">
+                    <p>The North Zone of India is a treasure trove of breathtaking landscapes, rich cultural heritage, and unforgettable experiences. Our carefully curated properties in this region offer:</p>
+
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Luxury resorts with panoramic Himalayan views</li>
+                        <li><i class="fas fa-check"></i> Heritage palace hotels with royal treatment</li>
+                        <li><i class="fas fa-check"></i> Adventure activities from skiing to white-water rafting</li>
+                        <li><i class="fas fa-check"></i> Wellness retreats with traditional Ayurvedic therapies</li>
+                        <li><i class="fas fa-check"></i> Cultural immersion in ancient temples and local traditions</li>
+                    </ul>
+
+                    <p>Whether you seek adventure, relaxation, or cultural exploration, our North Zone properties provide the perfect base for your Himalayan journey.</p>
                 </div>
-                
+            </div>
+            <div class="col-lg-6">
                 <div class="overview-image">
-                    <img src="~/assets/images/Aisa/himalaya.jpg" alt="Himalayan Resort">
+                    <img src="~/assets/images/Aisa/himalaya.jpg" alt="Himalayan Resort" class="img-fluid">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Resorts Section -->
-    <section class="resorts-section">
-        <div class="container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">Our Properties</span>
-                <h2 class="nexus-section-title">Featured North Zone Resorts</h2>
-                <p class="nexus-section-desc">Handpicked luxury accommodations across the most spectacular locations in Northern India</p>
-            </div>
-            
-            <div class="resort-grid">
+<!-- Resorts Section -->
+<section class="resorts-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Our Properties</span>
+            <h2 class="title">Featured North Zone Resorts</h2>
+            <p>Handpicked luxury accommodations across the most spectacular locations in Northern India</p>
+        </div>
+
+        <div class="row">
+            <!-- Shimla Resort -->
+            <div class="col-lg-4 col-md-6">
                 <div class="resort-card">
                     <div class="resort-image">
-                        <img src="/assets/images/Aisa/shimla.jpg" alt="Shimla Resort">
+                        <img src="/assets/images/Aisa/shimla.jpg" alt="Shimla Resort" class="img-fluid">
+                        <div class="resort-overlay">
+                            <h3>Mountain Lodge</h3>
+                            <p>Shimla, Himachal Pradesh</p>
+                        </div>
                     </div>
                     <div class="resort-info">
-                        <h3 class="resort-name">Mountain Lodge</h3>
-                        <div class="resort-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Shimla, Himachal Pradesh</span>
-                        </div>
                         <p>Perched at 8,000 feet with panoramic views of the Himalayas, our flagship mountain property offers luxury cottages with private balconies.</p>
-                        <a href="#" class="cta-button" style="display: inline-block; margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Explore</a>
+                        <a href="#" class="btn btn-outline">Explore</a>
                     </div>
                 </div>
-                
+            </div>
+
+            <!-- Udaipur Palace -->
+            <div class="col-lg-4 col-md-6">
                 <div class="resort-card">
                     <div class="resort-image">
-                        <img src="/assets/images/Aisa/udaipur (3).jpg" alt="Udaipur Palace">
+                        <img src="/assets/images/Aisa/udaipur (3).jpg" alt="Udaipur Palace" class="img-fluid">
+                        <div class="resort-overlay">
+                            <h3>Royal Retreat</h3>
+                            <p>Udaipur, Rajasthan</p>
+                        </div>
                     </div>
                     <div class="resort-info">
-                        <h3 class="resort-name">Royal Retreat</h3>
-                        <div class="resort-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Udaipur, Rajasthan</span>
-                        </div>
                         <p>A restored 18th-century palace on Lake Pichola, offering regal suites with lake views and butler service.</p>
-                        <a href="#" class="cta-button" style="display: inline-block; margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Explore</a>
+                        <a href="#" class="btn btn-outline">Explore</a>
                     </div>
                 </div>
-                
+            </div>
+
+            <!-- Rishikesh Resort -->
+            <div class="col-lg-4 col-md-6">
                 <div class="resort-card">
                     <div class="resort-image">
-                        <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rishikesh Resort">
+                        <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Rishikesh Resort" class="img-fluid">
+                        <div class="resort-overlay">
+                            <h3>Riverside</h3>
+                            <p>Rishikesh, Uttarakhand</p>
+                        </div>
                     </div>
                     <div class="resort-info">
-                        <h3 class="resort-name"> Riverside</h3>
-                        <div class="resort-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Rishikesh, Uttarakhand</span>
-                        </div>
                         <p>Eco-luxury tents along the Ganges, combining adventure activities with wellness programs and yoga.</p>
-                        <a href="#" class="cta-button" style="display: inline-block; margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Explore</a>
+                        <a href="#" class="btn btn-outline">Explore</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Experiences Section -->
-    <section class="experiences-section">
-        <div class="container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">Unique Experiences</span>
-                <h2 class="nexus-section-title">North Zone Adventures</h2>
-                <p class="nexus-section-desc">Curated activities that showcase the best of Northern India's diverse offerings</p>
-            </div>
-            
-            <div class="experience-grid">
+<!-- Experiences Section -->
+<section class="experiences-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Unique Experiences</span>
+            <h2 class="title">North Zone Adventures</h2>
+            <p>Curated activities that showcase the best of Northern India's diverse offerings</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
                 <div class="experience-card">
                     <div class="experience-icon">
                         <i class="fas fa-skiing"></i>
                     </div>
-                    <h3 class="experience-title">Ski Himalaya</h3>
+                    <h4>Ski Himalaya</h4>
                     <p>Guided skiing adventures in Gulmarg with professional instructors and premium equipment.</p>
                 </div>
-                
+            </div>
+
+            <div class="col-lg-3 col-md-6">
                 <div class="experience-card">
                     <div class="experience-icon">
                         <i class="fas fa-om"></i>
                     </div>
-                    <h3 class="experience-title">Yoga Retreats</h3>
+                    <h4>Yoga Retreats</h4>
                     <p>Week-long yoga programs in Rishikesh, the world capital of yoga, with master practitioners.</p>
                 </div>
-                
+            </div>
+
+            <div class="col-lg-3 col-md-6">
                 <div class="experience-card">
                     <div class="experience-icon">
                         <i class="fas fa-utensils"></i>
                     </div>
-                    <h3 class="experience-title">Royal Dining</h3>
+                    <h4>Royal Dining</h4>
                     <p>Private dinners in palace courtyards with traditional Rajasthani cuisine and performances.</p>
                 </div>
-                
+            </div>
+
+            <div class="col-lg-3 col-md-6">
                 <div class="experience-card">
                     <div class="experience-icon">
                         <i class="fas fa-hiking"></i>
                     </div>
-                    <h3 class="experience-title">Himalayan Treks</h3>
+                    <h4>Himalayan Treks</h4>
                     <p>Guided treks through stunning valleys with luxury camping and gourmet meals.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Gallery Section -->
-    <section class="gallery-section">
-        <div class="container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">Visual Journey</span>
-                <h2 class="nexus-section-title">North Zone Moments</h2>
-                <p class="nexus-section-desc">Capturing the essence of Northern India through breathtaking imagery</p>
+<!-- Gallery Section -->
+<section class="gallery-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Visual Journey</span>
+            <h2 class="title">North Zone Moments</h2>
+            <p>Capturing the essence of Northern India through breathtaking imagery</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Himalayas" class="img-fluid">
+                </div>
             </div>
-            
-            <div class="gallery-grid">
+            <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Himalayas" class="gallery-image">
+                    <img src="/assets/images/Aisa/mountain_resort.jpg" alt="Mountain Resort" class="img-fluid">
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="/assets/images/Aisa/mountain_resort.jpg" alt="Mountain Resort" class="gallery-image">
+                    <img src="~/assets/images/Aisa/forest (2).jpg" alt="Lake Palace" class="img-fluid">
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="~/assets/images/Aisa/forest (2).jpg" alt="Lake Palace" class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ganges River" class="img-fluid">
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ganges River" class="gallery-image">
+                    <img src="~/assets/images/Aisa/jaipur.jpg" alt="Desert" class="img-fluid">
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
                 <div class="gallery-item">
-                    <img src="~/assets/images/Aisa/jaipur.jpg" alt="Desert" class="gallery-image">
-                </div>
-                <div class="gallery-item">
-                    <img src="~/assets/images/Aisa/golden.jpg" alt="Golden Temple" class="gallery-image">
+                    <img src="~/assets/images/Aisa/golden.jpg" alt="Golden Temple" class="img-fluid">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">Guest Stories</span>
-                <h2 class="nexus-section-title">North Zone Experiences</h2>
-                <p class="nexus-section-desc">What our members say about their North Zone adventures</p>
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="subtitle">Guest Stories</span>
+            <h2 class="title">North Zone Experiences</h2>
+            <p>What our members say about their North Zone adventures</p>
+        </div>
+
+        <div class="testimonial-slider">
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>Our stay at Haven Mountain Lodge in Shimla was absolutely magical. Waking up to panoramic Himalayan views with our morning tea was unforgettable.</p>
+                    <div class="testimonial-author">
+                        <h5>The Sharma Family</h5>
+                        <span>Mumbai, India</span>
+                    </div>
+                </div>
             </div>
-            
-            <div class="testimonial-slider">
-                <div class="testimonial">
-                    <p class="testimonial-text">Our stay at Haven Mountain Lodge in Shimla was absolutely magical. Waking up to panoramic Himalayan views with our morning tea was unforgettable. The staff anticipated our every need, and the guided nature walks were the highlight of our trip.</p>
-                    <h4 class="testimonial-author">— The Sharma Family, Mumbai</h4>
+
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>The royal treatment at Haven's Udaipur palace exceeded all expectations. Our anniversary dinner on the private terrace overlooking Lake Pichola was straight out of a fairy tale.</p>
+                    <div class="testimonial-author">
+                        <h5>Mr. & Mrs. Kapoor</h5>
+                        <span>Delhi, India</span>
+                    </div>
                 </div>
-                
-                <div class="testimonial">
-                    <p class="testimonial-text">The royal treatment at Haven's Udaipur palace exceeded all expectations. Our anniversary dinner on the private terrace overlooking Lake Pichola was straight out of a fairy tale. The attention to detail in every aspect of our stay was remarkable.</p>
-                    <h4 class="testimonial-author">— Mr. & Mrs. Kapoor, Delhi</h4>
-                </div>
-                
-                <div class="testimonial">
-                    <p class="testimonial-text">As adventure seekers, we loved the variety of activities available at Haven Riverside in Rishikesh. From white-water rafting to sunrise yoga by the Ganges, every day brought new excitement. The luxury tents made us feel connected to nature without sacrificing comfort.</p>
-                    <h4 class="testimonial-author">— The Adventure Group, Bangalore</h4>
+            </div>
+
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>As adventure seekers, we loved the variety of activities available at Haven Riverside in Rishikesh. From white-water rafting to sunrise yoga by the Ganges, every day brought new excitement.</p>
+                    <div class="testimonial-author">
+                        <h5>The Adventure Group</h5>
+                        <span>Bangalore, India</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <span class="nexus-section-badge">Begin Your Journey</span>
-            <h2 class="nexus-section-title">Ready for Your North Zone Adventure?</h2>
-            <p class="nexus-section-desc">Contact our travel specialists to plan your perfect Himalayan getaway</p>
-            <a href="#" class="cta-button">Book Now</a>
+<!-- CTA Section -->
+<section class="cta-section" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1968&q=80') no-repeat center center; background-size: cover;">
+    <div class="container">
+        <div class="cta-content text-center">
+            <h2>Ready for Your North Zone Adventure?</h2>
+            <p>Contact our travel specialists to plan your perfect Himalayan getaway</p>
+            <a href="/contact" class="btn btn-primary">Book Now</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <script>
-        // Simple testimonial slider
-        let currentTestimonial = 0;
-        const testimonials = document.querySelectorAll('.testimonial');
-        
-        function showTestimonial(index) {
-            testimonials.forEach(testimonial => {
-                testimonial.style.display = 'none';
-            });
-            testimonials[index].style.display = 'block';
-        }
-        
-        function nextTestimonial() {
-            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-            showTestimonial(currentTestimonial);
-        }
-        
-        // Initialize
-        showTestimonial(0);
-        setInterval(nextTestimonial, 5000);
+
+
+<script>
+    $(document).ready(function(){
+        // Initialize testimonial slider
+        $('.testimonial-slider').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 5000
+        });
+    });
 </script>
