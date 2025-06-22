@@ -8,22 +8,14 @@
 
   <ItemGroup>
     <Compile Remove="Views\NewFolder\**" />
-    <Compile Remove="wwwroot\assets\images\NewFolder1\**" />
     <Content Remove="Views\NewFolder\**" />
-    <Content Remove="wwwroot\assets\images\NewFolder1\**" />
     <EmbeddedResource Remove="Views\NewFolder\**" />
-    <EmbeddedResource Remove="wwwroot\assets\images\NewFolder1\**" />
     <None Remove="Views\NewFolder\**" />
-    <None Remove="wwwroot\assets\images\NewFolder1\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Cors" Version="2.3.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\assets\images\india\" />
   </ItemGroup>
 
 </Project>
