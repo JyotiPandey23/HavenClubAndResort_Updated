@@ -549,11 +549,11 @@
     });
   }
 
-  var ZoomImages = function () {
-    function ZoomImages(el, slide) {
+  var Zoomassests/images = function () {
+    function Zoomassests/images(el, slide) {
       var _this = this;
       var onclose = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-      _classCallCheck(this, ZoomImages);
+      _classCallCheck(this, Zoomassests/images);
       this.img = el;
       this.slide = slide;
       this.onclose = onclose;
@@ -592,7 +592,7 @@
       }, false);
       this.img.setZoomEvents = true;
     }
-    return _createClass(ZoomImages, [{
+    return _createClass(Zoomassests/images, [{
       key: "zoomIn",
       value: function zoomIn() {
         var winWidth = this.widowWidth();
@@ -1360,7 +1360,7 @@
             }
             if (slideConfig.zoomable && img.naturalWidth > img.offsetWidth) {
               addClass(img, 'zoomable');
-              new ZoomImages(img, slide, function () {
+              new Zoomassests/images(img, slide, function () {
                 _this.instance.resize();
               });
             }

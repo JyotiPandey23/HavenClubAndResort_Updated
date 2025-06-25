@@ -10,10 +10,10 @@
 		right: -100px;
 		width: 1440px;
 		height: 324px;
-		background-image: url('../~/assets/images/header-illustration-light.svg');
+		background-image: url('../~/assets//assets/images/header-illustration-light.svg');
 
 		.lights-off & {
-			background-image: url('../~/assets/images/header-illustration-dark.svg');
+			background-image: url('../~/assets//assets/images/header-illustration-dark.svg');
 		}
 	}
 }

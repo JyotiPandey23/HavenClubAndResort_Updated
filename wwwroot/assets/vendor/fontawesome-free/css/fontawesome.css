@@ -4159,7 +4159,7 @@ readers do not read off random characters that represent icons */
 .fa-venus-double::before {
   content: "\f226"; }
 
-.fa-images::before {
+.fa-assests/images::before {
   content: "\f302"; }
 
 .fa-calculator::before {

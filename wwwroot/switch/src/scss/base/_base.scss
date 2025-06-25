@@ -55,13 +55,13 @@ dd {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
+	height: auto; /* Make sure assests/images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
 	vertical-align: middle;
 }
 
 figure {
-	margin: 24px 0; /* Extra wide images within figure tags don't overflow the content area. */
+	margin: 24px 0; /* Extra wide assests/images within figure tags don't overflow the content area. */
 }
 
 figcaption {

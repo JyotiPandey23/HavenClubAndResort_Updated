@@ -329,7 +329,7 @@ margin-top: 20px;
     -moz-appearance:none; /* Firefox */
     -webkit-appearance:none; /* Safari and Chrome */
     appearance: none;
-    background: url(../~/assets/images/down.png) no-repeat;
+    background: url(../~/assets//assets/images/down.png) no-repeat;
     background-size: 20px;
     background-position: 220px;
 }
@@ -363,7 +363,7 @@ margin-top: 20px;
 	border-right: 1px solid #EEEEEE;
 }
 .mainBanner .banner_wrapper .banner_content form input.location {
-	background: url(../~/assets/images/task.png) no-repeat;
+	background: url(../~/assets//assets/images/task.png) no-repeat;
     background-size: 13px;
     background-position: 220px;
 }
@@ -378,7 +378,7 @@ margin-top: 20px;
 height: 170px;
     display: block;
     position: absolute;
-    background: url(../~/assets/images/sky.png);
+    background: url(../~/assets//assets/images/sky.png);
     right: 0;
     top: 29px;
 }
@@ -418,7 +418,7 @@ height: 170px;
     height: 43px;
     display: block;
     position: absolute;
-    background: url(../~/assets/images/highlight.png);
+    background: url(../~/assets//assets/images/highlight.png);
     left: 46%;
     top: -25px;
 }
@@ -441,7 +441,7 @@ height: 170px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background: url(../~/assets/images/bottom-bar.png)no-repeat;
+    background: url(../~/assets//assets/images/bottom-bar.png)no-repeat;
 }
 .primary-btn{
     border-radius: 12px;
@@ -485,7 +485,7 @@ height: 170px;
 }
 .travelBgWithColor{
 	padding: 90px 0 90px;
-	background:#F1F6FF url("../~/assets/images/destination-india-bg.png") no-repeat;
+	background:#F1F6FF url("../~/assets//assets/images/destination-india-bg.png") no-repeat;
 	background-position: center center;
 	position: relative;
 }
@@ -495,12 +495,12 @@ height: 170px;
 }
 .travelBg{
 	padding: 90px 0 90px;
-	background: url("../~/assets/images/destination-india-bg.png") no-repeat;
+	background: url("../~/assets//assets/images/destination-india-bg.png") no-repeat;
 	background-position: center center;
 	position: relative;
 }
 .travelBgWithOutpd{
-	background: url("../~/assets/images/destination-india-bg.png");
+	background: url("../~/assets//assets/images/destination-india-bg.png");
 	background-position: center center;
 	position: relative;
 }
@@ -509,7 +509,7 @@ height: 170px;
 	left:0;
 	bottom: 0;
 	content: '';
-	background: url(../~/assets/images/blogShape.png);
+	background: url(../~/assets//assets/images/blogShape.png);
 	width: 260px;
    height: 81px;
 }
@@ -625,7 +625,7 @@ height: 170px;
 }
 
 .findBook{
-	background: url('../~/assets/images/findBook.jpeg')no-repeat;
+	background: url('../~/assets//assets/images/findBook.jpeg')no-repeat;
 	padding: 60px 0 70px;
 	position: relative;
 	background-position: center;
@@ -697,7 +697,7 @@ height: 170px;
     align-items: center;
 }
 .whyChooseUs{
-	background: url('../~/assets/images/why_choose_bg.jpeg')no-repeat;
+	background: url('../~/assets//assets/images/why_choose_bg.jpeg')no-repeat;
 	padding: 60px 0;
 	background-position: center;
 	    background-size: cover;
@@ -797,7 +797,7 @@ box-shadow: 0px 4px 20px 8px rgba(0, 0, 0, 0.07);
 }
 .travelPartners{
 	padding: 60px 0 60px;
-	background: #F1F6FF url(../~/assets/images/travelBg.png) no-repeat;
+	background: #F1F6FF url(../~/assets//assets/images/travelBg.png) no-repeat;
 	background-position: center bottom;
 }
 .travelPartners .owl-item img,
@@ -841,7 +841,7 @@ box-shadow: 0px 4px 20px 8px rgba(0, 0, 0, 0.07);
 	max-height: 100px;
 }
 .mediaPartners{
-   background: url('../~/assets/images/mediaPartnerBg.jpg')no-repeat;
+   background: url('../~/assets//assets/images/mediaPartnerBg.jpg')no-repeat;
 	padding: 60px 0 160px;
 	background-position: bottom;
 	background-size: 100%;
@@ -853,7 +853,7 @@ box-shadow: 0px 4px 20px 8px rgba(0, 0, 0, 0.07);
 
 #testim{
 	padding: 70px 0;
-	background: url('../~/assets/images/clientReviewBg.jpeg')no-repeat;
+	background: url('../~/assets//assets/images/clientReviewBg.jpeg')no-repeat;
 	background-size: cover;
 	position: relative;
 }
@@ -1593,7 +1593,7 @@ footer div h2{
 .unforgettableMain{
 	position: relative;
     padding: 70px 0;
-    background: url(../~/assets/images/unforgettableBg.jpeg);
+    background: url(../~/assets//assets/images/unforgettableBg.jpeg);
     background-size: 100%;
     background-position: center center;
 }
@@ -1728,7 +1728,7 @@ footer div h2{
 	left: 0;
 	content: '';
 	top: 5px;
-	background: url(../~/assets/images/check-mark.png);
+	background: url(../~/assets//assets/images/check-mark.png);
 	width: 18px;
 height: 18px;
 }
@@ -1759,7 +1759,7 @@ height: 18px;
 }
 .luxuryRoom {
 	padding: 60px 0 70px;
-	background: url(../~/assets/images/luxuryBg.jpeg);
+	background: url(../~/assets//assets/images/luxuryBg.jpeg);
 	position: relative;
 	text-align: center;
 }
@@ -1818,7 +1818,7 @@ height: 18px;
 .seasonApartment{
   padding: 60px 0 70px;
   position: relative;
-  background: url(../~/assets/images/seasonApartmentBg.jpeg)no-repeat;
+  background: url(../~/assets//assets/images/seasonApartmentBg.jpeg)no-repeat;
       background-size: cover;
 }
 .seasonApartment:before {
@@ -2024,11 +2024,11 @@ padding: 20px;
 }
 
 .destinationDetail .owl-nav button.owl-prev {
-    background-image: url('~/assets/images/prev.png'); /* Image for the "previous" button */
+    background-image: url('~/assets//assets/images/prev.png'); /* Image for the "previous" button */
 }
 
 .destinationDetail .owl-nav button.owl-next {
-    background-image: url('~/assets/images/next.png'); /* Image for the "next" button */
+    background-image: url('~/assets//assets/images/next.png'); /* Image for the "next" button */
 }
 .destinationDetail .owl-nav button.owl-prev{
   left: 34px;
@@ -2961,7 +2961,7 @@ a.polaroid:hover, a.polaroid:focus, a.polaroid:active {
    	position: relative;
 }
 .bookMembershipForm{
-	background: url(../~/assets/images/membershiBg.jpg);
+	background: url(../~/assets//assets/images/membershiBg.jpg);
 	padding: 30px;
 	position: relative;
 	border-radius: 8px;
@@ -3042,7 +3042,7 @@ a.polaroid:hover, a.polaroid:focus, a.polaroid:active {
 	    object-fit: cover;
 }
 .reciptMain{
-	background: #F1F6FF url(../~/assets/images/destination-india-bg.png) no-repeat;
+	background: #F1F6FF url(../~/assets//assets/images/destination-india-bg.png) no-repeat;
     background-position: center center;
 }
 .reciptInner{

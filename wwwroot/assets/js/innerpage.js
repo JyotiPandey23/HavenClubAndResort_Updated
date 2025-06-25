@@ -229,7 +229,7 @@
     });
 
     if ($('.tripex-isotope').length) {
-        $('.tripex-isotope').imagesLoaded(function () {
+        $('.tripex-isotope').assests/imagesLoaded(function () {
             $('.isotope-grid').isotope({
                 itemSelector: '.filter-item',
                 layoutMode: 'fitRows'

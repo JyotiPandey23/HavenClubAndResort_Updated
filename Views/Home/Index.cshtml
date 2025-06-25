@@ -1,1229 +1,715 @@
-﻿
-    <link href="~/assets/css/index_style.css" rel="stylesheet" />
-    
-
-    <!-- Video Hero Section -->
-    <section class="video-hero">
-        <!-- Video Background -->
-        <video class="video-hero-background" autoplay muted loop playsinline>
-            <source src="~/assets/video/homepagevideo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
-
-        <!-- Gradient Overlay -->
-        <div class="video-hero-overlay"></div>
-
-        <!-- Content -->
-        <div class="video-hero-content">
-            <h2 class="video-hero-title">Discover Your Next Adventure</h2>
-            <p class="video-hero-subtitle">Unleash your wanderlust with unforgettable experiences</p>
-            <div class="video-hero-cta">
-                <a href="#" class="nexus-stories-cta">Explore Now</a>
-                <a href="#" class="cta-button-outline">Learn More</a>
+﻿<section class="mainBanner">
+    <div class="banner_wrapper">
+        <div class="owl-carousel owl-theme mainBannerCarousel">
+            <div class="item">
+                <video autoplay="" muted="" playsinline="" loop="">
+                    <source src="media/Liberty_Vacations_International.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="item">
+                <img src="/assets/images/banner1.jpg">
+            </div>
+            <div class="item">
+                <img src="/assets/images/banner2.jpg">
+            </div>
+            <div class="item">
+                <img src="/assets/images/banner3.jpg">
+            </div>
+            <div class="item">
+                <img src="/assets/images/banner4.jpg">
             </div>
         </div>
-
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <span></span>
-        </div>
-    </section>
-
-    <!-- Holographic About Section -->
-    <section class="nexus-about">
-        <div class="nexus-particle-overlay"></div>
-        <div class="nexus-container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">Haven Club And Resorts Private Limited </span>
-                <h2 class="nexus-section-title">Redefining Luxury Exploration</h2>
-                <p class="nexus-section-desc">Where dimensional travel meets unparalleled hospitality</p>
-            </div>
-
-            <div class="nexus-about-grid">
-                <!-- Holographic Image Display -->
-                <div class="nexus-holo-display">
-                    <div class="nexus-main-hologram">
-                        <div class="nexus-holo-image" style="background-image: url('/assets/~/assets/images/travel_img1.jpg')"></div>
-                        <div class="nexus-holo-effect"></div>
-                        <div class="nexus-holo-badge">Member Exclusive</div>
-                    </div>
-                    
-                    <div class="nexus-holo-thumbnails">
-                        <div class="nexus-holo-thumb" style="background-image: url('/assets/~/assets/images/greece.jpg')">
-                            <div class="nexus-thumb-overlay">Tropical Gateways</div>
-                        </div>
-                        <div class="nexus-holo-thumb" style="background-image: url('/assets/~/assets/images/travel_img3.jpg')">
-                            <div class="nexus-thumb-overlay">Mountain Retreats</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Quantum Travel Content -->
-                <div class="nexus-quantum-content">
-                    <div class="nexus-mission-statement">
-                        <p>Since our Haven Club And Resorts Private Limited inception in 2022, Haven Club And Resorts Private Limited has transcended traditional travel through multi-dimensional experiences crafted for visionary explorers.</p>
-                    </div>
-
-                    <div class="nexus-quantum-features">
-                        <!-- Feature 1 -->
-                        <div class="nexus-qfeature">
-                            <div class="nexus-qfeature-orb">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2z" />
-                                </svg>
-                            </div>
-                            <div class="nexus-qfeature-content">
-                                <h3>Dimensional Destinations</h3>
-                            <p>Unlock exclusive member rates and explore our handpicked collection of 5-star Haven Club and Resorts Private Limited properties across extraordinary destinations..</p>
-                            </div>
-                        </div>
-
-                        <!-- Feature 2 -->
-                        <div class="nexus-qfeature">
-                            <div class="nexus-qfeature-orb">
-                                <svg viewBox="0 0 24 24">
-                                    <circle cx="12" cy="12" r="10" />
-                                    <path d="M12 8v4l3 3" />
-                                </svg>
-                            </div>
-                            <div class="nexus-qfeature-content">
-                                <h3>Temporal Itineraries</h3>
-                            <p>Our Haven Club And Resorts Private Limited travel designers craft personalized journeys that bend space-time to create unforgettable experiences.</p>
-                            </div>
-                        </div>
-
-                        <!-- Feature 3 -->
-                        <div class="nexus-qfeature">
-                            <div class="nexus-qfeature-orb">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                </svg>
-                            </div>
-                            <div class="nexus-qfeature-content">
-                            <h3>VIP Haven Club And Resorts Private Limited Treatment</h3>
-                                <p>Enjoy priority access across dimensions, reality upgrades, and special amenities at our inter-dimensional network.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="nexus-join-cta">
-                    <a asp-controller="Home" asp-action="MemberLogin" class="nexus-join-button">
-                            <span>Initiate Membership</span>
-                            <svg viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- REMEMBER US Section - Enhanced Design -->
-    <section class="haven-memorable-section">
-        <div class="haven-memorable-bg"></div>
-        <div class="haven-memorable-content">
-            <div class="haven-memorable-heading">
-                <span class="haven-memorable-subtitle">WHY CHOOSE US</span>
-                <h2 class="haven-memorable-title">Go Travel. Discover. <span>Remember Us</span></h2>
-                <p class="haven-memorable-description">Creating unforgettable travel experiences since 2022</p>
-            </div>
-
-            <div class="haven-memorable-stats">
-                <div class="haven-stat-item">
-                    <div class="haven-stat-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polyline points="12 6 12 12 16 14"></polyline>
-                        </svg>
-                    </div>
-                    <div class="haven-stat-value">3+</div>
-                    <div class="haven-stat-label">Years of Excellence</div>
-                </div>
-
-                <div class="haven-stat-item">
-                    <div class="haven-stat-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                        </svg>
-                    </div>
-                    <div class="haven-stat-value">100%</div>
-                    <div class="haven-stat-label">Client Satisfaction</div>
-                </div>
-
-                <div class="haven-stat-item">
-                    <div class="haven-stat-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <div class="haven-stat-value">7000+</div>
-                    <div class="haven-stat-label">Happy Travelers</div>
-                </div>
-
-                <div class="haven-stat-item">
-                    <div class="haven-stat-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                        </svg>
-                    </div>
-                    <div class="haven-stat-value">200+</div>
-                    <div class="haven-stat-label">Premium Resorts</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Holographic Destination Portal -->
-    <section class="nexus-destinations">
-        <div class="nexus-particle-overlay"></div>
-        <div class="nexus-container">
-            <div class="nexus-portal-header">
-            <span class="nexus-portal-badge">Haven Club And Resorts Private Limited TRAVEL NETWORK</span>
-                <h2 class="nexus-portal-title">Explore Dimensional Gateways</h2>
-                <p class="nexus-portal-desc">Access our curated collection of interdimensional travel experiences</p>
-            </div>
-
-            <div class="nexus-portal-grid">
-                <!-- Destination 1 - Holographic Portal -->
-                <div class="nexus-portal-item" data-destination="bali">
-                    <div class="nexus-portal-gate">
-                        <div class="nexus-portal-image" style="background-image: url('/assets/~/assets/images/payment-icon/bali2.jpg')"></div>
-                        <div class="nexus-portal-effect"></div>
-                        <div class="nexus-portal-marker">BALI</div>
-                    </div>
-                    <div class="nexus-portal-info">
-                        <div class="nexus-portal-stats">
-                            
-                            
-                        </div>
-                        <div class="nexus-portal-cta">
-                            <span class="nexus-cta-text">Island of Gods</span>
-                            <a href="#" class="nexus-cta-btn">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Destination 2 - Holographic Portal -->
-                <div class="nexus-portal-item" data-destination="santorini">
-                    <div class="nexus-portal-gate">
-                    <div class="nexus-portal-image" style="background-image: url('/assets/~/assets/images/payment-icon/bangkok.jpg')"></div>
-                        <div class="nexus-portal-effect"></div>
-                        <div class="nexus-portal-marker">BANGKOKS</div>
-                    </div>
-                    <div class="nexus-portal-info">
-                        <div class="nexus-portal-stats">
-                           
-                           
-                        </div>
-                        <div class="nexus-portal-cta">
-                            <span class="nexus-cta-text">Aegean Paradise</span>
-                            <a href="#" class="nexus-cta-btn">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Destination 3 - Holographic Portal -->
-                <div class="nexus-portal-item" data-destination="kyoto">
-                    <div class="nexus-portal-gate">
-                    <div class="nexus-portal-image" style="background-image: url('/assets/~/assets/images/payment-icon/maldiv.jpg')"></div>
-                        <div class="nexus-portal-effect"></div>
-                        <div class="nexus-portal-marker">MALDIVES</div>
-                    </div>
-                    <div class="nexus-portal-info">
-                        <div class="nexus-portal-stats">
-                           
-                            
-                        </div>
-                        <div class="nexus-portal-cta">
-                            <span class="nexus-cta-text">Ancient Traditions</span>
-                            <a href="#" class="nexus-cta-btn">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Destination 4 - Holographic Portal -->
-                <div class="nexus-portal-item" data-destination="paris">
-                    <div class="nexus-portal-gate">
-                        <div class="nexus-portal-image" style="background-image: url('/assets/~/assets/images/paris.jpg')"></div>
-                        <div class="nexus-portal-effect"></div>
-                        <div class="nexus-portal-marker">PARIS</div>
-                    </div>
-                    <div class="nexus-portal-info">
-                        <div class="nexus-portal-stats">
-                           
-                         
-                        </div>
-                        <div class="nexus-portal-cta">
-                            <span class="nexus-cta-text">City of Light</span>
-                            <a href="#" class="nexus-cta-btn">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Destination 5 - Holographic Portal -->
-                <div class="nexus-portal-item" data-destination="new-york">
-                    <div class="nexus-portal-gate">
-                        <div class="nexus-portal-image" style="background-image: url('/assets/~/assets/images/payment-icon/NewYork.jpg')"></div>
-                        <div class="nexus-portal-effect"></div>
-                        <div class="nexus-portal-marker">NEW YORK</div>
-                    </div>
-                    <div class="nexus-portal-info">
-                        <div class="nexus-portal-stats">
-                           
-                           
-                        </div>
-                        <div class="nexus-portal-cta">
-                            <span class="nexus-cta-text">Urban Wonder</span>
-                            <a href="#" class="nexus-cta-btn">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Destination 6 - Holographic Portal -->
-                <div class="nexus-portal-item" data-destination="swiss-alps">
-                    <div class="nexus-portal-gate">
-                        <div class="nexus-portal-image" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80')"></div>
-                        <div class="nexus-portal-effect"></div>
-                        <div class="nexus-portal-marker">SWISS ALPS</div>
-                    </div>
-                    <div class="nexus-portal-info">
-                        <div class="nexus-portal-stats">
-                      
-                           
-                        </div>
-                        <div class="nexus-portal-cta">
-                            <span class="nexus-cta-text">Mountain Majesty</span>
-                            <a href="#" class="nexus-cta-btn">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            @* <div class="nexus-portal-footer">
-                <a href="#" class="nexus-view-all">
-                    <span>Access All Portals</span>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                </a>
-            </div> *@
-
-        </div>
-    </section>
-
-    <!-- Top Categories Section -->
-    <section class="haven-categories-section">
-        <div class="haven-categories-container">
-            <div class="haven-categories-header">
-                <div class="haven-section-subtitle">TRAVEL BY ACTIVITY</div>
-                <h2 class="haven-section-title" style="color:white;">Explore <span>Top Categories</span></h2>
-                <p class="haven-section-description" style="color:white;">Discover your perfect vacation experience through our curated activity categories</p>
-            </div>
-
-            <div class="haven-categories-inner">
-                <!-- Beach Category -->
-                <div class="haven-category-item">
-                    <div class="haven-activity-item">
-                        <div class="haven-activity-icon flex justify-center items-center">
-                            <a href="beach">
-                                <img src="/assets/index_image/beach_vetcor.png" alt="Beach" loading="lazy">
-                            </a>
-                        </div>
-                        <div class="haven-activity-content">
-                            <h4><a href="beach">Beach</a></h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Heritage Category -->
-                <div class="haven-category-item">
-                    <div class="haven-activity-item">
-                        <div class="haven-activity-icon flex justify-center items-center">
-                            <a href="heritage">
-                                <img src="/assets/index_image/Heritage.png" alt="Heritage" loading="lazy">
-                            </a>
-                        </div>
-                        <div class="haven-activity-content">
-                            <h4><a href="heritage">Heritage</a></h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Religious Places Category -->
-                <div class="haven-category-item">
-                    <div class="haven-activity-item">
-                        <div class="haven-activity-icon flex justify-center items-center">
-                            <a href="#">
-                                <img src="/assets/index_image/religiousplace.png" alt="Religious Places" loading="lazy">
-                            </a>
-                        </div>
-                        <div class="haven-activity-content">
-                            <h4><a href="#">Religious Places</a></h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Forest Category -->
-                <div class="haven-category-item">
-                    <div class="haven-activity-item">
-                        <div class="haven-activity-icon flex justify-center items-center">
-                            <a href="forest">
-                                <img src="/assets/index_image/Forest.png" alt="Forest" loading="lazy">
-                            </a>
-                        </div>
-                        <div class="haven-activity-content">
-                            <h4><a href="forest">Forest</a></h4>
-                        </div>
-                    </div>  
-                </div>
-
-                <!-- Snow Peaks Category -->
-                <div class="haven-category-item">
-                    <div class="haven-activity-item">
-                        <div class="haven-activity-icon flex justify-center items-center">
-                            <a href="snow-peaks">
-                                <img src="/assets/index_image/snow peaks.png" alt="Snow Peaks" loading="lazy">
-                            </a>
-                        </div>
-                        <div class="haven-activity-content">
-                            <h4><a href="snow-peaks">Snow Peaks</a></h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mountain Category -->
-                <div class="haven-category-item">
-                    <div class="haven-activity-item">
-                        <div class="haven-activity-icon flex justify-center items-center">
-                            <a href="mountain-destination">
-                                <img src="/assets/index_image/mountain.png" alt="Mountain" loading="lazy">
-                            </a>
-                        </div>
-                        <div class="haven-activity-content">
-                            <h4><a href="mountain-destination">Mountain</a></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="haven-categories-button">
-                <a href="destinations" class="btn btn-primary">View All Destinations</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quantum Travel Experience Section -->
-        <section class="nexus-experience">
-            <div class="nexus-particle-overlay"></div>
-            <div class="nexus-container">
-                <div class="nexus-experience-grid">
-                    <!-- Visual Experience Panel -->
-                    <div class="nexus-visual-panel">
-                        <div class="nexus-holographic-display">
-                            <div class="nexus-main-visual" style="background-image: url('/assets/~/assets/images/payment-icon/beach+mountain.jpg')">
-                                <div class="nexus-visual-overlay">
-                                <h3>Your Haven Club And Resorts Private Limited Journey Begins</h3>
-                                    <p>Experience dimensional travel with our advanced portal technology</p>
-                                </div>
-                            </div>
-                            <div class="nexus-visual-thumbnails">
-                                <div class="nexus-thumbnail" style="background-image: url('/assets/~/assets/images/payment-icon/awitzerland1.jpg')"></div>
-                            <div class="nexus-thumbnail" style="background-image: url('/assets/~/assets/images/payment-icon/switerland2.jpg')"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content Experience Panel -->
-                    <div class="nexus-content-panel">
-                        <div class="nexus-panel-header">
-                        <span class="nexus-panel-badge">Haven Club And Resorts Private Limited TRAVEL NETWORK</span>
-                            <h2>Why Choose Haven Club And Resorts Private Limited</h2>
-                            <p class="nexus-panel-desc">We're pioneering the future of dimensional travel with cutting-edge technology and unparalleled service.</p>
-                        </div>
-
-                        <div class="nexus-benefits-grid">
-                            <!-- Benefit 1 -->
-                            <div class="nexus-benefit">
-                                <div class="nexus-benefit-orb">
-                                    <svg class="nexus-benefit-icon" viewBox="0 0 24 24">
-                                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 6h2v2h-2V7zm0 4h2v6h-2v-6z" />
-                                    </svg>
-                                    <div class="nexus-orb-glow"></div>
-                                </div>
-                                <div class="nexus-benefit-content">
-                                <h4>Haven Club And Private Limited Price Lock</h4>
-                                    <p>Our temporal algorithms guarantee the lowest prices across all dimensions with our price matching technology.</p>
-                                </div>
-                            </div>
-
-                            <!-- Benefit 2 -->
-                            <div class="nexus-benefit">
-                                <div class="nexus-benefit-orb">
-                                    <svg class="nexus-benefit-icon" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                                    </svg>
-                                    <div class="nexus-orb-glow"></div>
-                                </div>
-                                <div class="nexus-benefit-content">
-                                    <h4>Multiverse Destinations</h4>
-                                    <p>Access over 10,000 verified dimensional portals to parallel worlds and alternate realities.</p>
-                                </div>
-                            </div>
-
-                            <!-- Benefit 3 -->
-                            <div class="nexus-benefit">
-                                <div class="nexus-benefit-orb">
-                                    <svg class="nexus-benefit-icon" viewBox="0 0 24 24">
-                                        <path d="M17 10h-4l3-8H7v11h3v9l7-12z" />
-                                    </svg>
-                                    <div class="nexus-orb-glow"></div>
-                                </div>
-                                <div class="nexus-benefit-content">
-                                    <h4>AI Concierge</h4>
-                                <p>Your personal Haven Club And Resorts Private Limited assistant available 24/7 across all time zones and dimensions.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Emergency Support -->
-                        <div class="nexus-emergency">
-                            <div class="nexus-emergency-orb">
-                                <svg class="nexus-emergency-icon" viewBox="0 0 24 24">
-                                    <path d="M4.01 2L4 22c0 1.1.89 2 1.99 2h12c1.1 0 2-.9 2-2V2H4.01zM18 6l-8 4-8-4V4l8 4 8-4v2z" />
-                                </svg>
-                                <div class="nexus-emergency-glow"></div>
-                            </div>
-                            <div class="nexus-emergency-content">
-                                <h4>Temporal Support Beacon</h4>
-                                <h3><a href="tel:18002677022" class="nexus-emergency-link">Activate: 18002677022</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Holographic Feature Grid -->
-    <section class="nexus-features">
-        <div class="nexus-particle-overlay"></div>
-        <div class="nexus-container">
-            <div class="nexus-feature-grid">
-                <!-- Feature 1 -->
-                <div class="nexus-feature">
-                    <div class="nexus-feature-orb">
-                        <svg class="nexus-feature-icon" viewBox="0 0 24 24">
-                            <path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3" />
-                        </svg>
-                        <div class="nexus-orb-glow"></div>
-                    </div>
-                    <h3 class="nexus-feature-title">Registered Agency</h3>
-                    <div class="nexus-feature-beam"></div>
-                </div>
-
-                <!-- Feature 2 -->
-                <div class="nexus-feature">
-                    <div class="nexus-feature-orb">
-                        <svg class="nexus-feature-icon" viewBox="0 0 24 24">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
-                        </svg>
-                        <div class="nexus-orb-glow"></div>
-                    </div>
-                    <h3 class="nexus-feature-title">Interesting Packages</h3>
-                    <div class="nexus-feature-beam"></div>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="nexus-feature">
-                    <div class="nexus-feature-orb">
-                        <svg class="nexus-feature-icon" viewBox="0 0 24 24">
-                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
-                        </svg>
-                        <div class="nexus-orb-glow"></div>
-                    </div>
-                    <h3 class="nexus-feature-title">Best Support</h3>
-                    <div class="nexus-feature-beam"></div>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="nexus-feature">
-                    <div class="nexus-feature-orb">
-                        <svg class="nexus-feature-icon" viewBox="0 0 24 24">
-                            <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-                            <circle cx="8.5" cy="7" r="4" />
-                            <path d="M17 11l2 2 4-4" />
-                        </svg>
-                        <div class="nexus-orb-glow"></div>
-                    </div>
-                    <h3 class="nexus-feature-title">Experienced Tour Leader</h3>
-                    <div class="nexus-feature-beam"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Futuristic Travel Planner -->
-    <section class="nexus-planner">
-        <div class="nexus-container">
-            <div class="nexus-header">
-                <div class="nexus-subtitle">Haven Club And Resorts Private Limited</div>
-                <h2 class="nexus-title">THE CLUB EXPERIENCE</h2>
-                <div class="nexus-description">Where cutting-edge travel meets unparalleled luxury</div>
-            </div>
-
-            <div class="nexus-services">
-                <!-- Service 1 - Diagonal Split Layout -->
-                <div class="nexus-service service-diagonal">
-                    <div class="service-visual">
-                        <div class="visual-image" style="background-image: url('/assets/~/assets/images/payment-icon/udaipur.jpg')"></div>
-                        <div class="visual-overlay"></div>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-marker">01</div>
-                        <h3 class="service-title">Domestic Escapes</h3>
-                        <p class="service-desc">Discover hidden gems within your borders with our curated domestic journeys</p>
-                        <a href="#" class="service-cta">
-                            <span>Explore Routes</span>
-                            <svg viewBox="0 0 24 24" width="24" height="24">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Service 2 - Vertical Split Layout -->
-                <div class="nexus-service service-vertical">
-                    <div class="service-visual">
-                        <div class="visual-image" style="background-image: url('/assets/~/assets/images/payment-icon/global.jpg')"></div>
-                        <div class="visual-overlay"></div>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-marker">02</div>
-                        <h3 class="service-title">Global Odyssey</h3>
-                        <p class="service-desc">Cross borders with our seamless international travel concierge</p>
-                        <a href="#" class="service-cta">
-                            <span>View Destinations</span>
-                            <svg viewBox="0 0 24 24" width="24" height="24">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Service 3 - Full Width with Floating Content -->
-                <div class="nexus-service service-fullwidth">
-                    <div class="service-visual">
-                        <div class="visual-image" style="background-image: url('/assets/~/assets/images/payment-icon/beach2.jpg')"></div>
-                        <div class="visual-overlay"></div>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-marker">03</div>
-                        <h3 class="service-title">Sanctuary Stays</h3>
-                        <p class="service-desc">Our handpicked luxury accommodations redefine hospitality</p>
-                        <a href="#" class="service-cta">
-                            <span>Book Retreat</span>
-                            <svg viewBox="0 0 24 24" width="24" height="24">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                    </a>fWHY CHOOSE
-                    </div>
-                </div>
-
-                <!-- Service 4 - Geometric Layout -->
-                <div class="nexus-service service-geometric">
-                    <div class="service-visual">
-                        <div class="visual-image" style="background-image: url('/assets/~/assets/images/payment-icon/flight.jpg')"></div>
-                        <div class="visual-overlay"></div>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-marker">04</div>
-                        <h3 class="service-title">Seamless Transit</h3>
-                        <p class="service-desc">Let us handle all your transportation needs with precision</p>
-                        <a href="#" class="service-cta">
-                            <span>Arrange Travel</span>
-                            <svg viewBox="0 0 24 24" width="24" height="24">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>  
-
-    <!-- Holographic Testimonial Section -->
-    <section class="nexus-testimonials">
-    <div class="nexus-testimonial-overlay" style="background-image: url('/assets/~/assets/images/payment-icon/resorts.jpg');opacity:0.5"></div>
-        <div class="nexus-container">
-            <div class="nexus-testimonial-grid">
-                <!-- Call to Action Panel -->
-                <div class="nexus-call-panel">
-                    <div class="nexus-rating">
-                        <div class="stars">★★★★★</div>
-                        <span class="rating-text">Rated 5/5 by 2k+ travelers</span>
-                    </div>
-                    <h3 class="nexus-call-title">Your Dream Vacation <span class="nexus-accent">Awaits</span></h3>
-                    <div class="nexus-cta-box">
-                        <div class="nexus-phone">
-                            <svg class="phone-icon" viewBox="0 0 24 24">
-                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
-                            </svg>
-                            <div>
-                                <p class="nexus-phone-label">24/7 Travel Concierge</p>
-                                <a href="tel:18002677022" class="nexus-phone-number">1-800-267-7022</a>
-                            </div>
-                        </div>
-                        <p class="nexus-call-note"><svg class="check-icon" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" /></svg> Toll-free service</p>
-                    </div>
-                </div>
-
-                <!-- Testimonials Panel -->
-                <div class="nexus-testimonial-panel">
-                    <div class="nexus-panel-header">
-                        <span class="nexus-panel-subtitle">Client Voices</span>
-                        <h4>Traveler Experiences</h4>
-                    </div>
-
-                    <div class="nexus-testimonial-scroll">
-                        <!-- Testimonial 1 -->
-                        <div class="nexus-testimonial">
-                            <div class="nexus-testimonial-quote">
-                                <svg class="quote-icon" viewBox="0 0 24 24">
-                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-                                </svg>
-                                <p>I truly do not have the words to express the amazing vacation that was planned for us by this travel agent and his staff...</p>
-                            </div>
-                            <div class="nexus-testimonial-author">
-                                <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/~/assets/images/user.png" alt="Sanjeev Khana" class="nexus-avatar">
-                                <div class="nexus-author-info">
-                                   
-                                    <span class="nexus-author-name">Sanjeev Khana</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Testimonial 2 -->
-                        <div class="nexus-testimonial">
-                            <div class="nexus-testimonial-quote">
-                                <svg class="quote-icon" viewBox="0 0 24 24">
-                                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-                                </svg>
-                                <p>Everyone was incredible in helping us plan and carry out our trip. Thank you Rachel for helping us plan out the most amazing trip ever!</p>
-                            </div>
-                            <div class="nexus-testimonial-author">
-                                <img src="https://raoholidays.in/wp-content/themes/harshaholidays/assets/~/assets/images/user.png" alt="Rahul Pandya" class="nexus-avatar">
-                                <div class="nexus-author-info">
-                                    <div class="nexus-author-rating"></div>
-                                    <span class="nexus-author-name">Rahul Pandya</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Futuristic Destination Explorer -->
-    <section class="nexus-destinations">
-        <div class="nexus-particle-overlay"></div>
-        <div class="nexus-container">
-            <div class="nexus-section-header">
-                <span class="nexus-section-badge">DOMESTIC HOTSPOTS</span>  
-                <h2 class="nexus-section-title">
-                    Trending Destinations</h2>
-                        <p class="nexus-section-desc">Journey to the India's most captivating locations with our exclusive packages</p>
-            </div>
-
-            <div class="nexus-destination-grid">
-                <!-- Bali - Holographic Card -->
-                <div class="nexus-destination-card" data-location="bali">
-                    <div class="nexus-card-visual">
-                        <div class="nexus-image" style="background-image: url('/assets/~/assets/images/Aisa/udaipur (2).jpg')"></div>
-                        <div class="nexus-hologram-effect"></div>
-                        
-                        <div class="nexus-location-pin">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                            </svg>
-                            <span>UDAIPUR</span>
-                        </div>
-                    </div>
-                    <div class="nexus-card-content">
-                        <div class="nexus-rating">
-                            <div class="nexus-stars"></div>
-                            <span class="nexus-review-count">128 reviews</span>
-                        </div>
-                        <h3 class="nexus-card-title">Udaipur</h3>
-                    <p class="nexus-card-desc">The City of Lakes and Venice of the East</p>
-                        <div class="nexus-card-footer">
-                            <a href="#" class="nexus-explore-btn">
-                                <span>Customize Tour</span>
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <button class="nexus-wishlist-btn">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="nexus-card-hover">
-                        <div class="nexus-popular-tags">
-                            <span>Mountains</span>
-                            <span>Palaces</span>
-                            <span>Waterfalls</span>
-                        </div>
-                        <div class="nexus-weather-info">
-                       
-                            <span>Best time: May-September</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cappadocia - Holographic Card -->
-                <div class="nexus-destination-card" data-location="cappadocia">
-                    <div class="nexus-card-visual">
-                        <div class="nexus-image" style="background-image: url('/assets/~/assets/images/Aisa/kashmir.jpg')"></div>
-                        <div class="nexus-hologram-effect"></div>
-                        
-                        <div class="nexus-location-pin">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                            </svg>
-                            <span>KASHMIR</span>
-                        </div>
-                    </div>
-                    <div class="nexus-card-content">
-                        <div class="nexus-rating">
-                            <div class="nexus-stars"></div>
-                            <span class="nexus-review-count">95 reviews</span>
-                        </div>
-                        <h3 class="nexus-card-title">Kashmir</h3>
-                        <p class="nexus-card-desc">Kashmir is renowned for its breathtaking natural beauty, often referred to as "Paradise on Earth</p>
-                        <div class="nexus-card-footer">
-                            <a href="#" class="nexus-explore-btn">
-                                <span>Customize Tour</span>
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <button class="nexus-wishlist-btn">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="nexus-card-hover">
-                        <div class="nexus-popular-tags">
-                            <span>Mountains</span>
-                            <span>Forest</span>
-                            <span>History</span>
-                        </div>
-                        <div class="nexus-weather-info">
-                            <span>⛅ 18°C</span>
-                            <span>Best time: Full Year</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Kyoto - Holographic Card -->
-                <div class="nexus-destination-card" data-location="kyoto">
-                    <div class="nexus-card-visual">
-                        <div class="nexus-image" style="background-image: url('/assets/~/assets/images/Aisa/uk.jpg')"></div>
-                        <div class="nexus-hologram-effect"></div>
-                       
-                        <div class="nexus-location-pin">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                            </svg>
-                            <span>UTTRAKHAND</span>
-                        </div>
-                    </div>
-                    <div class="nexus-card-content">
-                        <div class="nexus-rating">
-                            <div class="nexus-stars"></div>
-                            <span class="nexus-review-count">112 reviews</span>
-                        </div>
-                        <h3 class="nexus-card-title">Uttrakhand</h3>
-                        <p class="nexus-card-desc">stunning natural landscapes, rich cultural heritage, and numerous religious pilgrimage sites</p>
-                        <div class="nexus-card-footer">
-                            <a href="#" class="nexus-explore-btn">
-                                <span>Customize Tour</span>
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <button class="nexus-wishlist-btn">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="nexus-card-hover">
-                        <div class="nexus-popular-tags">
-                            <span>Adventure Tourism</span>
-                            <span>Temples</span>
-                            <span>Cultural Heritage</span>
-                        </div>
-                        <div class="nexus-weather-info">
-                            <span>🌸 15°C</span>
-                            <span>Best time: Full Year</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Jaipur - Holographic Card -->
-                <div class="nexus-destination-card" data-location="jaipur">
-                    <div class="nexus-card-visual">
-                    <div class="nexus-image" style="background-image: url('/assets/~/assets/images/Aisa/ooty.jpg')"></div>
-                        <div class="nexus-hologram-effect"></div>
-                       
-                        <div class="nexus-location-pin">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                            </svg>
-                            <span>OOTY</span>
-                        </div>
-                    </div>
-                    <div class="nexus-card-content">
-                        <div class="nexus-rating">
-                            <div class="nexus-stars"></div>
-                            <span class="nexus-review-count">86 reviews</span>
-                        </div>
-                        <h3 class="nexus-card-title">Ooty</h3>
-                    <p class="nexus-card-desc">scenic beauty, cool climate, and lush greenery</p>
-                        <div class="nexus-card-footer">
-                            <a href="#" class="nexus-explore-btn">
-                                <span>Customize Tour</span>
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
-                            </a>
-                            <button class="nexus-wishlist-btn">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="nexus-card-hover">
-                        <div class="nexus-popular-tags">
-                        <span>Tea Plantations</span>
-                        <span>Nilgiri Mountain Railway</span>
-                        <span>Scenic Beauty</span>
-                        </div>
-                        <div class="nexus-weather-info">
-                            <span>☀️ 32°C</span>
-                            <span>Best time: October-March</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="nexus-view-all">
-                <a href="#" class="nexus-view-all-btn">
-                    <span>Discover 50+ Destinations</span>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Holographic Travel Stories -->
-    <section class="nexus-stories">
-        <div class="nexus-stories-overlay"></div>
-        <div class="nexus-container">
-            <div class="nexus-stories-header">
-                <span class="nexus-stories-badge">DIGITAL TRAVELOGUE</span>
-                <h2 class="nexus-stories-title">Explore Our Journeys</h2>
-                <p class="nexus-stories-desc">Immerse yourself in holographic travel narratives from across the multiverse</p>
-            </div>
-
-            <!-- Story 1 - Floating Card -->
-            <article class="nexus-story-card">
-                <div class="nexus-story-visual">
-                <div class="nexus-story-image" style="background-image: url('/assets/~/assets/images/Aisa/bangkok1.jpg')"></div>
-                    <div class="nexus-story-hologram"></div>
-                    <div class="nexus-story-tag">TRAVEL TIPS</div>
-                    <div class="nexus-story-scroll">Scroll →</div>
-                </div>
-                <div class="nexus-story-content">
-                    <div class="nexus-story-meta">
-                        <span class="nexus-story-date">JUN 15, 2023</span>
-                        <span class="nexus-story-duration">5 MIN READ</span>
-                    </div>
-                    <h3 class="nexus-story-title">Memories Last Forever</h3>
-                    <p class="nexus-story-excerpt">Discover revolutionary techniques to capture and preserve your travel memories using quantum photography and neural journaling.</p>
-                    <div class="nexus-story-author">
-                       @*  <div class="nexus-author-hologram">
-                        <img src="~/assets/~/assets/images/" alt="Sarah Johnson" class="nexus-author-img">
-                            <div class="nexus-author-ring"></div>
-                        </div> *@
-                        <div class="nexus-author-info">
-                            <span class="nexus-author-name">Vijay saxena</span>
-                       
-                        </div>
-                    </div>
-                    <a href="#" class="nexus-story-link">
-                        <span>Access Memory File</span>
-                        <svg viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="nexus-story-hover">
-                    <div class="nexus-story-stats">
-                        <div class="nexus-stat">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                                <circle cx="12" cy="12" r="3" />
-                            </svg>
-                            <span>24.5K views</span>
-                        </div>
-                        <div class="nexus-stat">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-                            </svg>
-                            <span>328 comments</span>
-                        </div>
-                    </div>
-                    <div class="nexus-story-keywords">
-                        <span>#MemoryPreservation</span>
-                        <span>#HoloPhotography</span>
-                        <span>#NeuralJournaling</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Story 2 - Floating Card -->
-            <article class="nexus-story-card">
-                <div class="nexus-story-visual">
-                    <div class="nexus-story-image" style="background-image: url('/assets/~/assets/images/Aisa/adventure.jpg'"></div>
-                    <div class="nexus-story-hologram"></div>
-                    <div class="nexus-story-tag">ADVENTURE</div>
-                    <div class="nexus-story-scroll">Scroll →</div>
-                </div>
-                <div class="nexus-story-content">
-                    <div class="nexus-story-meta">
-                        <span class="nexus-story-date">MAY 28, 2023</span>
-                        <span class="nexus-story-duration">7 MIN READ</span>
-                    </div>
-                    <h3 class="nexus-story-title">Embrace Adventure</h3>
-                    <p class="nexus-story-excerpt">Experience next-gen adrenaline activities from zero-gravity skydiving to augmented reality mountain climbing across dimensions.</p>
-                    <div class="nexus-story-author">
-                       @*  <div class="nexus-author-hologram">
-                            <img src="/assets/~/assets/images/author2.jpg" alt="Michael Chen" class="nexus-author-img">
-                            <div class="nexus-author-ring"></div>
-                        </div> *@
-                        <div class="nexus-author-info">
-                            <span class="nexus-author-name">Rajendra singh</span>
-                            <span class="nexus-author-title">Extreme Sports Guide</span>
-                        </div>
-                    </div>
-                    <a href="#" class="nexus-story-link">
-                        <span>Access Memory File</span>
-                        <svg viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="nexus-story-hover">
-                    <div class="nexus-story-stats">
-                        <div class="nexus-stat">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                                <circle cx="12" cy="12" r="3" />
-                            </svg>
-                            <span>18.2K views</span>
-                        </div>
-                        <div class="nexus-stat">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-                            </svg>
-                            <span>241 comments</span>
-                        </div>
-                    </div>
-                    <div class="nexus-story-keywords">
-                        <span>#ZeroGravity</span>
-                        <span>#ARClimbing</span>
-                        <span>#DimensionalTravel</span>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Story 3 - Floating Card -->
-            <article class="nexus-story-card">
-                <div class="nexus-story-visual">
-                    <div class="nexus-story-image" style="background-image: url('/assets/~/assets/images/Aisa/mayabay.jpg')"></div>
-                    <div class="nexus-story-hologram"></div>
-                    <div class="nexus-story-tag">DESTINATIONS</div>
-                    <div class="nexus-story-scroll">Scroll →</div>
-                </div>
-                <div class="nexus-story-content">
-                    <div class="nexus-story-meta">
-                        <span class="nexus-story-date">APR 12, 2023</span>
-                        <span class="nexus-story-duration">9 MIN READ</span>
-                    </div>
-                <h3 class="nexus-story-title">Maya Bay In Thailand: The Beach Is Open! (Phi Phi Leh)</h3>
-                <p class="nexus-story-excerpt">The beach at Maya Bay is one of the most famous and photogenic places in Thailand, and it’s the main thing responsible for bringing travelers to th</p>
-                    <div class="nexus-story-author">
-                       @*  <div class="nexus-author-hologram">
-                            <img src="/assets/~/assets/images/author3.jpg" alt="Priya Patel" class="nexus-author-img">
-                            <div class="nexus-author-ring"></div>
-                        </div> *@
-                        <div class="nexus-author-info">
-                            <span class="nexus-author-name">Priya Patel</span>
-                        
-                        </div>
-                    </div>
-                    <a href="#" class="nexus-story-link">
-                        <span>Access Memory File</span>
-                        <svg viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="nexus-story-hover">
-                    <div class="nexus-story-stats">
-                        <div class="nexus-stat">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                                <circle cx="12" cy="12" r="3" />
-                            </svg>
-                            <span>32.7K views</span>
-                        </div>
-                        <div class="nexus-stat">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-                            </svg>
-                            <span>512 comments</span>
-                        </div>
-                    </div>
-                    <div class="nexus-story-keywords">
-                        <span>#Mayabay</span>
-                        <span>#beach</span>
-                        <span>#RealityExpansion</span>
-                    </div>
-                </div>
-            </article>
-
-            <div class="nexus-stories-footer">
-                <a href="#" class="nexus-stories-cta">
-                    <span>Access All Stories</span>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partners/Brands Section -->
-            <section class="haven-partners-section">
-                <div class="haven-partners-container">
-                    <div class="haven-partners-header">
-                        <span class="haven-partners-subtitle">TRUSTED COLLABORATIONS</span>
-                        <h2 class="haven-partners-title">Our <span class="highlight">Valued Partners</span></h2>
-                        <p class="haven-partners-description">
-                            We proudly collaborate with industry leaders to bring you the best travel experiences.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="haven-partners-slider-container">
-                    <div class="haven-partners-slider-track">
-                        <!-- Partner Logos -->
-                        <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/MMYT_BIG.D.png" alt="MakeMyTrip"></div>
-                        <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/goibibo-seeklogo.png" alt="Goibibo"></div>
-                        <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/Booking.com_Logo_1.png" alt="Booking.com"></div>
-                   
-                        <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/TRVG_BIG.png" alt="Trivago"></div>
-                        <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/YTRA_BIG.png" alt="Yatra"></div>
-
-                        <!-- Repeat for infinite loop -->
-                <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/MMYT_BIG.D.png" alt="MakeMyTrip"></div>
-                <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/goibibo-seeklogo.png" alt="Goibibo"></div>
-                <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/Booking.com_Logo_1.png" alt="Booking.com"></div>
-            
-                <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/TRVG_BIG.png" alt="Trivago"></div>
-                <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/YTRA_BIG.png" alt="Yatra"></div>
-                    </div>
-                </div>
-            </section>
-
-<section class="haven-partners-section">
-    <div class="haven-partners-container">
-        <div class="haven-partners-header">
-            <span class="haven-partners-subtitle">TRUSTED COLLABORATIONS</span>
-            <h2 class="haven-partners-title">Our <span class="highlight">Our Preferred Partner</span></h2>
-            <p class="haven-partners-description">
-                We proudly collaborate with industry leaders to bring you the best travel experiences.
-            </p>
-        </div>
-    </div>
-
-    <div class="haven-partners-slider-container">
-        <div class="haven-partners-slider-track">
-            <!-- Partner Logos -->
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/ramada2.png" alt="Booking.com"></div>
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/hyatt2.png" alt="Booking.com"></div>
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/fern.png" alt="MakeMyTrip"></div>
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/novotel-seeklogo.png" alt="Goibibo"></div>
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/jw1.png" alt="Booking.com"></div>
-
-
-
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/raddission1.png" alt="Yatra"></div>
-            <!-- Repeat for infinite loop -->
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/ramada2.png" alt="Booking.com"></div>
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/hyatt2.png" alt="Booking.com"></div>
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/fern.png" alt="MakeMyTrip"></div>
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/novotel-seeklogo.png" alt="Goibibo"></div>
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/jw1.png" alt="Booking.com"></div>
-
-
-
-            <div class="haven-partner-logo"><img src="~/assets/~/assets/images/Aisa/raddission1.png" alt="Yatra"></div>
-
+        <div class="banner_content">
+            <span class="subheading">Let's travel the world with us</span>
+            <h1>Explore The World With <span class="strokeText">Liberty Vacations International</span></h1>
         </div>
     </div>
 </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Mobile Banner -->
+<section class="mobileBanner">
+    <div class="banner_wrapper">
+        <div class="owl-carousel owl-theme mainBannerCarousel">
+            <video class="mobileVideo" autoplay="" muted="" playsinline="" loop="">
+                <source src="media/Liberty_Vacations_International.mp4" type="video/mp4">
+            </video>
+            <div class="mobileVideo">
+                <img src="/assets/images/banner1.jpg">
+            </div>
+            <div class="mobileVideo">
+                <img src="/assets/images/banner2.jpg">
+            </div>
+            <div class="mobileVideo">
+                <img src="/assets/images/banner3.jpg">
+            </div>
+            <div class="mobileVideo">
+                <img src="/assets/images/banner4.jpg">
+            </div>
+        </div>
+        <div class="mobile_banner_content">
+            <span class="mobile_subheading">Let's travel the world with us</span>
+            <h1>Explore The World With <span class="mobileStrokeText">Liberty Vacations International</span></h1>
+        </div>
+    </div>
+
+</section>
+
+<section class="aboutHome">
+    <div class="container">
+        <div class="aboutInner">
+            <div>
+                <div class="secTitle">
+                    <span>Tour and travels</span>
+                    <h2>Welcome to Haven Club And  Resorts Private Limited</h2>
+                </div>
+                <p>
+                    Founded in 2022, Haven Club And Resorts Private Limited is revolutionizing the travel landscape with a focus on personalized service and exceptional hospitality. Our guiding principle, "Discover the world with us!", reflects our commitment to crafting unforgettable experiences for our guests.
+
+                    We present our clients with an extensive selection of both domestic and international destinations. Our resort offerings range from breathtaking mountain retreats to peaceful beachfront getaways, and from captivating desert landscapes to serene lakeside escapes.
+                </p>
+                <a href="https://www.clubliberty.in/about-us" class="primary-btn">About Us</a>
+            </div>
+            <div>
+                <img src="/assets/images/image1_bg.png">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="destinationIndia travelBg destination_sec">
+    <div class="container">
+        <div class="secTitle textCenter">
+            <span>Choose your place</span>
+            <h2>Destinations in India</h2>
+        </div>
+        <div class="indiaDestination destination owl-carousel">
+            <div class="item">
+                <a href="https://www.clubliberty.in/bengaluru/resorts/">
+                    <img src="/assets/images/1690549097desti.jpg" alt="Bengaluru">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690546081desti.jpg"> -->
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/bengaluru/resorts/">Bengaluru</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.clubliberty.in/agra/resorts/">
+                    <img src="/assets/images/1690546081desti.jpg" alt="Agra">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690546081desti.jpg"> -->
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/agra/resorts/">Agra</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.clubliberty.in/jaipur/resorts/">
+                    <img src="/assets/images/1690549225desti.jpg" alt="Jaipur">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690546081desti.jpg"> -->
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/jaipur/resorts/">Jaipur</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.clubliberty.in/goa/resorts/">
+                    <img src="/assets/images/1690549030desti.jpg" alt="Goa">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690546081desti.jpg"> -->
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/goa/resorts/">Goa</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.clubliberty.in/manali/resorts/">
+                    <img src="/assets/images/1690549187desti.jpg" alt="Manali">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690546081desti.jpg"> -->
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/manali/resorts/">Manali</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="item">
+               <img src="asset/img/srinagar.jpeg">
+               <div class="destinationContent">
+                  <h2><a href="#">Srinagar</a></h2>
+                  <ul>
+                     <li><img src="asset/img/icons/sleeping.png"></li>
+                     <li><img src="asset/img/icons/car.png"></li>
+                     <li><img src="asset/img/icons/travel-bag.png"></li>
+                     <li><img src="asset/img/icons/target.png"></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="item">
+               <img src="asset/img/shimla.png">
+               <div class="destinationContent">
+                  <h2><a href="#">Shimla</a></h2>
+                  <ul>
+                     <li><img src="asset/img/icons/sleeping.png"></li>
+                     <li><img src="asset/img/icons/car.png"></li>
+                     <li><img src="asset/img/icons/travel-bag.png"></li>
+                     <li><img src="asset/img/icons/target.png"></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="item">
+               <img src="asset/img/shimla.png">
+               <div class="destinationContent">
+                  <h2><a href="#">Shimla</a></h2>
+                  <ul>
+                     <li><img src="asset/img/icons/sleeping.png"></li>
+                     <li><img src="asset/img/icons/car.png"></li>
+                     <li><img src="asset/img/icons/travel-bag.png"></li>
+                     <li><img src="asset/img/icons/target.png"></li>
+                  </ul>
+               </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+<section class="findBook">
+    <div class="container">
+        <div class="secTitle textCenter">
+            <span>Tour and travels</span>
+            <h2>Find & Book Your Trip</h2>
+        </div>
+        <div class="findBookInner">
+            <div class="item">
+                <div>
+                    <img src="/assets/images/airoplane.png">
+                </div>
+                <h2 class="count percent" data-count="100">100+</h2>
+                <p>Countries</p>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="/assets/images/travel.png">
+                </div>
+                <h2 class="count percent" data-count="5000">5000+</h2>
+                <p>Destinations</p>
+            </div>
+            <div class="item">
+                <div>
+                    <img src="/assets/images/beach.png">
+                </div>
+                <h2 class="count percent" data-count="1200">1200+</h2>
+                <p>Vacation Options</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="destinationInter travelBg destination_sec">
+    <div class="container">
+        <div class="secTitle textCenter">
+            <span>Deals & offers</span>
+            <h2>International Destinations</h2>
+        </div>
+        <div class="internationalDestination destination owl-carousel ">
+            <div class="item">
+                <a href="https://www.clubliberty.in/dubai/resorts/">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690549690desti.jpg"> -->
+                    <img src="/assets/images/1690537735desti.jpg" alt="Dubai">
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/dubai/resorts/">Dubai</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.clubliberty.in/malaysia/resorts/">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690549690desti.jpg"> -->
+                    <img src="/assets/images/1690537983desti.jpg" alt="Malaysia">
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/malaysia/resorts/">Malaysia</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.clubliberty.in/pattaya/resorts/">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690549690desti.jpg"> -->
+                    <img src="/assets/images/1690549618desti.jpg" alt="Pattaya ">
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/pattaya/resorts/">Pattaya </a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.clubliberty.in/bali/resorts/">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690549690desti.jpg"> -->
+                    <img src="/assets/images/1690549718desti.jpg" alt="Bali">
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/bali/resorts/">Bali</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.clubliberty.in/london/resorts/">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690549690desti.jpg"> -->
+                    <img src="/assets/images/1690549656desti.jpg" alt="London">
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/london/resorts/">London</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.clubliberty.in/paris/resorts/">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690549690desti.jpg"> -->
+                    <img src="/assets/images/1690549690desti.jpg" alt="Paris">
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/paris/resorts/">Paris</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.clubliberty.in/las-vegas/resorts/">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690549690desti.jpg"> -->
+                    <img src="/assets/images/1690549379desti.jpg" alt="Las Vegas">
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/las-vegas/resorts/">Las Vegas</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.clubliberty.in/los-angeles/resorts/">
+                    <!-- <img src="https://www.clubliberty.in/admin//assets/images/destination/1690549690desti.jpg"> -->
+                    <img src="/assets/images/1690549750desti.jpg" alt="Los Angeles">
+                </a>
+                <div class="destinationContent">
+                    <h2><a href="https://www.clubliberty.in/los-angeles/resorts/">Los Angeles</a></h2>
+                    <ul>
+                        <li><img src="/assets/images/sleeping.png"></li>
+                        <li><img src="/assets/images/car.png"></li>
+                        <li><img src="/assets/images/travel-bag.png"></li>
+                        <li><img src="/assets/images/target.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="whyChooseUs">
+    <div class="container">
+        <div class="whyChooseUsInner">
+            <div class="whyFirstCol">
+                <div class="secTitle">
+                    <span>Why choose us</span>
+                    <h2 style="font-size: 35px;">Experience the finest in travel and comfort with Haven Club and Resorts Private Limited.</h2>
+                </div>
+                <p>At Haven Club and Resorts Private Limited, we're always here to assist you. Feel free to reach out to our customer care executives for any information or queries..</p>
+                <a href="/contact-us" class="primary-btn">Book Now</a>
+            </div>
+            <div class="centerImg">
+                <img src="/assets/images/image6-bg.png">
+            </div>
+            <div>
+                <div class="whyItem">
+                    <div class="icon">
+                        <img src="/assets/images/diamond.png">
+                    </div>
+                    <div>
+                        <h4>Lavishness</h4>
+                        <p>Haven Club and Resorts Private Limited is dedicated to making your stay as luxurious and comfortable as possible. We take immense pride in offering rooms that promise the perfect blend of elegance and relaxation.</p>
+                    </div>
+                </div>
+                <div class="whyItem">
+                    <div class="icon">
+                        <img src="/assets/images/wallet.png">
+                    </div>
+                    <div>
+                        <h4>Affordable</h4>
+                        <p>Haven Club and Resorts Private Limited is a favorite among travelers, offering unparalleled facilities and a relaxing stay at prices that are incredibly affordable.</p>
+                    </div>
+                </div>
+                <div class="whyItem">
+                    <div class="icon">
+                        <img src="/assets/images/activties.png">
+                    </div>
+                    <div>
+                        <h4>Activities</h4>
+                        <p>Haven Club and Resorts Private Limited takes you on an exciting journey filled with exhilarating activities that leave you feeling refreshed, joyful, and completely rejuvenated.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--<section class=" travelBg">-->
+<!--   <div class="container">-->
+<!--      <div class="secTitle textCenter">-->
+<!--         <span>Journals</span>-->
+<!--         <h2>Magazine & Brochure</h2>-->
+<!--      </div>-->
+<!--      <div class="magazineInner">-->
+<!--         <div class="magazineItem">-->
+<!--            <img src="https://www.clubliberty.in/assets/asset/img/magazine1.jpeg">-->
+<!--         </div>-->
+<!--         <div class="magazineItem">-->
+<!--            <img src="https://www.clubliberty.in/assets/asset/img/magazine2.jpeg">-->
+<!--         </div>-->
+<!--         <div class="magazineItem">-->
+<!--            <img src="https://www.clubliberty.in/assets/asset/img/magazine3.jpeg">-->
+<!--         </div>-->
+<!--      </div>-->
+<!--      <div class="magazineBtn">-->
+<!--         <a href="#"><img src="https://www.clubliberty.in/assets/asset/img/icons/preview.png"></a>-->
+<!--         <a href="#" download="club_liberty_magazine.pdf"><img src="https://www.clubliberty.in/assets/asset/img/icons/downloads.png"></a>-->
+<!--      </div>-->
+<!--   </div>-->
+<!--</section>-->
+<section class="travelPartners">
+    <div class="container">
+        <div class="secTitle textCenter">
+            <span>Tour and travels</span>
+            <h2>Our Travel Associates</h2>
+        </div>
+        <div class="travelPartnersInner owl-carousel ">
+            <div class="item">
+                <img src="/assets/images/1_1.jpeg">
+            </div>
+            <div class="item">
+                <img src="/assets/images/2_1.jpeg">
+            </div>
+            <div class="item">
+                <img src="/assets/images/3_1.jpeg">
+            </div>
+            <div class="item">
+                <img src="/assets/images/4.jpeg">
+            </div>
+            <div class="item">
+                <img src="/assets/images/5.jpeg">
+            </div>
+        </div>
+    </div>
+</section>
+<!--<section class="preferredPartners">-->
+<!--   <div class="container">-->
+<!--      <div class="secTitle textCenter">-->
+<!--         <span>Liberty Vacations International</span>-->
+<!--         <h2>Our Media Associates</h2>-->
+<!--      </div>-->
+<!--      <div class="mediaPartnersInner">-->
+<!--         <div class="item">-->
+<!--            <img src="asset/img/mediaPartners/1.png">-->
+<!--         </div>-->
+<!--         <div class="item">-->
+<!--            <img src="asset/img/mediaPartners/2.png">-->
+<!--         </div>-->
+<!--         <div class="item">-->
+<!--            <img src="asset/img/mediaPartners/3.png">-->
+<!--         </div>-->
+<!--         <div class="item">-->
+<!--            <img src="asset/img/mediaPartners/4.png">-->
+<!--         </div>-->
+<!--         <div class="item">-->
+<!--            <img src="asset/img/mediaPartners/5.png">-->
+<!--         </div>-->
+<!--         <div class="item">-->
+<!--            <img src="asset/img/mediaPartners/6.png">-->
+<!--         </div>-->
+<!--         <div class="item">-->
+<!--            <img src="asset/img/mediaPartners/7.png">-->
+<!--         </div>-->
+<!--         <div class="item">-->
+<!--            <img src="asset/img/mediaPartners/8.png">-->
+<!--         </div>-->
+<!--         <div class="item">-->
+<!--            <img src="asset/img/mediaPartners/9.png">-->
+<!--         </div>-->
+<!--         <div class="item">-->
+<!--            <img src="asset/img/mediaPartners/10.png">-->
+<!--         </div>-->
+<!--      </div>-->
+<!--   </div>-->
+<!--</section>-->
+<section class="mediaPartners">
+    <div class="container">
+        <div class="secTitle textCenter">
+            <span>Tour and travels</span>
+            <h2>Our Preferred Associates</h2>
+        </div>
+        <div class="preferredPartnersInner owl-carousel ">
+            <div class="item">
+                <img src="/assets/images/1.jpeg">
+            </div>
+            <div class="item">
+                <img src="/assets/images/2.jpeg">
+            </div>
+            <div class="item">
+                <img src="/assets/images/3.jpeg">
+            </div>
+            <div class="item">
+                <img src="/assets/images/4_1.jpeg">
+            </div>
+            <div class="item">
+                <img src="/assets/images/5_1.jpeg">
+            </div>
+            <!--<div class="item">-->
+            <!--   <img src="asset/img/preferredPartners/6.jpg">-->
+            <!--</div>-->
+        </div>
+    </div>
+</section>
+<section class="unforgettableMain">
+    <div class="container">
+        <div class="unforgettable">
+            <div>
+                <div class="secTitle">
+                    <span>Plan your stay with us</span>
+                    <h2>Ready for an unforgettable stay?</h2>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="btn">Book Your Stay Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="testim" class="testim">
+    <div class="container">
+        <div class="secTitle textCenter">
+            <span>Travelers love our locals</span>
+            <h2>Clients Review</h2>
+        </div>
+        <ul id="testim-dots" class="dots">
+            <li class="dot active"></li>
+
+            <li class="dot"></li>
+
+            <li class="dot"></li>
+
+            <li class="dot"></li>
+
+            <li class="dot"></li>
+
+            <li class="dot"></li>
+
+            <li class="dot"></li>
+        </ul>
+        <div id="testim-content" class="cont">
+            <div class="active testi-single">
+                <div class="img">
+                    <img src="https://www.clubliberty.in/uploads/web_feedback/1671547687.jpg" alt="Lucky Singh">
+                    <!-- <img src="asset/img/review1.png" alt=""> -->
+                </div>
+                <div class="testi-content">
+                    <h2>Lucky Singh</h2>
+                    <p>It was a comfortable stay at red fox,our housekeeping boy Rupam was very helpful and kind.food was nice.we celebrate our wedding anniversary there,and travel executive Gaurav,thank you for making our day wonderful.</p>
+                </div>
+            </div>
+            <div class="testi-single">
+                <div class="img">
+                    <img src="/assets/images/1671547447.jpg" alt="Rohit Prajapati">
+                    <!-- <img src="asset/img/review1.png" alt=""> -->
+                </div>
+                <div class="testi-content">
+                    <h2>Rohit Prajapati</h2>
+                    <p>Awesome experience and nice trip Thanks a lot to Liberty Vacations International team for a nice arrangement and coordination. It is really very worthy. Thanks once again.</p>
+                </div>
+            </div>
+            <div class="testi-single">
+                <div class="img">
+                    <img src="/assets/images/1671547069.jpg" alt="Balwant Chawla">
+                    <!-- <img src="asset/img/review1.png" alt=""> -->
+                </div>
+                <div class="testi-content">
+                    <h2>Balwant Chawla</h2>
+                    <p>Thank you very much to sending us Heritage Village Resort & Spa,Manesar to enjoy a complimentary night stay. It was worth every moment. The room was very spacious,ambience wonderful & food excellent. We enjoyed and are keenly looking forward to our future trips to be managed by your company. All the best.</p>
+                </div>
+            </div>
+            <div class="testi-single">
+                <div class="img">
+                    <img src="/assets/images/1671543174.jpg" alt="Naveen Gupta">
+                    <!-- <img src="asset/img/review1.png" alt=""> -->
+                </div>
+                <div class="testi-content">
+                    <h2>Naveen Gupta</h2>
+                    <p>
+                        It was awesome trip in Neemrana Fort Palace.
+                        Got the trust for you now.
+                        Thanks a lot.
+
+                        Be Safe guys..
+                    </p>
+                </div>
+            </div>
+            <div class="testi-single">
+                <div class="img">
+                    <img src="/assets/images/1693641715.jpg" alt="Suguna Bhushan">
+                    <!-- <img src="asset/img/review1.png" alt=""> -->
+                </div>
+                <div class="testi-content">
+                    <h2>Suguna Bhushan</h2>
+                    <p>
+                        I had 5N/6D trip from Bangalore to Bangkok and Pattaya through Liberty Vacations International.
+                        This was my first international holiday trip with family.
+                        The hotels provided were great and good accessibility to tourist places.
+                        I had also asked Liberty Vacations to help in trip itinerary, that was also well planned.
+                        In short, I enjoyed the trip and waiting to have next soon ðŸ˜Š
+                    </p>
+                </div>
+            </div>
+            <div class="testi-single">
+                <div class="img">
+                    <img src="/assets/images/1693641810.jpg" alt="Somali Saha">
+                    <!-- <img src="asset/img/review1.png" alt=""> -->
+                </div>
+                <div class="testi-content">
+                    <h2>Somali Saha</h2>
+                    <p>Had a wonderful family stay cation. Pn a weekend.looking fwd for more such experiences</p>
+                </div>
+            </div>
+            <div class="testi-single">
+                <div class="img">
+                    <img src="/assets/images/1693642030.jpeg" alt="Vikash Daga">
+                    <!-- <img src="asset/img/review1.png" alt=""> -->
+                </div>
+                <div class="testi-content">
+                    <h2>Vikash Daga</h2>
+                    <p>Till now our experience has been wonderful and we got good support from Vikash and Vishank. They arranged our stay at our selected 5 star property. We enjoyed shopping and casino during our stay at the property in Goa. Thanks to Liberty Vacations International.</p>
+                </div>
+            </div>
+
+            <!-- <div class="testi-single">
+               <div class="img">
+                  <img src="asset/img/review1.png" alt="">
+               </div>
+               <div class="testi-content">
+                  <h2>MR. ANIL POONIA</h2>
+                  <p>Thanks to FORTUNE PARK VACATION. Recently visited Mussoorie Dhanoluti, stay was amazing with FPV special thanks to Mr Rehan, at Royal orchid fort resort at Mussoorie very near to mall road and on main  road big area with amazing views.</p>
+               </div>
+            </div>
+            <div class="testi-single">
+               <div class="img">
+                  <img src="asset/img/review1.png" alt="">
+               </div>
+               <div class="testi-content">
+                  <h2>MRS. ISHA NANDA</h2>
+                  <p>We had been to Tijara Fort via Fortune Park Vacation Complimentary stay.The stay had been an experience for a life time.
+                     It was Christmas eve and the entire fort was sizzling with Christmas celebration. Thanks Fortune Park Vacation for helping us with a wonderful experience.
+                  </p>
+               </div>
+            </div>
+            <div class="testi-single">
+               <div class="img">
+                  <img src="asset/img/review1.png" alt="">
+               </div>
+               <div class="testi-content">
+                  <h2>MR. SHIVANG MISRA</h2>
+                  <p>Very friendly staff with great understanding of the customer and provides a luxury holiday experience. They understand the need of the customer to provide good service and best hotels.</p>
+               </div>
+            </div> -->
+        </div>
+        <div class="testimonial-arrow">
+            <span id="left-arrow" class="arrow left fa fa fa-angle-left">
+                <img src="/assets/images/prev.png">
+            </span>
+            <span id="right-arrow" class="arrow right fa fa-angle-right">
+                <img src="/assets/images/next.png">
+            </span>
+        </div>
+    </div>
+</section>
+<!-- <section class="Blogs travelBg">
+   <div class="container">
+      <div class="blogsHead">
+         <div class="secTitle">
+            <span>Blogs</span>
+            <h2>Our Blog</h2>
+         </div>
+         <a href="https://www.clubliberty.in/blogs" class="primary-btn">View More</a>
+      </div>
+      <div class="blogInner">
+         <a href="blog-detail.php">
+         <img src="asset/img/blog/1.jpeg">
+         <span>Exploring India's Enchanting Snowfall Destinations...</span>
+         </a>
+         <a href="blog-detail.php">
+         <img src="asset/img/blog/2.jpeg">
+         <span>Uncovering Hidden Gems In Bangkok: Beyond The Tour...</span>
+         </a>
+         <a href="#">
+         <img src="asset/img/blog/3.png">
+         <span>Celebrating Independence Day In The Land Of Divers...</span>
+         </a>
+      </div>
+   </div>
+</section> -->
+<!--<div class="starterPopup">
+  <div class="starterPopupInner">
+    <button class="close">x</button>
+   <img src="asset/img/HappyHoli.jpg" alt="Happy New Year Animation" width="100%" style="margin-top: 10px;">
+    <!-- Video Section
+     <video autoplay muted controls width="100%" style="margin-top: 10px;">
+      <source src="asset/img/happnewyear.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>-->

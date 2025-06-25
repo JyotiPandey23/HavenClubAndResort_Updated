@@ -213,7 +213,7 @@ $('.destinationDetail').owlCarousel({
     margin:0,
      nav:true,
     dots:true,
-    navText: ["<img src='https://clubliberty.in/asset/img/icons/prev.png'>","<img src='https://clubliberty.in/asset/img/icons/next.png'>"],
+    navText: ["<img src='https://clubliberty.in/assets/asset/img/icons/prev.png'>","<img src='https://clubliberty.in/assets/asset/img/icons/next.png'>"],
      items:1
 });
 //main banner
